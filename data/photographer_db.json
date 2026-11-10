@@ -1,0 +1,856 @@
+{
+  "adminAuth": {
+    "username": "admin",
+    "password": "admin"
+  },
+  "designerProfile": {
+    "name": "Agung Sabdo Wicaksono",
+    "primaryRole": "Commercial Photographer & Videographer",
+    "subRoles": [
+      "Commercial Photography",
+      "Director of Photography (DP)",
+      "Cinematography & Reel",
+      "Event & Concert Documentary",
+      "Color Grading (DaVinci Resolve)",
+      "Drone Aerial Videography",
+      "Editorial Portrait"
+    ],
+    "aliasTitle": "Photographer & Cinematographer",
+    "photoUrl": "/images/agung-sabdo.png",
+    "headline": "MEMPRODUKSI VISUAL SINEMATIK & MOMEN AUTENTIK UNTUK BRAND & EVENT",
+    "bioParagraphs": [
+      "Halo! Saya Agung Sabdo Wicaksono, fotografer komersial dan videografer profesional dengan fokus pada dokumentasi brand, event berskala besar, potret editorial, dan sinematografi komersial.",
+      "Bagi saya, kamera bukan sekadar alat rekam melainkan instrumen narasi visual. Setiap bingkai disusun dengan cermat melalui komposisi, tata cahaya studio terarah, dan color grading mendalam untuk menonjolkan karakter unik setiap subjek.",
+      "Siap berkolaborasi untuk proyek kampanye brand, peluncuran produk, video profil perusahaan, aftermovie festival, maupun sesi pemotretan editorial personal."
+    ],
+    "location": "Tangerang Selatan & Jakarta, Indonesia · Available",
+    "timezone": "GMT+7 (WIB)",
+    "email": "agung.sabdo.w@gmail.com",
+    "phone": "+62 851-5687-7792",
+    "studioAddress": "Jl. Benda Barat 9, Blok C 14 No. 17H, Pamulang, Tangerang Selatan",
+    "workingHours": "Senin - Minggu: Fleksibel Jadwal Produksi (On-Location & Studio)",
+    "responseTime": "Dibalas dalam 1x24 jam kerja",
+    "portfolioPdfUrl": "#kontak",
+    "availability": {
+      "status": "Available",
+      "currentQuarter": "Q1 / Q2 2026",
+      "note": "Terbuka untuk pemotretan komersial, dokumentasi event/konser, produksi video komersial, dan konsultasi visual."
+    },
+    "statistics": [
+      {
+        "number": "150+",
+        "label": "Sesi Foto & Video",
+        "sublabel": "Komersial, Event & Editorial"
+      },
+      {
+        "number": "4K DCI",
+        "label": "Standar Rekam",
+        "sublabel": "10-Bit 4:2:2 Color Depth"
+      },
+      {
+        "number": "6+",
+        "label": "Tahun Pengalaman",
+        "sublabel": "Produksi Visual & Sinematografi"
+      },
+      {
+        "number": "100%",
+        "label": "Kepuasan Klien",
+        "sublabel": "Kurasi rapi & delivery tepat waktu"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "Instagram",
+        "username": "@agung.sabdo.visual",
+        "url": "https://instagram.com",
+        "highlight": true
+      },
+      {
+        "platform": "YouTube",
+        "username": "Agung Sabdo Visuals",
+        "url": "https://youtube.com",
+        "highlight": true
+      },
+      {
+        "platform": "Vimeo",
+        "username": "agungsabdo",
+        "url": "https://vimeo.com",
+        "highlight": true
+      },
+      {
+        "platform": "Behance",
+        "username": "agung.sabdo",
+        "url": "https://behance.net"
+      }
+    ],
+    "runningText": [
+      "COMMERCIAL PHOTOGRAPHY",
+      "CINEMATOGRAPHY & REEL",
+      "EVENT DOCUMENTARY",
+      "DAVINCI COLOR GRADING",
+      "EDITORIAL PORTRAITURE",
+      "PRODUCT & F&B SHOOT",
+      "DRONE AERIAL FOOTAGE"
+    ]
+  },
+  "portfolioSections": [
+    {
+      "id": "photo-commercial",
+      "eyebrow": "Fotografi Utama",
+      "title": "Wedding Photography",
+      "subtitle": "Koleksi foto hasil wedding",
+      "layout": "gallery-3",
+      "showDesignThinking": false
+    },
+    {
+      "id": "video-production",
+      "eyebrow": "Produksi Sinematik",
+      "title": "Videography & Commercial Films",
+      "subtitle": "Video profil perusahaan, iklan komersial digital, dan short narrative dengan estetika sinematik 4K.",
+      "layout": "grid-2"
+    },
+    {
+      "id": "event-documentary",
+      "eyebrow": "Dokumentasi & Live",
+      "title": "Event Documentary & Music Stage",
+      "subtitle": "Liputan panggung musik, festival, pameran seni, dan gathering korporat dengan menangkap dinamika momen nyata.",
+      "layout": "gallery-3"
+    }
+  ],
+  "projectsData": [
+    {
+      "id": "project-1793943594283",
+      "sectionId": "photo-commercial",
+      "title": "Minimalis Wedding",
+      "subtitle": "Foto pernikahan Miftih",
+      "client": "Miftih & Suami",
+      "year": "2026",
+      "category": "Fotografi",
+      "mediaType": "photo",
+      "tags": [
+        "Fotografi"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793943677077-0-DSC07387-2.jpg",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "photo-editorial",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "",
+      "designBrief": "",
+      "conceptPhilosophy": "",
+      "myRole": {
+        "title": "Photographer & Retoucher",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Lightroom & Photoshop",
+          "code": "Lr",
+          "purpose": "Color grading dan retouching foto",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "photo-proj-1",
+      "sectionId": "photo-commercial",
+      "title": "Artisan Coffee Roasters — Visual Campaign & Packaging Shoot",
+      "subtitle": "Sesi foto komersial produk biji kopi artisan, metode seduh manual, dan suasana kedai bernuansa hangat.",
+      "client": "Tanamera / Artisan Beans",
+      "year": "2024",
+      "category": "Commercial Photography",
+      "mediaType": "graphic",
+      "tags": [
+        "Product Shoot",
+        "F&B",
+        "Studio Lighting",
+        "Commercial"
+      ],
+      "featured": true,
+      "customMockupUrl": "/images/project-packaging.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "clientObjective": "Menciptakan aset visual komersial resolusi tinggi untuk katalog e-commerce, billboard media sosial, dan materi promosi brand kopi premium.",
+      "myContribution": "Konsep lighting mood (warm cinematic), tata komposisi produk tabletop, fotografi macro detail biji kopi, serta kurasi dan retouching warna.",
+      "tools": [
+        "Sony A7 IV",
+        "Sony GM 85mm f/1.4",
+        "Godox AD400 Pro",
+        "Adobe Lightroom Classic",
+        "Adobe Photoshop"
+      ],
+      "deliverables": [
+        "30 Foto Resolusi Tinggi (TIFF & JPEG)",
+        "Banner E-Commerce 16:9 & 1:1",
+        "Social Media Story Asset 9:16"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#2B170B",
+          "name": "Espresso Roast"
+        },
+        {
+          "hex": "#8C6239",
+          "name": "Caramel Crema"
+        },
+        {
+          "hex": "#D4A373",
+          "name": "Almond Foam"
+        },
+        {
+          "hex": "#EFE6DD",
+          "name": "Warm Linen"
+        }
+      ],
+      "processSteps": [
+        {
+          "step": "01. Pre-Production & Moodboard",
+          "desc": "Penyusunan referensi visual pencahayaan, pemilihan props kayu dan cangkir keramik, serta penjadwalan shot list."
+        },
+        {
+          "step": "02. Studio Lighting Setup",
+          "desc": "Pengaturan two-light setup (key light softbox octa + rim light kicker) untuk memunculkan tekstur biji kopi."
+        },
+        {
+          "step": "03. Shooting & Tethering",
+          "desc": "Pengambilan gambar langsung terhubung (tethered) ke monitor untuk memastikan ketajaman fokus dan akurasi warna."
+        },
+        {
+          "step": "04. Curation & Color Grading",
+          "desc": "Seleksi frame terbaik, koreksi lensa, gradasi warna hangat alami, dan ekspor multi-resolusi."
+        }
+      ]
+    },
+    {
+      "id": "video-proj-1",
+      "sectionId": "video-production",
+      "title": "LRT Jakarta Movement — Cinematic Commercial Video",
+      "subtitle": "Video komersial dinamis yang menyoroti kecepatan, kenyamanan, dan pengalaman mobilitas perkotaan modern.",
+      "client": "LRT Jabodebek / Transportasi Publik",
+      "year": "2024",
+      "category": "Commercial Videography",
+      "mediaType": "graphic",
+      "tags": [
+        "Commercial Video",
+        "Cinematography",
+        "DaVinci Resolve",
+        "Color Grading"
+      ],
+      "featured": true,
+      "customMockupUrl": "/images/project-web.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "clientObjective": "Membuat video promosi 60 detik bergaya sinematik untuk kampanye digital moda transportasi baru dengan alur dinamis.",
+      "myContribution": "Director of Photography (DP), operator kamera gimbal, penyuntingan video (editor), dan colorist.",
+      "tools": [
+        "Sony FX3",
+        "Sony 24-70mm GM II",
+        "DJI RS3 Pro",
+        "DaVinci Resolve Studio",
+        "Adobe Premiere Pro"
+      ],
+      "deliverables": [
+        "Master Video 4K 16:9 (60 Detik)",
+        "Cutdown Reel 9:16 (30 Detik)",
+        "Sound Design & Color Master Rec.709"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#0D1B2A",
+          "name": "Midnight Steel"
+        },
+        {
+          "hex": "#1B4965",
+          "name": "Cobalt Blue"
+        },
+        {
+          "hex": "#62B6CB",
+          "name": "Cyan Electric"
+        },
+        {
+          "hex": "#F0F3F4",
+          "name": "Modern White"
+        }
+      ],
+      "processSteps": [
+        {
+          "step": "01. Storyboard & Shot Planning",
+          "desc": "Merancang papan cerita perpindahan penumpang dari peron ke gerbong dengan rute pengambilan gambar terencana."
+        },
+        {
+          "step": "02. On-Site Production (Run & Gun)",
+          "desc": "Perekaman 4K 60fps 10-bit S-Log3 menggunakan gimbal penyeimbang di stasiun dan dalam kabin kereta."
+        },
+        {
+          "step": "03. Offline Video Editing",
+          "desc": "Pemilihan tempo ritmis musik, sinkronisasi ketukan beat, dan perakitan transisi match-cut yang mulus."
+        },
+        {
+          "step": "04. DaVinci Color Grading",
+          "desc": "Konversi gamut S-Log3 ke Rec.709, kontras sinematik teal-orange terukur, dan penajaman visual."
+        }
+      ]
+    },
+    {
+      "id": "photo-proj-2",
+      "sectionId": "photo-commercial",
+      "title": "Botanical Skincare & Wellness — Clean Editorial Shoot",
+      "subtitle": "Fotografi still life produk perawatan kulit organik dengan pencahayaan lembut natural dan refleksi air jernih.",
+      "client": "Natura Botanica",
+      "year": "2023",
+      "category": "Product Photography",
+      "mediaType": "graphic",
+      "tags": [
+        "Skincare",
+        "Still Life",
+        "Clean Aesthetic",
+        "Macro Photography"
+      ],
+      "featured": true,
+      "customMockupUrl": "/images/project-branding.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "clientObjective": "Membuat foto produk bersuasana bersih, elegan, dan menonjolkan bahan alami botanical untuk peluncuran lini serum wajah.",
+      "myContribution": "Penata artistik properti daun alami, lighting diffuse bergradasi halus, dan fotografi macro tekstur cairan.",
+      "tools": [
+        "Sony A7 IV",
+        "Sony Macro 90mm f/2.8",
+        "Godox Softbox 120cm",
+        "Adobe Lightroom Classic"
+      ],
+      "deliverables": [
+        "25 Still Life Shots",
+        "E-Commerce White-Background Assets",
+        "Editorial Social Media Flatlays"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#283618",
+          "name": "Forest Moss"
+        },
+        {
+          "hex": "#606C38",
+          "name": "Olive Green"
+        },
+        {
+          "hex": "#DDA15E",
+          "name": "Golden Sand"
+        },
+        {
+          "hex": "#FEFAE0",
+          "name": "Alabaster"
+        }
+      ]
+    },
+    {
+      "id": "video-proj-2",
+      "sectionId": "video-production",
+      "title": "Archipelago Heritage — Documentary Short Film",
+      "subtitle": "Film pendek dokumenter mengenai pengrajin tenun tradisional nusantara dengan pendekatan visual puitis.",
+      "client": "Yayasan Seni Budaya Nusantara",
+      "year": "2023",
+      "category": "Documentary Film",
+      "mediaType": "graphic",
+      "tags": [
+        "Documentary",
+        "Cultural Heritage",
+        "Natural Light",
+        "Storytelling"
+      ],
+      "featured": false,
+      "customMockupUrl": "/images/project-motion.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "clientObjective": "Mengabadikan dedikasi maestro pengrajin tenun tangan tradisional dengan pendekatan dokumenter intim dan visual bermakna.",
+      "myContribution": "Sutradara, sinematografer, perekaman audio lapangan, dan editing akhir.",
+      "tools": [
+        "Sony FX3",
+        "Sony 35mm f/1.4 GM",
+        "Rode Wireless Pro",
+        "DaVinci Resolve Studio"
+      ],
+      "deliverables": [
+        "Film Dokumenter 8 Menit (4K)",
+        "Teaser Promosi 45 Detik",
+        "Koleksi Foto BTS Resolusi Tinggi"
+      ]
+    },
+    {
+      "id": "doc-proj-1",
+      "sectionId": "event-documentary",
+      "title": "Sound of Java — Indie Music Festival Live Stage",
+      "subtitle": "Dokumentasi konser panggung musik luar ruangan dengan tata cahaya panggung dramatis dan ekspresi musisi.",
+      "client": "Java Indie Fest",
+      "year": "2024",
+      "category": "Event Photography",
+      "mediaType": "graphic",
+      "tags": [
+        "Stage Photography",
+        "Concert",
+        "Low Light",
+        "Live Performance"
+      ],
+      "featured": true,
+      "customMockupUrl": "/images/project-editorial.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "clientObjective": "Menangkap atmosfer konser festival musik dengan 5.000 penonton, aksi panggung musisi, dan interaksi penonton yang penuh energi.",
+      "myContribution": "Fotografer panggung pit utama, dokumentasi backstage musisi, dan seleksi instan untuk publikasi media hari yang sama.",
+      "tools": [
+        "Sony A7 IV",
+        "Sony GM 70-200mm f/2.8 II",
+        "Adobe Lightroom Classic"
+      ],
+      "deliverables": [
+        "80 Foto Kurasi Panggung & Penonton",
+        "Same-Day Press Release Selection (15 Foto)",
+        "Dokumentasi Backstage Musisi"
+      ]
+    },
+    {
+      "id": "doc-proj-2",
+      "sectionId": "event-documentary",
+      "title": "Tech Summit Indonesia — Corporate Gathering & Keynote",
+      "subtitle": "Liputan fotografi dan video highlight konferensi teknologi tahunan dengan 1.500 delegasi eksekutif.",
+      "client": "Tech Summit Media",
+      "year": "2023",
+      "category": "Corporate Event",
+      "mediaType": "graphic",
+      "tags": [
+        "Conference",
+        "Corporate",
+        "Keynote",
+        "Networking"
+      ],
+      "featured": false,
+      "customMockupUrl": "/images/project-web.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "clientObjective": "Mendokumentasikan jalannya sesi keynote, panel diskusi, dan area networking pameran teknologi tingkat nasional.",
+      "myContribution": "Fotografi dokumentasi resmi, liputan sesi presentasi utama, dan dokumentasi VIP.",
+      "tools": [
+        "Sony A7 IV",
+        "Sony 24-70mm GM II",
+        "Godox V1 Flash"
+      ],
+      "deliverables": [
+        "100+ Foto Dokumentasi Konferensi",
+        "Foto Portret Pembicara Utama",
+        "Rangkuman Foto Area Booth Pameran"
+      ]
+    }
+  ],
+  "applicationsList": [
+    {
+      "id": "sony-fx3",
+      "name": "Sony FX3 Cinema Line",
+      "shortCode": "FX3",
+      "category": "Videografi & Color",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "4+ Tahun",
+      "color": {
+        "bg": "bg-[#E63946]/10",
+        "text": "text-[#E63946]",
+        "border": "border-[#E63946]/30",
+        "badge": "bg-[#E63946] text-white"
+      },
+      "description": "Kamera sinema full-frame utama dengan sensor 4K 120fps, rentang dinamis 15+ stop S-Log3, dan pendingin aktif untuk perekaman tanpa henti.",
+      "keyUseCases": [
+        "Perekaman Iklan Komersial & TVC 4K DCI",
+        "Dokumenter & Wawancara Sinematik S-Log3",
+        "Liputan Konser Live Musik Low-Light ISO 12800",
+        "Video Profil Perusahaan Multi-Angle"
+      ]
+    },
+    {
+      "id": "sony-a7iv",
+      "name": "Sony Alpha A7 IV",
+      "shortCode": "A7",
+      "category": "Fotografi",
+      "experienceLevel": "Production Master",
+      "yearsUsed": "4+ Tahun",
+      "color": {
+        "bg": "bg-[#457B9D]/10",
+        "text": "text-[#457B9D]",
+        "border": "border-[#457B9D]/30",
+        "badge": "bg-[#457B9D] text-white"
+      },
+      "description": "Kamera hybrid 33 megapiksel full-frame dengan autofocus mata real-time yang presisi untuk pemotretan produk komersial, still life, dan potret editorial.",
+      "keyUseCases": [
+        "Sesi Foto Produk E-Commerce & F&B",
+        "Editorial Portrait & Campaign Lookbook",
+        "Dokumentasi Panggung Konser & Festival",
+        "Cetak Billboard & Media Promosi Skala Besar"
+      ]
+    },
+    {
+      "id": "sony-gm-lenses",
+      "name": "Sony G-Master Lens Collection",
+      "shortCode": "GM",
+      "category": "Fotografi",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "5+ Tahun",
+      "color": {
+        "bg": "bg-[#FFB703]/10",
+        "text": "text-[#FFB703]",
+        "border": "border-[#FFB703]/30",
+        "badge": "bg-[#FFB703] text-black"
+      },
+      "description": "Optik kelas atas 24-70mm f/2.8 GM II, 70-200mm f/2.8 GM II, dan 85mm f/1.4 untuk ketajaman optik sudut-ke-sudut dan bokeh lembut.",
+      "keyUseCases": [
+        "Portraiture Tajam dengan Separasi Kedalaman Ekstrem",
+        "Fleksibilitas Liputan Event Cepat 24-70mm",
+        "Panggung Konser dari Jarak Jauh 70-200mm",
+        "Detail Macro Produk Berdimensi Kecil"
+      ]
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve Studio",
+      "shortCode": "Dv",
+      "category": "Videografi & Color",
+      "experienceLevel": "Production Master",
+      "yearsUsed": "5+ Tahun",
+      "color": {
+        "bg": "bg-[#FB8500]/10",
+        "text": "text-[#FB8500]",
+        "border": "border-[#FB8500]/30",
+        "badge": "bg-[#FB8500] text-black"
+      },
+      "description": "Software standar industri film untuk color grading, color space transform ACES/Color Managed, skin tone isolation, dan audio mastering Fairlight.",
+      "keyUseCases": [
+        "Color Grading Rekaman S-Log3 ke Rec.709 Sinematik",
+        "Penyamaan Nada Warna (Color Match) Multi-Kamera",
+        "Film Emulation & Grain Styling 35mm",
+        "Mastering Ekspor 4K HDR & ProRes 422 HQ"
+      ],
+      "iconUrl": "/icons/software/davinci-resolve.svg"
+    },
+    {
+      "id": "premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "shortCode": "Pr",
+      "category": "Videografi & Color",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "6+ Tahun",
+      "color": {
+        "bg": "bg-[#9999FF]/10",
+        "text": "text-[#9999FF]",
+        "border": "border-[#9999FF]/30",
+        "badge": "bg-[#9999FF] text-black"
+      },
+      "description": "Perangkat penyuntingan video non-linear sehari-hari untuk merangkai jalan cerita, sinkronisasi audio multi-track, dan perakitan cutdown media sosial.",
+      "keyUseCases": [
+        "Perakitan Narasi Video Komersial & Company Profile",
+        "Editing Ritmis Aftermovie Festival Musik",
+        "Multi-Aspect Ratio Auto Reframe 16:9 ke 9:16",
+        "Sinkronisasi Multicam Otomatis Berbasis Gelombang Suara"
+      ],
+      "iconUrl": "/icons/software/premiere.svg"
+    },
+    {
+      "id": "lightroom-classic",
+      "name": "Adobe Lightroom Classic",
+      "shortCode": "Lr",
+      "category": "Fotografi",
+      "experienceLevel": "Production Master",
+      "yearsUsed": "6+ Tahun",
+      "color": {
+        "bg": "bg-[#31A8FF]/10",
+        "text": "text-[#31A8FF]",
+        "border": "border-[#31A8FF]/30",
+        "badge": "bg-[#31A8FF] text-black"
+      },
+      "description": "Alat kurasi, seleksi ribuan foto RAW dalam hitungan menit, koreksi distorsi lensa, kalibrasi warna kamera, dan ekspor batch resolusi tinggi.",
+      "keyUseCases": [
+        "Kurasi & Rating Cepat Ribuan Foto Event",
+        "Color Grading & Tonal Curve Still Life Produk",
+        "Tethered Shooting Live Preview di Studio",
+        "Penghapusan Debu Sensor & Retouching Cepat"
+      ],
+      "iconUrl": "/icons/software/lightroom.svg"
+    },
+    {
+      "id": "dji-rs3-mavic",
+      "name": "DJI RS3 Pro & Mavic 3 Pro",
+      "shortCode": "DJI",
+      "category": "Videografi & Color",
+      "experienceLevel": "Advanced Specialist",
+      "yearsUsed": "4+ Tahun",
+      "color": {
+        "bg": "bg-[#06D6A0]/10",
+        "text": "text-[#06D6A0]",
+        "border": "border-[#06D6A0]/30",
+        "badge": "bg-[#06D6A0] text-black"
+      },
+      "description": "Sistem gimbal 3-axis berbahan serat karbon dengan LiDAR focusing dan drone tri-camera Hasselblad untuk perspektif sinematik dari darat dan udara.",
+      "keyUseCases": [
+        "Pergerakan Kamera Mulus (Tracking & Dolly Shot)",
+        "Pengambilan Gambar Sudut Lebar & Bird-Eye View Udara",
+        "Perekaman Obyek Bergerak di Lokasi Terbuka",
+        "Sinematografi Lanskap & Properti Arsitektur"
+      ]
+    },
+    {
+      "id": "godox-aputure",
+      "name": "Godox & Aputure High-CRI Lighting",
+      "shortCode": "LUX",
+      "category": "Fotografi",
+      "experienceLevel": "Production Master",
+      "yearsUsed": "5+ Tahun",
+      "color": {
+        "bg": "bg-[#A78BFA]/10",
+        "text": "text-[#A78BFA]",
+        "border": "border-[#A78BFA]/30",
+        "badge": "bg-[#A78BFA] text-black"
+      },
+      "description": "Lampu studio flash AD400 Pro dan LED continuous Aputure Amaran dengan indeks reproduksi warna CRI 96+ untuk bentuk pencahayaan terkontrol.",
+      "keyUseCases": [
+        "Pencahayaan Tabletop Produk dengan Softbox Octa & Grid",
+        "Key Light & Rim Light Wawancara Sinematik",
+        "High-Speed Sync (HSS) Sinar Matahari Siang Hari",
+        "Efek Cahaya Mood & Warna Gel Kreatif"
+      ]
+    }
+  ],
+  "servicesData": [
+    {
+      "number": "01",
+      "title": "Commercial & Product Photography",
+      "tagline": "Fotografi produk & still life berkarakter kuat untuk meningkatkan nilai jual brand.",
+      "description": "Sesi foto komersial untuk produk e-commerce, F&B, dan kampanye brand dengan pencahayaan studio terarah.",
+      "deliverables": [
+        "Tabletop Studio Lighting Setup",
+        "Akurasi Warna Natural High-CRI",
+        "Macro Photography & Tekstur Detail",
+        "Retouching Resolusi Tinggi Siap Cetak & Web"
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Cinematic Video Production",
+      "tagline": "Video profil & materi iklan berestetika sinematik dengan alur bercerita dinamis.",
+      "description": "Pembuatan video profil perusahaan, video iklan TVC/media sosial, dan short narrative dengan estetika sinematik.",
+      "deliverables": [
+        "Perekaman 4K 10-bit S-Log3",
+        "Papan Cerita & Directing",
+        "Editing Ritmis & Sound Design",
+        "Cutdown Reel Media Sosial 9:16"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Event Documentary & Stage Live",
+      "tagline": "Menangkap energi konser, festival, dan gathering korporat secara autentik.",
+      "description": "Liputan dinamis konser, festival musik, pameran seni, dan gathering korporat dengan menangkap dinamika momen nyata.",
+      "deliverables": [
+        "Liputan Panggung Konser & Penonton",
+        "Dokumentasi Backstage & VIP",
+        "Same-Day Press Release Highlight",
+        "Aftermovie Video Dokumenter"
+      ]
+    },
+    {
+      "number": "04",
+      "title": "Color Grading & Post-Production",
+      "tagline": "Penyempurnaan nuansa warna sinematik menggunakan DaVinci Resolve Studio.",
+      "description": "Penyempurnaan warna rekaman log menggunakan DaVinci Resolve, balancing, tone styling, dan output mastering.",
+      "deliverables": [
+        "Konversi Gamut S-Log3 ke Rec.709",
+        "Film Emulation & Skin Tone Isolation",
+        "Color Consistency Multi-Camera",
+        "Mastering Ekspor 4K HDR & SDR"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "number": "01",
+      "phase": "PRE-PRODUCTION & CONCEPT",
+      "title": "Pre-Production & Creative Concept",
+      "description": "Diskusi visi brand, perancangan moodboard visual, penyusunan shot list terstruktur, dan penentuan lokasi serta model.",
+      "methodology": [
+        "Visual Moodboard",
+        "Detailed Shot List",
+        "Call Sheet & Location Scout",
+        "Lighting Reference Plan"
+      ],
+      "deliverableHighlight": "Papan Konsep Visual & Rencana Produksi Lengkap"
+    },
+    {
+      "number": "02",
+      "phase": "PRODUCTION & SHOOTING",
+      "title": "Production & On-Location Shooting",
+      "description": "Eksekusi pemotretan atau perekaman video 4K dengan tata cahaya profesional, pengarah gaya, dan pemantauan tethering monitor.",
+      "methodology": [
+        "Full-Frame 4K 10-Bit Recording",
+        "Studio Strobe & High-CRI Lighting",
+        "Tethered Monitor Preview",
+        "32-Bit Float Audio Recording"
+      ],
+      "deliverableHighlight": "Raw 4K 10-Bit Footage & High-Res Raw Photos"
+    },
+    {
+      "number": "03",
+      "phase": "POST-PRODUCTION & COLOR",
+      "title": "Editing, Grading & Post-Production",
+      "description": "Kurasi foto terbaik, perakitan video offline, color grading DaVinci Resolve, mixing audio jernih, dan sentuhan visual akhir.",
+      "methodology": [
+        "Lightroom RAW Curation & Exposure",
+        "DaVinci Resolve S-Log3 Grading",
+        "Sound Design & Audio Mastering",
+        "Multi-Aspect Ratio Cutdowns (16:9 & 9:16)"
+      ],
+      "deliverableHighlight": "Master Video 4K & Retouched Photos Terkurasi"
+    },
+    {
+      "number": "04",
+      "phase": "DELIVERY & ARCHIVE",
+      "title": "Review, Revision & Delivery",
+      "description": "Pemberian preview hasil pengerjaan, penyesuaian detail jika diperlukan, dan pengiriman berkas master melalui cloud drive.",
+      "methodology": [
+        "Client Online Preview Link",
+        "Rapid Turnaround Revisions",
+        "High-Speed Cloud Storage Link",
+        "Raw Data Archiving"
+      ],
+      "deliverableHighlight": "Full-Resolution Master Cloud Link (Akses Selamanya)"
+    }
+  ],
+  "awardsData": [
+    {
+      "year": "2025",
+      "award": "Best Cinematography Commercial Reel",
+      "project": "LRT Jakarta Movement Reel",
+      "institution": "Indonesian Visual Creator Awards",
+      "category": "Videography",
+      "credentialUrl": ""
+    },
+    {
+      "year": "2024",
+      "award": "Selected Work — National Photography Exhibition",
+      "project": "Artisan Coffee Roasters Campaign",
+      "institution": "Galeri Seni Nusantara",
+      "category": "Photography",
+      "credentialUrl": ""
+    },
+    {
+      "year": "2023",
+      "award": "Sony Alpha Creator Spotlight Contestant",
+      "project": "Archipelago Heritage Documentary",
+      "institution": "Sony Indonesia",
+      "category": "Cinematography",
+      "credentialUrl": ""
+    }
+  ],
+  "exhibitionsData": [
+    {
+      "year": "2024",
+      "exhibition": "Wajah Kota & Cerita Nusantara",
+      "venue": "Taman Ismail Marzuki",
+      "city": "Jakarta",
+      "works": "Koleksi Potret Humanis & Urban Street"
+    },
+    {
+      "year": "2023",
+      "exhibition": "Frame & Rhythm Music Visuals",
+      "venue": "Jogja National Museum",
+      "city": "Yogyakarta",
+      "works": "Dokumentasi Visual Festival Musik Indie"
+    }
+  ],
+  "clientRoster": [
+    {
+      "name": "Tanamera Coffee Roasters",
+      "city": "Jakarta",
+      "category": "F&B Commercial"
+    },
+    {
+      "name": "LRT Jabodebek",
+      "city": "Jakarta",
+      "category": "Transportation & Infrastructure"
+    },
+    {
+      "name": "Natura Botanica Skincare",
+      "city": "Bandung",
+      "category": "Beauty & Wellness"
+    },
+    {
+      "name": "Java Indie Fest",
+      "city": "Yogyakarta",
+      "category": "Music & Entertainment"
+    },
+    {
+      "name": "Tech Summit Media",
+      "city": "Jakarta",
+      "category": "Corporate Conference"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Agung memiliki mata sinematik yang luar biasa. Hasil video komersial dan foto produk kami meningkat drastis dalam engagement media sosial!",
+      "client": "Dimas Prasetyo",
+      "role": "Brand Manager",
+      "company": "Tanamera Coffee",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "quote": "Pengambilan gambar saat live konser sangat tepat waktu, menangkap momen puncak musisi dan energi penonton dengan warna yang dramatis.",
+      "client": "Rina Hapsari",
+      "role": "Festival Director",
+      "company": "Java Indie Fest",
+      "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80"
+    }
+  ],
+  "tactileSpecs": [
+    {
+      "label": "Standar Rekam Video",
+      "value": "4K DCI 10-Bit 4:2:2 Broadcast Quality",
+      "detail": "Kualitas bioskop menggunakan kamera Sony Cinema Line dengan kedalaman warna miliaran warna."
+    },
+    {
+      "label": "Resolusi Foto Sensor",
+      "value": "33 MP Full-Frame RAW Resolution",
+      "detail": "Detail tinggi yang siap dicetak untuk billboard skala besar maupun media digital."
+    },
+    {
+      "label": "Tata Cahaya Studio",
+      "value": "High-CRI 96+ Studio Lighting",
+      "detail": "Akurasi warna natural sempurna untuk produk, makanan, dan potret kulit manusia."
+    },
+    {
+      "label": "Perekaman Audio",
+      "value": "32-Bit Float Wireless Audio Sync",
+      "detail": "Suara jernih tanpa distorsi suara pecah (clipping) untuk wawancara dan suara atmosfer."
+    }
+  ],
+  "inquiries": []
+}

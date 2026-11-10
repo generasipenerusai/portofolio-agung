@@ -1,0 +1,1754 @@
+{
+  "adminAuth": {
+    "username": "sabdo",
+    "password": "akusayangkamu",
+    "updatedAt": "2026-11-04T15:59:07.512Z"
+  },
+  "designerProfile": {
+    "name": "Agung Sabdo Wicaksono",
+    "primaryRole": "Portofolio 2026",
+    "subRoles": [
+      "Digital Designer",
+      "UI/UX Designer",
+      "Web Designer",
+      "Motion Graphics",
+      "Photo & Video Editor",
+      "Cinematography & Color Grading",
+      "Custom Typography"
+    ],
+    "aliasTitle": "Desainer Grafis & Visual Artist",
+    "photoUrl": "/images/agung-sabdo.png",
+    "headline": "Creative Designer & UI/UX Designer",
+    "bioParagraphs": [
+      "Halo! Saya Agung Sabdo Wicaksono, Digital Designer dan UI/UX Designer dengan pengalaman membuat design digital, desain web/UI lebih dari 4 tahun.\nMenggabungkan kreativitas visual, UI/UX design, dan pemahaman teknologi untuk menciptakan solusi digital yang fungsional, modern, dan berorientasi pada pengguna.\nSelain itu saya punya keahlian lain di bidang motion graphics, fotografi editorial, video editorial dan konten visual kreatif."
+    ],
+    "location": "South Tangerang, Indonesia · Available",
+    "timezone": "GMT+7 (WIB)",
+    "email": "agung.sabdo.w@gmail.com",
+    "phone": "+62 851-5687-7792",
+    "studioAddress": "Jl. Benda Barat 9, Blok C 14 No. 17H, Pondok Benda, Pamulang, Tangerang Selatan",
+    "workingHours": "Senin - Jumat: 09:00 - 18:00 WIB",
+    "responseTime": "Dibalas dalam 1x24 jam kerja",
+    "portfolioPdfUrl": "#kontak",
+    "availability": {
+      "status": "Available",
+      "currentQuarter": "Q1 / Q2 2026",
+      "note": "Terbuka untuk pekerjaan freelance, proyek desain grafis, digital, dan konsultasi kreatif personal."
+    },
+    "statistics": [
+      {
+        "number": "54+",
+        "label": "Proyek Selesai",
+        "sublabel": "Grafis, Motion & Video"
+      },
+      {
+        "number": "4+",
+        "label": "Sertifikasi Keahlian",
+        "sublabel": "UI/UX, Desain Visual & Motion"
+      },
+      {
+        "number": "5+",
+        "label": "Tahun Pengalaman",
+        "sublabel": "Desainer & Kreatif Independen"
+      },
+      {
+        "number": "100%",
+        "label": "Kualitas Produksi",
+        "sublabel": "Pengawasan ketat pre-press & mastering"
+      }
+    ],
+    "socials": [
+      {
+        "platform": "Behance",
+        "username": "agung.sabdo",
+        "url": "https://behance.net",
+        "highlight": true
+      },
+      {
+        "platform": "Instagram",
+        "username": "@agung.sabdo.studio",
+        "url": "https://instagram.com",
+        "highlight": true
+      },
+      {
+        "platform": "Vimeo",
+        "username": "agung.sabdo-motion",
+        "url": "https://vimeo.com",
+        "highlight": true
+      },
+      {
+        "platform": "Dribbble",
+        "username": "agungsabdo",
+        "url": "https://dribbble.com"
+      },
+      {
+        "platform": "Are.na",
+        "username": "agung.sabdo-archive",
+        "url": "https://are.na"
+      },
+      {
+        "platform": "LinkedIn",
+        "username": "agung.sabdo",
+        "url": "https://linkedin.com"
+      }
+    ],
+    "runningText": [
+      "Digital Designer",
+      "UI/UX Designer",
+      "Web Designer",
+      "AI Generate",
+      "Motion Graphics",
+      "Photographer & Videographer"
+    ],
+    "hidePortfolioSwitcher": true,
+    "portfolioSwitcherLabel": ""
+  },
+  "portfolioSections": [
+    {
+      "id": "main",
+      "eyebrow": "Portofolio Utama",
+      "title": "Design Graphic",
+      "subtitle": "Klik pada karya untuk melihat detail kontribusi, proses pengerjaan, dan hasil akhir.",
+      "layout": "grid-2"
+    },
+    {
+      "id": "sec-1793524758056",
+      "eyebrow": "UI/UX & Product Design",
+      "title": "UI/UX Designer",
+      "subtitle": "Perancangan antarmuka aplikasi, website, dan sistem desain berbasis riset pengguna (Design Thinking).",
+      "layout": "grid-2",
+      "showDesignThinking": true
+    },
+    {
+      "id": "sec-1793451369822",
+      "eyebrow": "Keahlian Tambahan",
+      "title": "Animation & Motion Graphics",
+      "subtitle": "",
+      "layout": "gallery-3"
+    }
+  ],
+  "projectsData": [
+    {
+      "id": "project-1793942773964",
+      "sectionId": "main",
+      "title": "Vektor Truck Mushola",
+      "subtitle": "Membuat Blue Print Vektor untuk pemasangan Stiker Mushola Bank BSI",
+      "client": "Riganda Jakarta",
+      "year": "2026",
+      "category": "Branding",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793943187984-0-Screenshot-2026-11-06-at-12-32-47.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "photoGallery": [
+        {
+          "url": "/uploads/1793943110014-0-Samping.jpg",
+          "caption": ""
+        },
+        {
+          "url": "/uploads/1793943110016-1-WhatsApp-Image-2026-08-22-at-16-21-04--1.jpeg",
+          "caption": ""
+        }
+      ],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Membuat presisi setiap sudut mobil truk sebelum nantinya akan di tempelkan stiker mushola BANK BSI",
+      "designBrief": "Ubah hasil foto menjadi tampilan vektor untuk bisa dijadikan blue print cetak stiker mushola BANK BSI, foto tidak memiliki posisi center sempurna",
+      "conceptPhilosophy": "Mencari referensi lain dengan di merge foto asli referensi sehingga terbentuk hasil yang presisi",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Mencari referensi yang sesuai dengan referensi briefing user",
+          "duration": "Minggu 1",
+          "toolUsed": "Browser",
+          "description": "menyesuaikan gambar-gambar yang ada di internet dengan gambar referensi\nmencocokan dengan kondisi objek yang ada\nmemasukkan kedalam software Adobe Ilustrator",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Tracing Gambar",
+          "duration": "Minggu 1",
+          "toolUsed": "Alat",
+          "description": "Manggunakan Pentool agal lebih mudah menyesualikan hasil secara presisi dari gambar dasar-shadows\nmenambahkan warna-warna yang sesuai\neksport dalam pdf",
+          "keyMilestone": "Output terverifikasi"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#FFFFFF",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#DBDBDA",
+          "name": "Abu Netral"
+        },
+        {
+          "hex": "#494949",
+          "name": "Abu Gelap"
+        },
+        {
+          "hex": "#909191",
+          "name": "Abu Netral"
+        },
+        {
+          "hex": "#CD962C",
+          "name": ""
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793809396868",
+      "sectionId": "sec-1793524758056",
+      "title": "Implement Web-App to Mobile UI/UX Design",
+      "subtitle": "Transformasi Web Application menjadi Mobile Experience yang Responsif dan Intuitif",
+      "client": "LRT",
+      "year": "2024",
+      "category": "UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": true,
+      "customMockupUrl": "/uploads/1793853857592-0-Kepala-Stasiun-Login.png",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "photoGallery": [
+        {
+          "url": "/uploads/1793853868640-0-Screenshot-2026-11-05-at-11-40-58.png",
+          "caption": ""
+        },
+        {
+          "url": "/uploads/1793853868642-1-Screenshot-2026-11-05-at-11-42-42.png",
+          "caption": ""
+        },
+        {
+          "url": "/uploads/1793853868643-2-Screenshot-2026-11-05-at-11-43-14.png",
+          "caption": ""
+        },
+        {
+          "url": "/uploads/1793853868645-3-Screenshot-2026-11-05-at-11-43-28.png",
+          "caption": ""
+        }
+      ],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Proyek perancangan ulang antarmuka aplikasi berbasis web ke dalam format mobile dengan pendekatan UI/UX Design. Proses ini berfokus pada adaptasi layout, penyederhanaan navigasi, optimalisasi komponen antarmuka, serta penyesuaian pengalaman pengguna agar fitur utama aplikasi dapat diakses secara lebih praktis melalui perangkat mobile. Perancangan dilakukan dengan mempertimbangkan konsistensi visual, kemudahan penggunaan, dan responsivitas pada berbagai ukuran layar.",
+      "designBrief": "Antarmuka aplikasi berbasis web perlu disesuaikan dengan karakteristik penggunaan perangkat mobile, terutama pada keterbatasan ukuran layar, navigasi, keterbacaan informasi, dan akses terhadap fitur utama. Tantangan utama dalam proyek ini adalah mempertahankan fungsi penting aplikasi sekaligus menyederhanakan struktur tampilan agar lebih mudah dipahami, efisien, dan nyaman digunakan oleh pengguna mobile.",
+      "conceptPhilosophy": "Solusi dirancang melalui pendekatan mobile-first dengan menyusun ulang hierarki informasi, menyederhanakan navigasi, mengoptimalkan tata letak komponen, dan menyesuaikan ukuran elemen interaktif agar mudah digunakan pada layar sentuh. Proses perancangan mencakup eksplorasi wireframe, pengembangan high-fidelity UI, konsistensi komponen visual, serta penyusunan prototype untuk menggambarkan alur penggunaan aplikasi pada perangkat mobile.",
+      "myRole": {
+        "title": "UI/UX Designer",
+        "contributionType": "Bekerja TIM",
+        "responsibilities": [
+          "Analisis struktur dan alur aplikasi web yang sudah ada.",
+          "Adaptasi layout web ke tampilan mobile.",
+          "Perancangan user flow dan navigasi.",
+          "Pembuatan wireframe dan high-fidelity UI.",
+          "Penyusunan komponen dan konsistensi visual.",
+          "Pembuatan prototype interaktif untuk menggambarkan pengalaman pengguna."
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Presentasi Papan Konsep & Moodboard Interaktif",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Research & Analysis",
+          "duration": "Minggu 1",
+          "toolUsed": "Alat",
+          "description": "Mempelajari struktur halaman, fitur utama, dan alur penggunaan pada aplikasi web yang sudah ada untuk menentukan kebutuhan adaptasi ke perangkat mobile.",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Tahap Baru",
+          "duration": "Minggu 1",
+          "toolUsed": "Alat",
+          "description": "Deskripsi langkah",
+          "keyMilestone": "Output terverifikasi"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793780328758",
+      "sectionId": "sec-1793524758056",
+      "title": "SIPAM – Redesign UI/UX Platform Pengelolaan Air",
+      "subtitle": "Redesign Antarmuka Digital untuk Pengelolaan Air yang Lebih Modern dan Informatif",
+      "client": "PAMSIMAS",
+      "year": "2026",
+      "category": "UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793781440559-0-Screenshot-2026-11-04-at-15-35-02.png",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "monograph-book",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Proyek redesign UI/UX SIPAM berfokus pada pengembangan tampilan antarmuka digital yang lebih modern, profesional, informatif, dan mudah digunakan. Proses desain mencakup perancangan ulang landing page, penyusunan hierarki informasi, pengembangan elemen visual bertema pengelolaan air, serta adaptasi desain untuk perangkat tablet dan mobile. Pendekatan visual menggunakan tata letak yang bersih, tipografi yang mudah dibaca, dan elemen grafis yang merepresentasikan infrastruktur serta distribusi air. Tujuan utama proyek ini adalah meningkatkan keterbacaan informasi, konsistensi visual, dan kemudahan pengguna dalam memahami layanan yang disajikan.",
+      "designBrief": "Visual pada website pengguna/ landing page belum memiliki identitas dan juga visual yang membuat inovasi yang indah dipandang karena seperti monoton",
+      "conceptPhilosophy": "Saya membuat tema air dan paralon sehingga identitas dari PAM itu sendiri tergambar, saat orang pertama kali memandang pasti faham bahwa ini adalah layanan penyedia PAM",
+      "myRole": {
+        "title": "UI/UX Designer",
+        "contributionType": "End-to-End Product Design",
+        "responsibilities": [
+          "Riset pengguna, perumusan masalah & User Persona (Empathize & Define)",
+          "Penyusunan Information Architecture, User Flow & Wireframe (Ideate)",
+          "Perancangan UI Design System, Interactive Prototype & Usability Testing (Prototype & Test)"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Wireframing, UI Design System & Interactive Prototyping",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Konstruksi Geometri Vektor & Monogram",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Mempelajari dokumentasi dari aplikasi yang akan saya bangun landing page, sehingga informasi yang akan saya tampilkan dapat ter-deliver dengan baik",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Menentukan point-point yang akan di tampilkan pada landing page ini sebagai informasi unggulan",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Menyesuaikan urutan dari proritas utama, sehingga alur dari atas hingga bawah seperti cerita yang saling terkaitan, sehingga membawa user dapat tertarik ke tahap sepanjutnya\n\nWireframing\nsaya menggunakan bantuan AI untuk menampilkan beberapa referensi design yang memiliki minimalis modern yang berkaitan untuk bisa saya terapkan pada Landing page SIPAM",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Membangun komponen Design System\nseperti warna, button, font dan component yang akan saya gunakan berulang\n\nUI Design\nmulai penerapan dari hasil riset dengan kebutuhan yang ada\n\nPrototype\nsaya membuat animasi sehingga walau belum masuk tahap develop user bisa merasakan sensasi menekan tombol dengan hover dan prototype yang sesuai",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Menguji skenario penggunaan bersama pengguna untuk memvalidasi kemudahan alur dan menyempurnakan detail UX.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#036CC7",
+          "name": "Primary"
+        },
+        {
+          "hex": "#607780",
+          "name": "Netral"
+        },
+        {
+          "hex": "#0387F9",
+          "name": "Hover"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793778282968",
+      "sectionId": "sec-1793524758056",
+      "title": "Amartha Gold Investment",
+      "subtitle": "UX Studi Kasus Merancang Fitur Investasi Emas untuk Aplikasi Amartha",
+      "client": "Amartha",
+      "year": "2026",
+      "category": "UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "UI/UX Design",
+        "Design Thinking",
+        "Figma"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793778978830-0-1_Dv931Sc5R7ElcnhOFwWeFg.webp",
+      "videoEmbedUrl": "",
+      "photoGallery": [
+        {
+          "url": "/uploads/1793780269822-0-Screenshot-2026-11-04-at-15-17-24.png",
+          "caption": ""
+        },
+        {
+          "url": "/uploads/1793780274711-0-Screenshot-2026-11-04-at-15-17-12.png",
+          "caption": ""
+        },
+        {
+          "url": "/uploads/1793780277128-0-Screenshot-2026-11-04-at-15-17-24.png",
+          "caption": ""
+        }
+      ],
+      "aspectRatio": "standard",
+      "mockupType": "monograph-book",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Kali ini saya akan membahas tentang proses Desain UI/UX untuk aplikasi Amartha yang merupakan salah satu tantangan UI/UX dari skilvul.com. Saya bersama Tim bekerja sama untuk menyelesaikan tantangan dari Amartha ini.\n\n",
+      "designBrief": "Overview\nAmartha adalah sebuah platform berbasis website dan aplikasi yang hadir dengan konsep P2P Lending yang mempertemukan peminjam dan pemberi pinjaman (lenders) melalui digital. Amartha ingin membuat layanan investasi emas yang dibungkus dengan gamifikasi.\n\nObjective\nMembuat fitur investasi emas untuk aplikasi Amartha yang mudah digunakan\n\n",
+      "conceptPhilosophy": "Dalam kasus ini kami memilih menggunakan Design Thinking sebagai pendekatan design process yang kami lakukan. Dikarenakan Design Thinking prosesnya lebih mudah diterapkan dan fleksibel",
+      "myRole": {
+        "title": "UI/UX Designer",
+        "contributionType": "End-to-End Product Design",
+        "responsibilities": [
+          "Riset pengguna, perumusan masalah & User Persona (Empathize & Define)",
+          "Penyusunan Information Architecture, User Flow & Wireframe (Ideate)",
+          "Perancangan UI Design System, Interactive Prototype & Usability Testing (Prototype & Test)"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Wireframing, UI Design System & Interactive Prototyping",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        },
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Konstruksi Geometri Vektor & Monogram",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Menggali kebutuhan, perilaku, dan kendala utama (pain points) pengguna terhadap produk atau alur layanan.",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Dalam tahap define ini kita mencari permasalah berdasarkan ide-ide kita dalam mengembangkan fitur investasi emas di aplikasi amartha sesuai dengan permintaan dari pihak Amartha dengan membuat pain point. Dari pain point tersebut kita baru membuat How-Might-We sebagai solusi-solusi dari pain point dan kita melakukan voting dari How-Might-We yang telah dibuat.\n\n",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Dalam tahap ideate, kita melakukan brainstorming ide berdasarkan How-Might-We sebanyak-banyaknya dan hasil dari brainstorming ide tersebut kita mengelompokkannya di dalam Affinity Diagram. Dari Affinity Diagram, kita kelompokkan lagi kategori mana yang lebih diprioritaskan di dalam prioritization Idea. di sini, kita hanya membuat UI/UX design di prioritas Yes, Do It Now. dan membuat desain kasar dengan metode Crazy’8.\n\nSketch\nSetelah menemukan solusi, kami membuat sketsa menggunakan metode desain sprint, Crazy’8. Hanya ada 8 frame yang menggambarkan tata letak kasar dari aplikasi mobile. Untuk sketsa ini, saya dan teman-teman masing-masing membuat sketsa kasar.\n\nWireframe\nSetelah melakukan beberapa sketsa, kami melanjutkan dengan membuat wireframe. Kami membuat sedikit perubahan sebagai bagian dari pengembangan ide tata letak kasar dalam proses sketsa.\n\n",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Prototyping\nSetelah menyelesaikan tahap ideate, kami membuat alur pengguna, membuat panduan gaya UI untuk mendokumentasikan sumber daya desain, membuat desain visual, dan membuat desain prototype.\n\nUser Flow\nSebelum membuat desain visual, kami membuat alur pengguna untuk memudahkan pembuatan prototype.\n\nVisual Design\nUntuk desain visual, kami memilih warna dominan ungu sesuai dengan app Amartha.\n\nUI Kits\nUI Kit yang kami gunakan pada antarmuka dari Amartha, dari warna, font, dan assets primary sepert: logo\n\nPrototype Amartha\nDalam tahap prototyping, kita membuat User Flow di Fig Jam dalam aplikasi Figma.",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Untuk mengevaluasi apakah desain yang kami buat adalah solusi yang ideal, kami membuat daftar pertanyaan dan pengujian skenario sebagai persiapan untuk pengujian kegunaan. Pada tahap pengujian ini, kami menggunakan Single Ease Question sebagai metrik kegunaan untuk menghitung produk secara keseluruhan. Ada 6 skenario yang kami buat.\n\n1. Login dan masuk ke halaman Amartha Emas\n2. Membeli emas\n3. Jual emas\n4. Lakukan misi emas\n5. Lihat riwayat Transaksi\n6. Lihat informasi Amartha Emas\n\nUntuk mengetahui efektivitas produk ini, kami juga mencari 1 responden berusia 18–50 tahun untuk melakukan wawancara singkat dan pengujian prototype. Kami menggunakan aplikasi zoom untuk wawancara dengan responden.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "User Persona & User Flow",
+        "UI Design System",
+        "Interactive Figma Prototype"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#7F5FA3",
+          "name": "Primary Color"
+        },
+        {
+          "hex": "#8A77D8",
+          "name": "Primary Color"
+        },
+        {
+          "hex": "#8A54CF",
+          "name": "Primary Color"
+        },
+        {
+          "hex": "#6B75CA",
+          "name": "Secondary Color"
+        },
+        {
+          "hex": "#FBD22F",
+          "name": ""
+        },
+        {
+          "hex": "#27AE60",
+          "name": ""
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793515580101",
+      "sectionId": "main",
+      "title": "Lefleat SIPAM",
+      "subtitle": "",
+      "client": "PAMSIMAS",
+      "year": "2026",
+      "category": "Branding",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793516188573-0-sipam-cvr.png",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "",
+      "designBrief": "",
+      "conceptPhilosophy": "",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        }
+      ],
+      "creationProcess": [],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#DAEFFE",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#0269C8",
+          "name": "Biru Utama"
+        },
+        {
+          "hex": "#A9BCC1",
+          "name": "Abu Netral"
+        },
+        {
+          "hex": "#94D1FF",
+          "name": "Biru Utama"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793514843615",
+      "sectionId": "main",
+      "title": "Rate Card",
+      "subtitle": "Strategic Pricing Layout & Visual Communication",
+      "client": "Anta Dana 99",
+      "year": "2026",
+      "category": "Pricelist",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793524636305-0-ANTA-DANA-99.png",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Perancangan desain rate card untuk Anta Dana 99 yang berfokus pada penyajian informasi harga dan layanan secara profesional, sistematis, dan mudah dipahami. Proyek ini menggabungkan pendekatan desain editorial dengan strategi komunikasi visual untuk menciptakan media informasi yang tidak hanya informatif, tetapi juga mampu memperkuat citra dan kredibilitas brand.",
+      "designBrief": "Tantangan utama dalam proyek ini adalah mengolah informasi layanan dan rincian harga ke dalam satu komposisi visual yang terstruktur tanpa membuat tampilan terasa padat atau membingungkan. Desain harus mampu menyampaikan informasi secara cepat, menjaga hierarki konten, serta memastikan setiap detail harga dan layanan dapat dibaca dengan jelas oleh target audiens.",
+      "conceptPhilosophy": "Pendekatan desain dilakukan melalui penguatan hierarki visual, pengelompokan informasi, serta pengaturan tipografi dan komposisi layout yang konsisten. Setiap elemen dirancang dengan mempertimbangkan prioritas informasi agar audiens dapat memahami pilihan layanan dan harga secara intuitif. Hasil akhirnya adalah rate card dengan tampilan profesional, komunikatif, dan memiliki karakter visual yang selaras dengan identitas brand.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#631920",
+          "name": "Merah Aksentuasi"
+        },
+        {
+          "hex": "#D8C5A9",
+          "name": "Oranye Hangat"
+        },
+        {
+          "hex": "#7E4442",
+          "name": "Merah Aksentuasi"
+        },
+        {
+          "hex": "#1C1B1A",
+          "name": "Hitam Pekat"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793505828987",
+      "sectionId": "main",
+      "title": "Desain Booth Portable Alpukat Kocok",
+      "subtitle": "Portable Booth Design & Visual Brand Identity",
+      "client": "Alpukat Tangsel",
+      "year": "2026",
+      "category": "Branding",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793505883960-0-AHVOCADO.png",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Perancangan desain booth portable untuk brand Alpukat Tangsel yang mengusung konsep visual modern, fresh, dan playful. Desain ini dibuat untuk memperkuat identitas brand sekaligus menghadirkan media promosi yang menarik, praktis, dan mudah diaplikasikan pada berbagai kebutuhan aktivitas penjualan maupun event.",
+      "designBrief": "Mengembangkan desain booth portable yang mampu merepresentasikan karakter Alpukat Tangsel sebagai brand minuman alpukat yang segar, modern, dan dekat dengan konsumen. Tantangan utama adalah menciptakan desain yang eye-catching dalam ruang terbatas, tetap komunikatif, serta mempertimbangkan aspek fungsionalitas, kemudahan pemasangan, dan mobilitas booth.",
+      "conceptPhilosophy": "Bertanggung jawab penuh dalam proses perancangan konsep visual, pengembangan identitas grafis, eksplorasi layout, pemilihan warna dan tipografi, hingga finalisasi desain booth portable. Memastikan seluruh elemen visual konsisten dengan karakter dan identitas brand Alpukat Tangsel.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Research & Brand Exploration",
+          "duration": "Minggu 1",
+          "toolUsed": "Browser",
+          "description": "Mempelajari karakter brand Alpukat Tangsel, target audiens, serta kebutuhan booth sebagai media promosi dan penjualan.",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Concept Development",
+          "duration": "Minggu 1",
+          "toolUsed": "Notepad",
+          "description": "Mengembangkan konsep desain dengan pendekatan modern, fresh, dan playful yang merepresentasikan produk minuman alpukat.",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Visuak Exploration",
+          "duration": "Minggu 1",
+          "toolUsed": "Adobe Illustrator & Browser",
+          "description": "Deskripsi langkahMelakukan eksplorasi warna, tipografi, elemen grafis, ilustrasi, serta komposisi visual untuk membangun karakter booth.",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Layout & Design Development",
+          "duration": "Minggu 1",
+          "toolUsed": "Adobe Illustrator",
+          "description": "Menyusun tata letak setiap sisi booth dengan mempertimbangkan estetika, keterbacaan informasi, dan kebutuhan operasional.",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Mockup & Visualization",
+          "duration": "Minggu 1",
+          "toolUsed": "Adobe Photoshop",
+          "description": "Mengaplikasikan desain ke dalam visualisasi booth untuk memperlihatkan gambaran hasil akhir secara realistis.Deskripsi langkah",
+          "keyMilestone": "Output terverifikasi"
+        },
+        {
+          "stepNumber": "06",
+          "title": "Finalization",
+          "duration": "Minggu 1",
+          "toolUsed": "Alat",
+          "description": "DeskrMelakukan penyempurnaan desain dan menyiapkan hasil akhir untuk kebutuhan produksi dan implementasi.ipsi langkah",
+          "keyMilestone": "Output terverifikasi"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#FFFFFF",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#497400",
+          "name": "Hijau Tua"
+        },
+        {
+          "hex": "#D7D7D5",
+          "name": "Abu Netral"
+        },
+        {
+          "hex": "#A2B87D",
+          "name": "Hijau Segar"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793505385433",
+      "sectionId": "main",
+      "title": "Spanduk Nasi Kuning Muthia",
+      "subtitle": "Desain Identitas Visual dan Media Promosi Kuliner Nasi Kuning",
+      "client": "Nasi Kuning Muthia",
+      "year": "2026",
+      "category": "Branding",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793505418179-0-Mutiah-mokeup.png",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Desain spanduk promosi Nasi Kuning Muthia yang dirancang untuk memperkuat identitas usaha kuliner sekaligus menarik perhatian calon pelanggan. Menggabungkan visual produk makanan yang menggugah selera, tipografi yang jelas, serta komposisi warna yang menarik agar informasi produk mudah dibaca dan mampu meningkatkan daya tarik promosi.",
+      "designBrief": "Menciptakan desain spanduk usaha kuliner yang menarik perhatian, mudah dikenali, dan mampu menyampaikan informasi produk secara efektif. Tantangan utama adalah mengatur komposisi elemen visual, pemilihan warna, tipografi, serta penempatan foto produk agar desain tetap informatif, menarik, dan terlihat jelas dari jarak jauh.",
+      "conceptPhilosophy": "Menggunakan pendekatan desain promosi kuliner dengan kombinasi warna yang harmonis, tipografi tegas dan mudah dibaca, serta visual makanan sebagai fokus utama. Tata letak dirancang secara strategis untuk menonjolkan nama usaha, produk unggulan, dan informasi penting sehingga menghasilkan desain spanduk yang komunikatif, profesional, dan memiliki daya tarik visual tinggi.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#E7E7E5",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#AD1C1C",
+          "name": "Merah Aksentuasi"
+        },
+        {
+          "hex": "#E7CC2C",
+          "name": "Kuning Cerah"
+        },
+        {
+          "hex": "#C2C1BF",
+          "name": "Abu Netral"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793449338263",
+      "sectionId": "main",
+      "title": "Lefleat Aplikasi PACS",
+      "subtitle": "Medical Technology Marketing Collateral & Product Information",
+      "client": "Ferizza RICS PACS",
+      "year": "2024",
+      "category": "Branding",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793449488504-0-Screenshot-2026-10-31-at-19-24-34.png",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Perancangan leaflet promosi Ferizza RICS PACS sebagai media komunikasi visual untuk memperkenalkan aplikasi Picture Archiving and Communication System (PACS) di bidang radiologi. Desain disusun untuk menyampaikan informasi produk, fitur utama, dan manfaat sistem secara ringkas, informatif, serta mudah dipahami oleh calon pengguna dan institusi layanan kesehatan.",
+      "designBrief": "Tantangan utama dalam perancangan leaflet ini adalah menyajikan informasi teknis mengenai aplikasi PACS ke dalam format promosi yang ringkas dan mudah dipahami. Informasi mengenai fungsi sistem, fitur aplikasi, dan manfaat bagi operasional radiologi perlu disusun dengan hierarki visual yang jelas tanpa membuat tampilan terlalu padat. Leaflet juga harus mampu merepresentasikan karakter produk teknologi kesehatan yang profesional dan modern.",
+      "conceptPhilosophy": "Pendekatan visual dilakukan melalui penerapan hierarki informasi, tipografi yang mudah dibaca, komposisi layout yang terstruktur, serta penggunaan elemen visual yang mendukung karakter teknologi kesehatan. Informasi produk dikelompokkan berdasarkan prioritas agar pembaca dapat memahami fungsi dan manfaat aplikasi secara cepat. Desain diarahkan untuk menghasilkan media promosi yang profesional, informatif, dan konsisten dengan citra produk Ferizza RICS PACS.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Research & Product Understanding",
+          "duration": "Minggu 1",
+          "toolUsed": "Google Browser, Aplikasi PACS, Notebook",
+          "description": "- Memahami fungsi dan tujuan aplikasi PACS.\n- Mengidentifikasi target audiens, seperti rumah sakit, klinik, radiografer, dan dokter radiologi.\n- Mengumpulkan informasi fitur serta keunggulan produk.",
+          "keyMilestone": "Product insights"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Content Planning & Information Architecture",
+          "duration": "Minggu 1",
+          "toolUsed": "Alat",
+          "description": "- Menentukan informasi utama yang perlu ditampilkan.\n- Mengelompokkan fitur, manfaat, dan informasi pendukung.\n- Menyusun urutan informasi untuk sisi depan dan belakang leaflet.",
+          "keyMilestone": "Content structure"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#969696",
+          "name": "Abu Netral"
+        },
+        {
+          "hex": "#016592",
+          "name": "Toska / Cyan"
+        },
+        {
+          "hex": "#EEF2F3",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#161617",
+          "name": "Hitam Pekat"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793447243150",
+      "sectionId": "main",
+      "title": "Create Logo Ferizzaqu Mandiri Utama",
+      "subtitle": "Visual Identity Refresh & Corporate Logo Redesign",
+      "client": "PT. Ferizzaqu Mandiri Utama",
+      "year": "2024",
+      "category": "Branding",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/1793447683658-0-NEW-LOGO-FMU.jpg",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Proyek ini berfokus pada evaluasi identitas visual yang sudah ada dan pengembangan logo yang lebih relevan dengan citra perusahaan saat ini. Tantangan utamanya adalah mempertahankan pengenalan merek FMU yang bergerak di bidang alat kesehatan, sekaligus meningkatkan kualitas visual, keterbacaan, proporsi elemen, dan fleksibilitas penggunaan logo di berbagai ukuran serta media.",
+      "designBrief": "Proyek ini berfokus pada evaluasi identitas visual yang sudah ada dan pengembangan logo yang lebih relevan dengan citra perusahaan saat ini. Tantangan utamanya adalah mempertahankan pengenalan merek FMU sekaligus meningkatkan kualitas visual, keterbacaan, proporsi elemen, dan fleksibilitas penggunaan logo di berbagai ukuran serta media.",
+      "conceptPhilosophy": "Pendekatan desain dilakukan melalui penyederhanaan elemen visual, penyempurnaan bentuk dan proporsi logo, serta pengembangan tipografi dan komposisi yang lebih seimbang. Fokus utama adalah menciptakan identitas yang profesional, mudah diingat, mudah diaplikasikan, dan konsisten pada media digital maupun cetak. Hasil akhir diarahkan untuk memberikan tampilan merek yang lebih modern tanpa menghilangkan karakter utama perusahaan.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Desain identitas visual dan aset grafis",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        }
+      ],
+      "creationProcess": [],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#FFFFFF",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#161616",
+          "name": "Hitam Pekat"
+        },
+        {
+          "hex": "#C04849",
+          "name": "Merah Aksentuasi"
+        },
+        {
+          "hex": "#616161",
+          "name": "Abu Gelap"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1793270490568",
+      "sectionId": "sec-1793451369822",
+      "title": "3D promotional animation Champion PERSINAS ASAD",
+      "subtitle": "Animation Promotion Champion ",
+      "client": "PERSINAS ASAD SOUTH TANGERANG",
+      "year": "2026",
+      "category": "Animation",
+      "mediaType": "motion",
+      "tags": [
+        "Branding"
+      ],
+      "featured": false,
+      "customMockupUrl": "/uploads/cover-project-1793270490568.jpg",
+      "videoEmbedUrl": "https://www.instagram.com/reel/DeVp-aDR4ba/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "motion-reel",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "3D promotional animation using Google AI Flow",
+      "designBrief": "Membuat animasi sebagai promosi kejuaraan.\nAgar orang melihat dapat tertarik dan juga segera mendaftarkan diri sebelum pendaftaran ditutup.\n\n",
+      "conceptPhilosophy": "Konsep 3D Animasi, dengan cerita pesan baik kepada para atlit yang hendak akan bertanding, bahwa untuk menjadi juara membutuhkan usaha dan juga doa.",
+      "myRole": {
+        "title": "Lead Produksi",
+        "contributionType": "Sole Lead & Art Director (100%)",
+        "responsibilities": [
+          "Konseptualisasi ide dan sketsa arah visual",
+          "Memproduksi Animasi"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Adobe Premiere Pro",
+          "code": "Pr",
+          "purpose": "Timeline Editing Video Iklan Komersial & Reels",
+          "colorBg": "bg-[#9999FF]/10",
+          "colorText": "text-[#9999FF]"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Pra-produksi",
+          "duration": "Minggu 1",
+          "toolUsed": "Google Flow AI",
+          "description": "Menganalisis referensi, menentukan konsep, gaya visual, durasi, rasio video, dan membagi cerita menjadi beberapa adegan.",
+          "keyMilestone": "Riset dan mencari referensi"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Membuat aset visual",
+          "duration": "Minggu 2 - 3",
+          "toolUsed": "Google Flow AI",
+          "description": "Membuat gambar referensi karakter, objek utama, latar, pencahayaan, serta komposisi untuk setiap adegan.",
+          "keyMilestone": "Storyboard "
+        },
+        {
+          "stepNumber": "03",
+          "title": "Animasi",
+          "duration": "Minggu 1",
+          "toolUsed": "Google Flow AI",
+          "description": "Menghasilkan klip per adegan, mengatur gerakan kamera, aksi objek, transisi, dan kesinambungan visual menggunakan referensi gambar yang sesuai.",
+          "keyMilestone": "Mengubah gambar dan teks menjadi Animasi"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Pascaproduksi",
+          "duration": "Minggu 1",
+          "toolUsed": "Capcut",
+          "description": "Menyusun klip, mengatur tempo, musik, efek suara, color grading, teks, dan ekspor video untuk Instagram Reels.",
+          "keyMilestone": "Output"
+        }
+      ],
+      "deliverables": [
+        "Identitas Visual Lengkap",
+        "Brand Guidelines Book"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#0C0C0E",
+          "name": "Obsidian Black",
+          "cmyk": "75 / 65 / 65 / 90"
+        },
+        {
+          "hex": "#CCFF00",
+          "name": "Radioactive Lime",
+          "pantone": "Pantone 802 C"
+        }
+      ],
+      "typographyStack": [
+        {
+          "role": "Headline",
+          "fontName": "Clash Display Bold",
+          "category": "Display",
+          "sampleText": "SAMPLE TEXT"
+        }
+      ],
+      "impactMetrics": [
+        {
+          "label": "Kepuasan Klien",
+          "value": "100%"
+        }
+      ],
+      "printSpecs": {
+        "paperStock": "Fedrigoni Materica 360gsm",
+        "finishing": [
+          "Kurz Gold Foil Hot Stamping"
+        ],
+        "pantone": [
+          "Pantone 802 C"
+        ],
+        "dimensions": "A4 Format",
+        "technique": "Offset Lithography"
+      },
+      "photoSpecs": {
+        "camera": "Hasselblad H6D-100c",
+        "lens": "80mm f/2.8",
+        "settings": "f/8.0 · 1/250s · ISO 64",
+        "location": "Studio / Location",
+        "filmSimulation": "Kodak Portra 160",
+        "lighting": "Natural Diffused Light"
+      },
+      "videoSpecs": {
+        "resolution": "4K DCI (4096 x 2160)",
+        "aspectRatio": "2.39:1 Anamorphic",
+        "frameRate": "24.00 FPS",
+        "colorGrade": "Arri LogC3 to Kodak 2383 Film Print LUT",
+        "runtime": "01:30 Menit",
+        "audioSpec": "24-bit 48kHz LPCM Stereo"
+      }
+    }
+  ],
+  "applicationsList": [
+    {
+      "id": "illustrator",
+      "name": "Adobe Illustrator",
+      "shortCode": "Ai",
+      "category": "Vektor & Brand",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "4+ Tahun",
+      "description": "Perangkat utama untuk menggambar logomark vektor dengan kurva bezier presisi mikron, membangun sistem grid identitas, serta merancang struktur pola potong (dieline) kemasan botol dan boks karton.",
+      "color": {
+        "bg": "bg-[#FF9A00]/10",
+        "text": "text-[#FF9A00]",
+        "border": "border-[#FF9A00]/30",
+        "badge": "bg-[#FF9A00] text-black"
+      },
+      "keyUseCases": [
+        "Konstruksi Geometri Vektor & Monogram",
+        "Desain Dieline & Pisau Potong Kemasan Box",
+        "Tipografi Kustom & Penyesuaian Kerning Vektor",
+        "Asset Master Siap Cetak (Separasi Warna & Trap)"
+      ],
+      "iconUrl": "/icons/software/illustrator.svg"
+    },
+    {
+      "id": "photoshop",
+      "name": "Adobe Photoshop",
+      "shortCode": "Ps",
+      "category": "Raster & Tekstur",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "4+ Tahun",
+      "description": "Digunakan untuk manipulasi tekstur kertas seni (paper grain), komposisi fotografi produk, simulasi efek fisik foil emas dan debossing 3D, serta koreksi warna kuratorial FOGRA39.",
+      "color": {
+        "bg": "bg-[#31A8FF]/10",
+        "text": "text-[#31A8FF]",
+        "border": "border-[#31A8FF]/30",
+        "badge": "bg-[#31A8FF] text-white"
+      },
+      "keyUseCases": [
+        "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+        "Tekstur Taktil Kertas (Cotton, Linen, Gesso)",
+        "Simulasi Kilau Foil Emas & Emboss Tiga Dimensi",
+        "Retouching Foto Editorial & Pemisahan Kanal Tinta"
+      ],
+      "iconUrl": "/icons/software/photoshop.svg"
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve Studio",
+      "shortCode": "Dv",
+      "category": "Videografi & Color",
+      "experienceLevel": "Advanced Specialist",
+      "yearsUsed": "5+ Tahun",
+      "color": {
+        "bg": "bg-[#E63946]/10",
+        "text": "text-[#E63946]",
+        "border": "border-[#E63946]/30",
+        "badge": "bg-[#E63946] text-white"
+      },
+      "description": "Standar industri Hollywood untuk koreksi warna sinematik, manajemen ruang warna ACES, emulsi cetak film 35mm, dan mastering HDR video komersial.",
+      "keyUseCases": [
+        "Color Grading Film Sinematik & Emulsi Kodak 2383",
+        "Manajemen Warna ACES & Arri LogC3 Pipeline",
+        "Koreksi Warna Kulit (Skin Tone Separation)",
+        "Mastering Video Komersial Resolusi 4K DCI"
+      ],
+      "iconUrl": "/icons/software/davinci-resolve.svg"
+    },
+    {
+      "id": "cinema4d",
+      "name": "Cinema 4D & Octane",
+      "shortCode": "C4",
+      "category": "3D & Motion",
+      "experienceLevel": "Advanced Specialist",
+      "yearsUsed": "1+ Tahun",
+      "description": "Perangkat lunak motion design 3D untuk menciptakan animasi kinetik prosedural, simulasi pencahayaan fotorealistik dengan Octane, dan brand reel.",
+      "color": {
+        "bg": "bg-[#0084FF]/10",
+        "text": "text-[#0084FF]",
+        "border": "border-[#0084FF]/30",
+        "badge": "bg-[#002B49] text-cyan-300"
+      },
+      "keyUseCases": [
+        "Animasi 3D MoGraph & Prosedural Partikel",
+        "Shading & Lighting Octane Raytracing",
+        "Simulasi Dinamika Fisik Gerak Benda",
+        "Rendering Brand Reel Resolusi 4K 60 FPS"
+      ],
+      "iconUrl": "/icons/software/cinema4d.svg"
+    },
+    {
+      "id": "premiere-pro",
+      "name": "Adobe Premiere Pro",
+      "shortCode": "Pr",
+      "category": "Videografi & Color",
+      "experienceLevel": "Production Master",
+      "yearsUsed": "2+ Tahun",
+      "description": "Penyuntingan video komersial, penyelarasan ritme adegan, sinkronisasi audio multisaluran, dan ekspor master penyiaran televisi maupun digital.",
+      "color": {
+        "bg": "bg-[#9999FF]/10",
+        "text": "text-[#9999FF]",
+        "border": "border-[#9999FF]/30",
+        "badge": "bg-[#330066] text-purple-200"
+      },
+      "keyUseCases": [
+        "Timeline Editing Video Iklan Komersial & Reels",
+        "Sinkronisasi Multikamera & Desain Suara",
+        "Dynamic Link Kolaborasi dengan After Effects",
+        "Ekspor Master ProRes 422 HQ & H.265/AV1"
+      ],
+      "iconUrl": "/icons/software/premiere.svg"
+    },
+    {
+      "id": "indesign",
+      "name": "Adobe InDesign",
+      "shortCode": "Id",
+      "category": "Editorial & Layout",
+      "experienceLevel": "Production Master",
+      "yearsUsed": "7+ Tahun",
+      "color": {
+        "bg": "bg-[#FF3366]/10",
+        "text": "text-[#FF3366]",
+        "border": "border-[#FF3366]/30",
+        "badge": "bg-[#FF3366] text-white"
+      },
+      "description": "Pilar utama untuk arsitektur publikasi buku seni, monografi sampul keras, pedoman manual jenama (brand guidelines), dan majalah dengan kedisiplinan modular grid Swiss.",
+      "keyUseCases": [
+        "Tata Letak Buku Monografi & Publikasi Multi-Halaman",
+        "Penyusunan Brand Architecture & Guidelines Book",
+        "Manajemen Master Pages, Baseline Grid & Style Sheets",
+        "Kompilasi File Pre-Press PDF/X-1a dengan Bleed & Slugs"
+      ],
+      "iconUrl": "/icons/software/indesign.svg"
+    },
+    {
+      "id": "aftereffects",
+      "name": "Adobe After Effects",
+      "shortCode": "Ae",
+      "category": "3D & Motion",
+      "experienceLevel": "Advanced Specialist",
+      "yearsUsed": "2+ Tahun",
+      "description": "Menghidupkan identitas visual melalui animasi tipografi kinetik, bumper logo dinamis, dan materi video pameran seni untuk media sosial maupun layar instalasi galeri.",
+      "color": {
+        "bg": "bg-[#9999FF]/10",
+        "text": "text-[#9999FF]",
+        "border": "border-[#9999FF]/30",
+        "badge": "bg-[#9999FF] text-black"
+      },
+      "keyUseCases": [
+        "Kinetic Typography & Animasi Huruf Display",
+        "Motion Bumper Induk Identitas Jenama",
+        "Simulasi Dinamis Poster Bergerak (Animated Posters)",
+        "Video Presentasi Studi Kasus Eksibisi"
+      ],
+      "iconUrl": "/icons/software/aftereffects.svg"
+    },
+    {
+      "id": "glyphs",
+      "name": "Glyphs 3",
+      "shortCode": "Gl",
+      "category": "Huruf & Font",
+      "experienceLevel": "Advanced Specialist",
+      "yearsUsed": "5+ Tahun",
+      "color": {
+        "bg": "bg-[#8A3FFC]/10",
+        "text": "text-[#A56EFF]",
+        "border": "border-[#8A3FFC]/30",
+        "badge": "bg-[#8A3FFC] text-white"
+      },
+      "description": "Perangkat lunak khusus tipografi untuk merancang karakter huruf rupa dari nol, memahat kurva glif optikal, menyusun fitur OpenType, dan menggenerasikan font variabel 9 bobot.",
+      "keyUseCases": [
+        "Desain Glif Huruf Abjad Alfabet & Angka Karakteristik",
+        "Pengaturan Metrik Spasi Huruf & Tabel Kerning Presisi",
+        "Pemrograman Fitur OpenType (Ligatur, Alternates)",
+        "Ekspor Font Siap Pakai Format OTF, TTF & WOFF2"
+      ],
+      "iconUrl": "/icons/software/glyphs.svg"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "shortCode": "Fg",
+      "category": "Digital & Interface",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "5+ Tahun",
+      "description": "Platform kolaboratif untuk mempresentasikan arah seni visual kepada klien secara real-time, menyusun sistem token desain digital, serta membuat prototipe panduan identitas interaktif.",
+      "color": {
+        "bg": "bg-[#0ACF83]/10",
+        "text": "text-[#0ACF83]",
+        "border": "border-[#0ACF83]/30",
+        "badge": "bg-[#0ACF83] text-black"
+      },
+      "keyUseCases": [
+        "Presentasi Papan Konsep & Moodboard Interaktif",
+        "Penyusunan Sistem Aset Digital Brand Guidelines",
+        "Uji Skalabilitas Logo pada Berbagai Ukuran Layar",
+        "Handoff Aset Vektor Beresolusi Tinggi ke Tim Pengembang"
+      ],
+      "iconUrl": "/icons/software/figma.svg"
+    },
+    {
+      "id": "tool-1794281403226",
+      "name": "Capcut",
+      "shortCode": "Ct",
+      "category": "Videografi & Color",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "2+ Tahun",
+      "description": "Mengedit video dan menambahkan komponen-komponen, seperti teks, gambar dan video visual pendukung\n",
+      "color": {
+        "bg": "bg-neutral-800",
+        "text": "text-white",
+        "border": "border-neutral-700",
+        "badge": "bg-lime-400 text-black"
+      },
+      "keyUseCases": [
+        "Fungsi kapabilitas 1",
+        "Fungsi kapabilitas 2"
+      ],
+      "iconUrl": "/icons/software/capcut.svg"
+    }
+  ],
+  "servicesData": [
+    {
+      "number": "01",
+      "title": "Design & Creativity",
+      "tagline": "",
+      "description": "",
+      "deliverables": [
+        "UI/UX Design",
+        "Graphic Design",
+        "Sistem Tipografi & Pasangan Huruf Hirarkis",
+        "Branding",
+        "Motion Graphics"
+      ]
+    },
+    {
+      "number": "02",
+      "title": "Frontend Development",
+      "tagline": "",
+      "description": "",
+      "deliverables": [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "PHP"
+      ]
+    },
+    {
+      "number": "03",
+      "title": "Multimedia Production",
+      "tagline": "",
+      "description": "",
+      "deliverables": [
+        "Photography",
+        "Videography",
+        "Pilot Drone",
+        "Video Editing"
+      ]
+    },
+    {
+      "number": "04",
+      "title": "IT & Infrastruktur",
+      "tagline": "",
+      "description": "",
+      "deliverables": [
+        "IT Support",
+        "Networking",
+        "Hardware Troubleshooting",
+        "System Installation"
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "number": "01",
+      "phase": "DISCOVER & DECONSTRUCT",
+      "title": "Semiotika Visual & Eksplorasi Konseptual",
+      "description": "Menganalisis kode-kode visual, sejarah budaya industri klien, dan peta diferensiasi estetika. Menyusun moodboard taktil yang menggabungkan tekstur fisik, referensi seni sejarah, dan arah nada visual.",
+      "methodology": [
+        "Semiotics & Cultural Research",
+        "Tactile Moodboards",
+        "Creative Direction Brief",
+        "Competitive Visual Audit"
+      ],
+      "deliverableHighlight": "Dossier Arah Artistik & Hipotesis Desain"
+    },
+    {
+      "number": "02",
+      "phase": "SCAFFOLD & CRAFT",
+      "title": "Arsitektur Tipografi & Eksplorasi Grid",
+      "description": "Merancang sketsa dasar, proporsi matematis, dan interaksi antara ruang positif dan negatif. Menentukan apakah sebuah karya membutuhkan kedisiplinan grid Swiss atau kebebasan komposisi gerak/lensa.",
+      "methodology": [
+        "Bespoke Letterform Sketching",
+        "Modular Grid Construction",
+        "Storyboard & Motion Path",
+        "Macro/Micro Scale Testing"
+      ],
+      "deliverableHighlight": "3 Konsep Visual Terkurasi dengan Mockup Nyata"
+    },
+    {
+      "number": "03",
+      "phase": "MATERIALIZE & CALIBRATE",
+      "title": "Kurasi Material, Kertas & Uji Kromatik",
+      "description": "Memilih palet warna Pantone murni, menguji sampel kertas fisik dari produsen kertas legendaris (G.F Smith, Fedrigoni, Munken), atau menguji profil emulsi film dan kurva tonal RAW.",
+      "methodology": [
+        "Physical Paper Swatch Testing",
+        "Color Grading Lookdev (ACES)",
+        "Finishing Simulation (Foil & Deboss)",
+        "Lighting & 3D Shading"
+      ],
+      "deliverableHighlight": "Spesifikasi Teknis Material & Prototipe Dummy Fisik"
+    },
+    {
+      "number": "04",
+      "phase": "PRE-PRESS & MASTERING",
+      "title": "Supervisi Produksi & Pengiriman Master Aset",
+      "description": "Menyiapkan artwork siap cetak dengan trapping, bleed, color profiles CMYK/FOGRA39 yang presisi, atau rendering master video 4K ProRes 4444 XQ siap siar.",
+      "methodology": [
+        "Pre-Press Artwork Calibration",
+        "Print House Press-Check",
+        "Video 4K Mastering DCI-P3",
+        "Comprehensive Guidelines"
+      ],
+      "deliverableHighlight": "Paket Aset Master Terorganisir & Panduan Implementasi"
+    }
+  ],
+  "awardsData": [
+    {
+      "year": "2021",
+      "award": "Pelatihan UI/UX Design",
+      "project": "UI/UX Fundamentals, Design Process, User Research, User Journey, Wireframe etc",
+      "institution": "KOMINFO",
+      "badge": "Sertifikat",
+      "credentialUrl": ""
+    },
+    {
+      "year": "2020",
+      "award": "Multimedia IT",
+      "project": "Animator Madya",
+      "institution": "BNSP (Badan Nasional Sertifikasi Profesi)",
+      "badge": "Sektifikasi",
+      "credentialUrl": ""
+    },
+    {
+      "year": "2020",
+      "award": "Glints Expert Class",
+      "project": "UX Metrics : Measuring UX Effectiveness of Your Product",
+      "institution": "Glints",
+      "badge": "Certificate of Participation",
+      "credentialUrl": ""
+    },
+    {
+      "year": "2017",
+      "award": "Software Developer",
+      "project": "Web Programming",
+      "institution": "BNSP (Badan Nasional Sertifikasi Profesi)",
+      "badge": "Kompetensi",
+      "credentialUrl": ""
+    }
+  ],
+  "exhibitionsData": [],
+  "clientRoster": [
+    {
+      "name": "Jakarta Fasion Hub",
+      "city": "Jakarta",
+      "category": "Fasion"
+    },
+    {
+      "name": "Light Rail Transit (LRT)",
+      "city": "Jakarta",
+      "category": "Transportasi"
+    },
+    {
+      "name": "SIPAM (PAMSIMAS)",
+      "city": "Jakarta",
+      "category": "AIR PAM"
+    },
+    {
+      "name": "Riganda",
+      "city": "Jakarta",
+      "category": "Sticker"
+    },
+    {
+      "name": "Potongan Film",
+      "city": "South Tangerang",
+      "category": "Content Creator"
+    },
+    {
+      "name": "Anta Dana",
+      "city": "Jakarta",
+      "category": "Content Creator"
+    },
+    {
+      "name": "Senkom Mitra Polri",
+      "city": "Jakarta",
+      "category": "Organisasi Masyarakat"
+    },
+    {
+      "name": "Persinas ASAD",
+      "city": "South Tangerang",
+      "category": "Perguruan Pencak Silat"
+    },
+    {
+      "name": "Arbani Yasiz",
+      "city": "Jakarta",
+      "category": "Artist"
+    },
+    {
+      "name": "Universitas Terbuka",
+      "city": "Jakarta",
+      "category": "Study"
+    },
+    {
+      "name": "Sewain Aja",
+      "city": "Tangerang Selatan",
+      "category": "Penyewaan Alat Event"
+    }
+  ],
+  "testimonials": [
+    {
+      "quote": "Agung telah beberapa kali membantu saya dalam menangani project BUMN dan saya cukup puas dengan hasil pekerjaannya. Secara personal, saya melihat Agung sebagai sosok muda yang pekerja keras, memiliki rasa ingin tahu yang tinggi, serta semangat untuk terus belajar dan berkembang.",
+      "client": "Rinaldi Zulfikar",
+      "role": "CEO",
+      "company": "RIGANDA JAKARTA",
+      "avatarUrl": "/uploads/1794301603678-0-Screenshot-2026-11-10-at-16-06-11.png"
+    },
+    {
+      "quote": "Agung sabdo, selalu membantu editing saya dengan sangat baik, hasilnya sangat memuaskan, dan kalau ada revisi cepat tanggap.\n\nOrangnya tekun, semangat dan entengan bisa melakukan pekerjaan apapun, seperti membuat banner, standuk, power poin, desain apapun dan sebagainya.\n\nSebagai videografer atau photografer juga bisa, dan hasilnya juga cukup memuaskan.\n\nSaya kasih bintang 5 ⭐️⭐️⭐️⭐️⭐️",
+      "client": "Anta Dana",
+      "role": "Tiktoker",
+      "company": "Antadana99",
+      "avatarUrl": "/uploads/1794301655505-0-Screenshot-2026-11-10-at-16-07-16.png"
+    }
+  ],
+  "tactileSpecs": [
+    {
+      "id": "tactile-1",
+      "title": "Kertas Seni & Tekstur Taktil",
+      "description": "Bekerja dengan pabrik kertas terkemuka dunia seperti Fedrigoni (Italia), G.F Smith Colorplan (UK), dan Munken (Swedia). Menyesuaikan serat katun, gramatur 120gsm hingga 700gsm duplex.",
+      "badge": "FEDRIGONI & G.F SMITH"
+    },
+    {
+      "id": "tactile-2",
+      "title": "Hot Foil Stamping & Deboss 3D",
+      "description": "Aplikasi foil cap panas mikro Kurz Luxor, pigment foil matte, dan blind debossing dengan kedalaman presisi hingga 1.2mm untuk menghadirkan kontras bayangan fisik yang dramatis.",
+      "badge": "KURZ GERMANY PRECISION"
+    },
+    {
+      "id": "tactile-3",
+      "title": "Sistem Warna Pantone & Fluoresens",
+      "description": "Kalibrasi warna solid spot-color Pantone Formula Guide, tinta neon fluoresen berpigmen tinggi, dan tinta metalik perak/tembaga untuk mencegah distorsi warna cetak massal.",
+      "badge": "PANTONE MATCHING SYSTEM"
+    },
+    {
+      "id": "tactile-4",
+      "title": "Supervisi Pre-Press & Uji Mesin",
+      "description": "Pemeriksaan langsung di fasilitas percetakan (press-check), penyesuaian register silinder cetak, trap ketajaman vektor, dan proofing FOGRA39 tersertifikasi ISO 12647-2.",
+      "badge": "PRESS-CHECK SUPERVISION"
+    }
+  ],
+  "inquiries": [
+    {
+      "id": "inq-1740000001",
+      "name": "Maya Sutedja",
+      "email": "maya@ateliernouveau.co",
+      "company": "Atelier Nouveau Paris",
+      "scopes": [
+        "Identitas Jenama (Brand System)",
+        "Packaging & Struktur Box"
+      ],
+      "budget": "Rp 50 - 100 Juta",
+      "message": "Halo Mas Agung, kami sedang merencanakan peluncuran lini parfum botani baru dan sangat terkesan dengan packaging Aura Botanica. Kami ingin mendiskusikan identitas jenama dan desain botol kustom.",
+      "createdAt": "2026-10-27T10:15:00.000Z",
+      "read": true
+    },
+    {
+      "id": "inq-1740000002",
+      "name": "Alexander Hayes",
+      "email": "alex@vanguardrecords.co.uk",
+      "company": "Vanguard Records London",
+      "scopes": [
+        "Motion Graphics & 3D Animation",
+        "Sinematografi & Video Kampanye"
+      ],
+      "budget": "> Rp 100 Juta",
+      "message": "Tertarik untuk menggarap visual album teaser dan motion visualizer untuk artis elektronik baru kami untuk rilis vinyl Q3 2026.",
+      "createdAt": "2026-10-26T14:40:00.000Z",
+      "read": true
+    }
+  ]
+}
