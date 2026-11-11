@@ -901,7 +901,8 @@ export default function AdminPage() {
     soundFx.playPop();
 
     if (!projectForm.title || !projectForm.title.trim()) {
-      alert('Judul Karya wajib diisi.');
+      setModalFormTab('basic');
+      alert('Judul Karya wajib diisi. Silakan isi judul karya pada tab "1. Info Dasar & Media".');
       return;
     }
 
@@ -965,7 +966,13 @@ export default function AdminPage() {
         setTimeout(() => window.scrollTo({ top: scrollPos, behavior: 'instant' }), 20);
       }
     } else {
-      alert('Gagal menyimpan ke server. Silakan coba lagi.');
+      alert(
+        'Gagal menyimpan ke server: Hosting Vercel bersifat Read-Only (tidak bisa menulis file langsung di cloud).\n\n' +
+        '💡 CARA TERBAIK:\n' +
+        '1. Buka admin di laptop Anda: http://localhost:3000/admin\n' +
+        '2. Tambah / edit karya di sana lalu klik Simpan.\n' +
+        '3. Jalankan "git push" di terminal untuk sinkronisasi otomatis ke Vercel.'
+      );
     }
   };
 
