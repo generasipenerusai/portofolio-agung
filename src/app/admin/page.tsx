@@ -448,23 +448,79 @@ export default function AdminPage() {
   // File Import Ref
   const importFileRef = useRef<HTMLInputElement>(null);
 
-  // Fast server-side file upload to /public/uploads (avoids heavy Base64 strings in state & JSON)
+  // Client-side auto-compression using Canvas (reduces 10MB down to ~200KB instantly)
+  const compressImageFile = async (file: File, maxDim = 1920, quality = 0.85): Promise<File> => {
+    if (file.type === 'image/svg+xml' || file.type === 'image/gif') {
+      return file;
+    }
+
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        const img = new Image();
+        img.onload = () => {
+          let width = img.width;
+          let height = img.height;
+
+          if (width > maxDim || height > maxDim) {
+            if (width > height) {
+              height = Math.round((height * maxDim) / width);
+              width = maxDim;
+            } else {
+              width = Math.round((width * maxDim) / height);
+              height = maxDim;
+            }
+          }
+
+          const canvas = document.createElement('canvas');
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext('2d');
+          if (!ctx) {
+            resolve(file);
+            return;
+          }
+
+          ctx.drawImage(img, 0, 0, width, height);
+          canvas.toBlob(
+            (blob) => {
+              if (!blob) {
+                resolve(file);
+                return;
+              }
+              const cleanName = file.name.replace(/\.[^/.]+$/, '') + '.jpg';
+              const compressedFile = new File([blob], cleanName, { type: 'image/jpeg' });
+              resolve(compressedFile);
+            },
+            'image/jpeg',
+            quality
+          );
+        };
+        img.onerror = () => resolve(file);
+        img.src = e.target?.result as string;
+      };
+      reader.onerror = () => resolve(file);
+      reader.readAsDataURL(file);
+    });
+  };
+
+  // Upload gambar lokal dengan kompresi otomatis & dukungan cloud / fallback
   const handleLocalImageUpload = async (
     e: React.ChangeEvent<HTMLInputElement>,
     callback: (uploadedUrl: string) => void
   ) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
+    const originalFile = e.target.files?.[0];
+    if (!originalFile) return;
     e.target.value = '';
 
-    if (file.size > 15 * 1024 * 1024) {
-      alert('Ukuran berkas gambar maksimal 15MB.');
-      return;
-    }
+    showToast('Mengoptimasi & mengunggah gambar...');
 
     try {
+      // 1. Kompresi gambar di browser agar ringan & hemat kuota
+      const compressedFile = await compressImageFile(originalFile, 1920, 0.85);
+
       const formData = new FormData();
-      formData.append('file', file);
+      formData.append('file', compressedFile);
       const res = await fetch('/api/upload', { method: 'POST', body: formData });
       if (res.ok) {
         const data = await res.json();
@@ -475,19 +531,25 @@ export default function AdminPage() {
           return;
         }
       }
-    } catch {
-      // Fallback to FileReader only if /api/upload fails
+    } catch (err) {
+      console.warn('API upload error, switching to direct preview:', err);
     }
 
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      if (typeof reader.result === 'string') {
-        callback(reader.result);
-        soundFx.playPop();
-        showToast('Gambar berhasil diunggah!');
-      }
-    };
-    reader.readAsDataURL(file);
+    // 2. Fallback langsung bila serverless read-only
+    try {
+      const compressedFile = await compressImageFile(originalFile, 1600, 0.8);
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        if (typeof reader.result === 'string') {
+          callback(reader.result);
+          soundFx.playPop();
+          showToast('Gambar berhasil diunggah!');
+        }
+      };
+      reader.readAsDataURL(compressedFile);
+    } catch {
+      alert('Gagal memproses berkas gambar.');
+    }
   };
 
   // Form State for Project
@@ -599,40 +661,63 @@ export default function AdminPage() {
     setTimeout(() => setToastMessage(null), 3000);
   };
 
-  // Fast multi-image server upload for gallery (avoids Base64 memory & render bloat)
+  // Upload banyak foto galeri sekaligus dengan kompresi otomatis & fallback
   const handleMultiGalleryUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const files = Array.from(e.target.files || []);
-    if (files.length === 0) return;
+    const rawFiles = Array.from(e.target.files || []);
+    if (rawFiles.length === 0) return;
     e.target.value = '';
 
-    const oversized = files.find((f) => f.size > 15 * 1024 * 1024);
-    if (oversized) {
-      alert(`Berkas "${oversized.name}" melebihi batas maksimal 15MB.`);
-      return;
-    }
+    showToast(`Mengoptimasi ${rawFiles.length} foto...`);
 
-    try {
-      const formData = new FormData();
-      files.forEach((f) => formData.append('files', f));
-      const res = await fetch('/api/upload', { method: 'POST', body: formData });
-      if (res.ok) {
-        const data = await res.json();
-        const uploadedUrls: string[] = data.urls || [];
-        if (uploadedUrls.length > 0) {
-          setProjectForm((prev) => ({
-            ...prev,
-            photoGallery: [
-              ...(prev.photoGallery || []),
-              ...uploadedUrls.map((url) => ({ url, caption: '' })),
-            ],
-          }));
-          soundFx.playPop();
-          showToast(`${uploadedUrls.length} foto ditambahkan ke galeri karya!`);
-          return;
+    const uploadedUrls: string[] = [];
+
+    for (const rawFile of rawFiles) {
+      // 1. Coba upload via API dengan gambar terkompresi
+      let added = false;
+      try {
+        const compressed = await compressImageFile(rawFile, 1920, 0.85);
+        const formData = new FormData();
+        formData.append('file', compressed);
+        const res = await fetch('/api/upload', { method: 'POST', body: formData });
+        if (res.ok) {
+          const data = await res.json();
+          if (data.urls?.[0]) {
+            uploadedUrls.push(data.urls[0]);
+            added = true;
+          }
+        }
+      } catch {
+        // Fallback ke pembacaan data URI lokal
+      }
+
+      // 2. Fallback kompresi data URI jika API gagal / offline
+      if (!added) {
+        try {
+          const compressed = await compressImageFile(rawFile, 1600, 0.8);
+          const dataUrl = await new Promise<string>((resolve) => {
+            const r = new FileReader();
+            r.onloadend = () => resolve(r.result as string);
+            r.readAsDataURL(compressed);
+          });
+          if (dataUrl) uploadedUrls.push(dataUrl);
+        } catch {
+          // lewati jika berkas rusak
         }
       }
-    } catch {
-      // Fallback if needed
+    }
+
+    if (uploadedUrls.length > 0) {
+      setProjectForm((prev) => ({
+        ...prev,
+        photoGallery: [
+          ...(prev.photoGallery || []),
+          ...uploadedUrls.map((url) => ({ url, caption: '' })),
+        ],
+      }));
+      soundFx.playPop();
+      showToast(`${uploadedUrls.length} foto berhasil ditambahkan ke galeri karya!`);
+    } else {
+      alert('Gagal mengunggah foto. Silakan coba lagi.');
     }
   };
 

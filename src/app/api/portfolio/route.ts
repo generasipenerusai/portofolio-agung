@@ -98,18 +98,50 @@ async function commitToGithub(filePath: string, contentStr: string, commitMsg: s
 
 async function persistDataUriIfNeeded(val: string | undefined, prefix: string): Promise<string> {
   if (!val || !val.startsWith('data:image/')) return val || '';
+  const match = val.match(/^data:image\/([a-zA-Z0-9+.-]+);base64,(.+)$/);
+  if (!match) return val;
+  let ext = match[1].toLowerCase();
+  if (ext === 'jpeg') ext = 'jpg';
+  if (ext === 'svg+xml') ext = 'svg';
+  const filename = `${prefix}-${Date.now()}.${ext}`;
+  const base64Content = match[2];
+
+  // 1. Jika GITHUB_TOKEN tersedia di Vercel, simpan gambar ke GitHub public/uploads
+  if (GITHUB_TOKEN) {
+    try {
+      const cleanRepo = GITHUB_REPO.replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '');
+      const filePath = `public/uploads/${filename}`;
+      const putUrl = `https://api.github.com/repos/${cleanRepo}/contents/${filePath}`;
+      const putRes = await fetch(putUrl, {
+        method: 'PUT',
+        headers: {
+          Authorization: `Bearer ${GITHUB_TOKEN}`,
+          Accept: 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          'User-Agent': 'antigravity-portfolio',
+        },
+        body: JSON.stringify({
+          message: `Upload media: ${filename} [skip ci]`,
+          content: base64Content,
+          branch: GITHUB_BRANCH,
+        }),
+      });
+
+      if (putRes.ok) {
+        return `https://raw.githubusercontent.com/${cleanRepo}/${GITHUB_BRANCH}/public/uploads/${filename}`;
+      }
+    } catch (err) {
+      console.warn('Failed to upload image to GitHub:', err);
+    }
+  }
+
+  // 2. Coba simpan ke disk lokal (untuk laptop localhost)
   try {
-    const match = val.match(/^data:image\/([a-zA-Z0-9+.-]+);base64,(.+)$/);
-    if (!match) return val;
-    let ext = match[1].toLowerCase();
-    if (ext === 'jpeg') ext = 'jpg';
-    if (ext === 'svg+xml') ext = 'svg';
     await fs.mkdir(UPLOADS_DIR, { recursive: true });
-    const filename = `${prefix}-${Date.now()}.${ext}`;
-    await fs.writeFile(path.join(UPLOADS_DIR, filename), Buffer.from(match[2], 'base64'));
+    await fs.writeFile(path.join(UPLOADS_DIR, filename), Buffer.from(base64Content, 'base64'));
     return `/uploads/${filename}`;
   } catch {
-    // If running in a read-only serverless environment, keep base64 so image never breaks
+    // 3. Fallback: pertahankan base64
     return val;
   }
 }
