@@ -261,6 +261,138 @@
       "impactMetrics": []
     },
     {
+      "id": "project-1794400051067",
+      "sectionId": "sec-1793524758056",
+      "title": "Landing Page Warung Babe",
+      "subtitle": "Perancangan Landing Page Digital untuk Mendukung Transformasi dan Pengembangan UMKM Warung Kelontong.",
+      "client": "PT. Derap Kreasi Persada",
+      "year": "2021",
+      "category": "UI/UX & Web Design",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": true,
+      "customMockupUrl": "",
+      "projectUrl": "",
+      "projectUrlLabel": "Buka Prototype Figma",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "monograph-book",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Warung Babe merupakan platform digital yang dirancang untuk membantu pemilik warung kelontong dalam mengembangkan dan mengelola bisnis secara lebih modern. Landing page ini memperkenalkan berbagai layanan dan manfaat Warung Babe, mulai dari penjualan produk digital, PPOB, kemudahan belanja stok barang, pencatatan penjualan otomatis, hingga dukungan komunitas dan akses permodalan tanpa bunga. Desain dibuat dengan pendekatan UI/UX yang informatif, responsif, dan mudah dipahami oleh pengguna.\n",
+      "designBrief": "Pemilik warung kelontong membutuhkan solusi digital yang mudah digunakan untuk membantu mengembangkan usaha mereka. Beberapa tantangan yang menjadi perhatian adalah keterbatasan akses terhadap produk digital, pengelolaan stok barang, pencatatan transaksi secara manual, serta keterbatasan akses permodalan. Oleh karena itu, diperlukan landing page yang mampu menyampaikan manfaat platform secara jelas, membangun kepercayaan, dan memudahkan calon pengguna memahami layanan yang tersedia.",
+      "conceptPhilosophy": "Merancang landing page dengan struktur informasi yang terorganisasi, mulai dari hero section, pengenalan layanan, manfaat platform, informasi komunitas, testimoni pengguna, hingga call-to-action. Menggunakan navigasi sederhana, ilustrasi pendukung, kombinasi warna ungu dan oranye sebagai identitas visual, serta komposisi layout yang responsif. Pendekatan desain difokuskan pada kemudahan membaca informasi, memperjelas nilai produk, dan mendorong pengguna untuk mencoba layanan Warung Babe.",
+      "myRole": {
+        "title": "UI/UX Designer & Web Designer",
+        "contributionType": "100% Kontribusi",
+        "responsibilities": [
+          "Riset pengguna, perumusan masalah & User Persona (Empathize & Define)",
+          "Penyusunan Information Architecture, User Flow & Wireframe (Ideate)",
+          "Perancangan UI Design System, Interactive Prototype & Usability Testing (Prototype & Test)"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Wireframing, UI Design System & Interactive Prototyping",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Konstruksi Geometri Vektor & Monogram",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]"
+        },
+        {
+          "name": "HTML",
+          "code": "HTML",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white"
+        },
+        {
+          "name": "CSS",
+          "code": "CSS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white"
+        },
+        {
+          "name": "Javascript",
+          "code": "JS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Menggali kebutuhan, perilaku, dan kendala utama (pain points) pengguna terhadap produk atau alur layanan.",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Menyintesis temuan riset menjadi User Persona, User Journey Map, dan Problem Statement yang fokus.",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Menyusun Information Architecture, alur navigasi (User Flow), dan sketsa tata letak Low-Fidelity Wireframe.",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Membangun komponen Design System, antarmuka High-Fidelity, serta prototipe interaktif yang siap diuji.",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Menguji skenario penggunaan bersama pengguna untuk memvalidasi kemudahan alur dan menyempurnakan detail UX.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
       "id": "project-1793942773964",
       "sectionId": "main",
       "title": "Vektor Truck Mushola",
