@@ -15,20 +15,12 @@ import {
   TactileHighlight,
   AdminAuthSettings,
 } from '../types/portfolio';
-import {
-  designerProfile as fallbackProfile,
-  defaultPortfolioSections as fallbackSections,
-  projectsData as fallbackProjects,
-  applicationsList as fallbackApplications,
-  servicesData as fallbackServices,
-  processSteps as fallbackProcessSteps,
-  awardsData as fallbackAwards,
-  exhibitionsData as fallbackExhibitions,
-  clientRoster as fallbackClients,
-  testimonials as fallbackTestimonials,
-  tactileSpecs as fallbackTactile,
-  initialInquiries as fallbackInquiries,
-} from '../data/portfolioData';
+import graphicDb from '@/data/db.json';
+import photographerDb from '@/data/photographer_db.json';
+
+const getInitialData = (type: 'graphic' | 'photographer') => {
+  return type === 'photographer' ? (photographerDb as any) : (graphicDb as any);
+};
 
 interface ClientItem {
   name: string;
@@ -147,19 +139,21 @@ export const PortfolioProvider: React.FC<{
   const switchPortfolioUrl = resolvedType === 'photographer' ? '/' : '/photographer';
   const adminSwitchUrl = resolvedType === 'photographer' ? '/admin' : '/photographer/admin';
 
-  const [adminAuth, setAdminAuth] = useState<AdminAuthSettings>(fallbackAdminAuth);
-  const [designerProfile, setDesignerProfile] = useState<DesignerProfile>(fallbackProfile);
-  const [portfolioSections, setPortfolioSections] = useState<PortfolioSection[]>(fallbackSections);
-  const [projectsData, setProjectsData] = useState<Project[]>(fallbackProjects);
-  const [applicationsList, setApplicationsList] = useState<ApplicationTool[]>(fallbackApplications);
-  const [servicesData, setServicesData] = useState<ServiceItem[]>(fallbackServices);
-  const [processSteps, setProcessSteps] = useState<ProcessStep[]>(fallbackProcessSteps);
-  const [awardsData, setAwardsData] = useState<AwardItem[]>(fallbackAwards);
-  const [exhibitionsData, setExhibitionsData] = useState<ExhibitionItem[]>(fallbackExhibitions);
-  const [clientRoster, setClientRoster] = useState<ClientItem[]>(fallbackClients);
-  const [testimonials, setTestimonials] = useState<TestimonialItem[]>(fallbackTestimonials);
-  const [tactileSpecs, setTactileSpecs] = useState<TactileHighlight[]>(fallbackTactile);
-  const [inquiries, setInquiries] = useState<InquiryMessage[]>(fallbackInquiries);
+  const initialData = getInitialData(resolvedType);
+
+  const [adminAuth, setAdminAuth] = useState<AdminAuthSettings>(initialData.adminAuth);
+  const [designerProfile, setDesignerProfile] = useState<DesignerProfile>(initialData.designerProfile);
+  const [portfolioSections, setPortfolioSections] = useState<PortfolioSection[]>(initialData.portfolioSections || []);
+  const [projectsData, setProjectsData] = useState<Project[]>(initialData.projectsData || []);
+  const [applicationsList, setApplicationsList] = useState<ApplicationTool[]>(initialData.applicationsList || []);
+  const [servicesData, setServicesData] = useState<ServiceItem[]>(initialData.servicesData || []);
+  const [processSteps, setProcessSteps] = useState<ProcessStep[]>(initialData.processSteps || []);
+  const [awardsData, setAwardsData] = useState<AwardItem[]>(initialData.awardsData || []);
+  const [exhibitionsData, setExhibitionsData] = useState<ExhibitionItem[]>(initialData.exhibitionsData || []);
+  const [clientRoster, setClientRoster] = useState<ClientItem[]>(initialData.clientRoster || []);
+  const [testimonials, setTestimonials] = useState<TestimonialItem[]>(initialData.testimonials || []);
+  const [tactileSpecs, setTactileSpecs] = useState<TactileHighlight[]>(initialData.tactileSpecs || []);
+  const [inquiries, setInquiries] = useState<InquiryMessage[]>(initialData.inquiries || []);
   const [isLoading, setIsLoading] = useState<boolean>(true);
 
   // Load from API on mount or when resolvedType changes
@@ -169,33 +163,47 @@ export const PortfolioProvider: React.FC<{
 
     const storageKey = `portfolio_backup_${resolvedType}`;
 
-    // 1. Segera pulihkan dari localStorage saat halaman di-refresh agar karya baru tidak hilang
+    // 1. Pulihkan dari localStorage HANYA jika data valid dan BUKAN template lama
     if (typeof window !== 'undefined') {
       try {
         const cached = localStorage.getItem(storageKey);
         if (cached) {
           const parsed = JSON.parse(cached);
-          if (parsed.designerProfile) setDesignerProfile(parsed.designerProfile);
-          if (Array.isArray(parsed.portfolioSections) && parsed.portfolioSections.length > 0) {
-            setPortfolioSections(parsed.portfolioSections);
-          }
-          if (Array.isArray(parsed.projectsData) && parsed.projectsData.length > 0) {
-            setProjectsData(parsed.projectsData);
-          }
-          if (Array.isArray(parsed.applicationsList) && parsed.applicationsList.length > 0) {
-            setApplicationsList(parsed.applicationsList);
-          }
-          if (Array.isArray(parsed.servicesData) && parsed.servicesData.length > 0) {
-            setServicesData(parsed.servicesData);
-          }
-          if (Array.isArray(parsed.awardsData) && parsed.awardsData.length > 0) {
-            setAwardsData(parsed.awardsData);
-          }
-          if (Array.isArray(parsed.clientRoster) && parsed.clientRoster.length > 0) {
-            setClientRoster(parsed.clientRoster);
-          }
-          if (Array.isArray(parsed.testimonials) && parsed.testimonials.length > 0) {
-            setTestimonials(parsed.testimonials);
+          const hasStaleDummyData = parsed.projectsData?.some((p: any) =>
+            [
+              'Aura Botanica',
+              'KROMA Display Specimen',
+              'Neo-Tokyo Avant-Garde Jazz',
+              'Atelier Noir Horlogerie',
+            ].includes(p.title)
+          );
+
+          if (hasStaleDummyData) {
+            // Hapus cache basi template lama agar tidak pernah tampil lagi
+            localStorage.removeItem(storageKey);
+          } else {
+            if (parsed.designerProfile) setDesignerProfile(parsed.designerProfile);
+            if (Array.isArray(parsed.portfolioSections) && parsed.portfolioSections.length > 0) {
+              setPortfolioSections(parsed.portfolioSections);
+            }
+            if (Array.isArray(parsed.projectsData)) {
+              setProjectsData(parsed.projectsData);
+            }
+            if (Array.isArray(parsed.applicationsList)) {
+              setApplicationsList(parsed.applicationsList);
+            }
+            if (Array.isArray(parsed.servicesData)) {
+              setServicesData(parsed.servicesData);
+            }
+            if (Array.isArray(parsed.awardsData)) {
+              setAwardsData(parsed.awardsData);
+            }
+            if (Array.isArray(parsed.clientRoster)) {
+              setClientRoster(parsed.clientRoster);
+            }
+            if (Array.isArray(parsed.testimonials)) {
+              setTestimonials(parsed.testimonials);
+            }
           }
         }
       } catch {
@@ -658,20 +666,7 @@ export const PortfolioProvider: React.FC<{
       }
     }
 
-    const defaultData = {
-      designerProfile: fallbackProfile,
-      portfolioSections: fallbackSections,
-      projectsData: fallbackProjects,
-      applicationsList: fallbackApplications,
-      servicesData: fallbackServices,
-      processSteps: fallbackProcessSteps,
-      awardsData: fallbackAwards,
-      exhibitionsData: fallbackExhibitions,
-      clientRoster: fallbackClients,
-      testimonials: fallbackTestimonials,
-      tactileSpecs: fallbackTactile,
-      inquiries: fallbackInquiries,
-    };
+    const defaultData = getInitialData(resolvedType);
     setDesignerProfile(defaultData.designerProfile);
     setPortfolioSections(defaultData.portfolioSections);
     setProjectsData(defaultData.projectsData);

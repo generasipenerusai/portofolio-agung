@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
+import bundledGraphicDb from '@/data/db.json';
+import bundledPhotographerDb from '@/data/photographer_db.json';
 
 const DATA_DIR = path.join(process.cwd(), 'data');
 const DB_PATH = path.join(DATA_DIR, 'db.json');
-const LEGACY_DB_PATH = path.join(process.cwd(), 'src', 'data', 'db.json');
 const PHOTOGRAPHER_DB_PATH = path.join(DATA_DIR, 'photographer_db.json');
-const LEGACY_PHOTOGRAPHER_DB_PATH = path.join(process.cwd(), 'src', 'data', 'photographer_db.json');
 const UPLOADS_DIR = path.join(process.cwd(), 'public', 'uploads');
 
 // Cloud storage credentials (if configured in Vercel environment variables)
@@ -14,7 +14,9 @@ const KV_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL
 const KV_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
 
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GITHUB_PAT;
-const GITHUB_REPO = process.env.GITHUB_REPO || 'generasipenerusai/portofolio-agung';
+const GITHUB_REPO = (process.env.GITHUB_REPO || 'generasipenerusai/portofolio-agung')
+  .replace(/^https?:\/\/github\.com\//, '')
+  .replace(/\.git$/, '');
 const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main';
 
 async function getFromKv(key: string) {
@@ -55,11 +57,13 @@ async function setToKv(key: string, data: any): Promise<boolean> {
 async function getFromGithub(filePath: string) {
   if (!GITHUB_TOKEN) return null;
   try {
-    const cleanRepo = GITHUB_REPO.replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '');
-    const url = `https://raw.githubusercontent.com/${cleanRepo}/${GITHUB_BRANCH}/${filePath}?t=${Date.now()}`;
+    // Menggunakan endpoint GitHub contents dengan header raw agar mengembalikan JSON asli
+    const url = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}?ref=${GITHUB_BRANCH}`;
     const res = await fetch(url, {
       headers: {
         Authorization: `Bearer ${GITHUB_TOKEN}`,
+        Accept: 'application/vnd.github.v3.raw',
+        'User-Agent': 'antigravity-portfolio',
       },
       cache: 'no-store',
     });
@@ -68,7 +72,7 @@ async function getFromGithub(filePath: string) {
       return JSON.parse(text);
     }
   } catch (err) {
-    console.warn('Failed to fetch latest data from GitHub:', err);
+    console.warn('Failed to fetch latest data from GitHub API:', err);
   }
   return null;
 }
@@ -76,8 +80,7 @@ async function getFromGithub(filePath: string) {
 async function commitToGithub(filePath: string, contentStr: string, commitMsg: string): Promise<boolean> {
   if (!GITHUB_TOKEN) return false;
   try {
-    const cleanRepo = GITHUB_REPO.replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '');
-    const getUrl = `https://api.github.com/repos/${cleanRepo}/contents/${filePath}?ref=${GITHUB_BRANCH}`;
+    const getUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}?ref=${GITHUB_BRANCH}`;
     const getRes = await fetch(getUrl, {
       headers: {
         Authorization: `Bearer ${GITHUB_TOKEN}`,
@@ -93,7 +96,7 @@ async function commitToGithub(filePath: string, contentStr: string, commitMsg: s
       sha = existing.sha;
     }
 
-    const putUrl = `https://api.github.com/repos/${cleanRepo}/contents/${filePath}`;
+    const putUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`;
     const putRes = await fetch(putUrl, {
       method: 'PUT',
       headers: {
@@ -130,9 +133,8 @@ async function persistDataUriIfNeeded(val: string | undefined, prefix: string): 
   // 1. Jika GITHUB_TOKEN tersedia di Vercel, simpan gambar ke GitHub public/uploads
   if (GITHUB_TOKEN) {
     try {
-      const cleanRepo = GITHUB_REPO.replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '');
       const filePath = `public/uploads/${filename}`;
-      const putUrl = `https://api.github.com/repos/${cleanRepo}/contents/${filePath}`;
+      const putUrl = `https://api.github.com/repos/${GITHUB_REPO}/contents/${filePath}`;
       const putRes = await fetch(putUrl, {
         method: 'PUT',
         headers: {
@@ -149,7 +151,7 @@ async function persistDataUriIfNeeded(val: string | undefined, prefix: string): 
       });
 
       if (putRes.ok) {
-        return `https://raw.githubusercontent.com/${cleanRepo}/${GITHUB_BRANCH}/public/uploads/${filename}`;
+        return `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/public/uploads/${filename}`;
       }
     } catch (err) {
       console.warn('Failed to upload image to GitHub:', err);
@@ -172,8 +174,9 @@ export async function GET(request: Request) {
     const { searchParams } = new URL(request.url);
     const type = searchParams.get('type') === 'photographer' ? 'photographer' : 'graphic';
     const kvKey = `portfolio_db_${type}`;
+    const defaultBundled = type === 'photographer' ? bundledPhotographerDb : bundledGraphicDb;
 
-    // 1. Check KV / Upstash if configured
+    // 1. Cek KV / Upstash jika terkonfigurasi
     if (KV_URL && KV_TOKEN) {
       const kvData = await getFromKv(kvKey);
       if (kvData && kvData.designerProfile) {
@@ -181,7 +184,7 @@ export async function GET(request: Request) {
       }
     }
 
-    // 2. Check GitHub live commit if GITHUB_TOKEN is configured (fetches latest saved data in real-time)
+    // 2. Cek GitHub live commit jika GITHUB_TOKEN terkonfigurasi (mengambil data tersimpan terbaru)
     const gitFilePath = type === 'photographer' ? 'data/photographer_db.json' : 'data/db.json';
     if (GITHUB_TOKEN) {
       const ghData = await getFromGithub(gitFilePath);
@@ -190,21 +193,23 @@ export async function GET(request: Request) {
       }
     }
 
-    // 3. Fallback to bundled local files (for local laptop development)
-    const primaryPath = type === 'photographer' ? PHOTOGRAPHER_DB_PATH : DB_PATH;
-    const fallbackPath = type === 'photographer' ? LEGACY_PHOTOGRAPHER_DB_PATH : LEGACY_DB_PATH;
-
-    let fileContent: string;
+    // 3. Coba baca file lokal jika di laptop (localhost)
     try {
-      fileContent = await fs.readFile(primaryPath, 'utf-8');
+      const primaryPath = type === 'photographer' ? PHOTOGRAPHER_DB_PATH : DB_PATH;
+      const fileContent = await fs.readFile(primaryPath, 'utf-8');
+      const parsed = JSON.parse(fileContent);
+      if (parsed && parsed.designerProfile) {
+        return NextResponse.json(parsed);
+      }
     } catch {
-      fileContent = await fs.readFile(fallbackPath, 'utf-8');
+      // Abaikan jika di cloud serverless
     }
-    const data = JSON.parse(fileContent);
-    return NextResponse.json(data);
+
+    // 4. Fallback ke data internal bawaan (selalu berhasil & berisi 11 karya asli)
+    return NextResponse.json(defaultBundled);
   } catch (error) {
-    console.error('Failed to read db.json:', error);
-    return NextResponse.json({ error: 'Failed to read database' }, { status: 500 });
+    console.error('Failed to read database:', error);
+    return NextResponse.json(bundledGraphicDb);
   }
 }
 
@@ -275,13 +280,12 @@ export async function POST(request: Request) {
       await fs.writeFile(targetPath, jsonString, 'utf-8');
       saved = true;
     } catch (fsErr: any) {
-      // If disk is read-only on Vercel and no cloud storage configured yet
       if (!saved && (fsErr?.code === 'EROFS' || fsErr?.code === 'EACCES')) {
         return NextResponse.json(
           {
             error: 'READ_ONLY_ENVIRONMENT',
             message:
-              'Hosting Vercel bersifat Read-Only. Tambahkan GITHUB_TOKEN atau sambungkan Vercel KV di Settings agar dapat menyimpan langsung dari web.',
+              'Hosting Vercel bersifat Read-Only. Tambahkan GITHUB_TOKEN di Settings agar dapat menyimpan langsung dari web.',
           },
           { status: 503 }
         );
