@@ -9,23 +9,126 @@ const PHOTOGRAPHER_DB_PATH = path.join(DATA_DIR, 'photographer_db.json');
 const LEGACY_PHOTOGRAPHER_DB_PATH = path.join(process.cwd(), 'src', 'data', 'photographer_db.json');
 const UPLOADS_DIR = path.join(process.cwd(), 'public', 'uploads');
 
+// Cloud storage credentials (if configured in Vercel environment variables)
+const KV_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
+const KV_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
+
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || process.env.GITHUB_PAT;
+const GITHUB_REPO = process.env.GITHUB_REPO || 'generasipenerusai/portofolio-agung';
+const GITHUB_BRANCH = process.env.GITHUB_BRANCH || 'main';
+
+async function getFromKv(key: string) {
+  if (!KV_URL || !KV_TOKEN) return null;
+  try {
+    const res = await fetch(`${KV_URL}/get/${key}`, {
+      headers: { Authorization: `Bearer ${KV_TOKEN}` },
+      cache: 'no-store',
+    });
+    if (!res.ok) return null;
+    const json = await res.json();
+    if (!json.result) return null;
+    return typeof json.result === 'string' ? JSON.parse(json.result) : json.result;
+  } catch (err) {
+    console.warn('Failed to get from KV:', err);
+    return null;
+  }
+}
+
+async function setToKv(key: string, data: any): Promise<boolean> {
+  if (!KV_URL || !KV_TOKEN) return false;
+  try {
+    const res = await fetch(`${KV_URL}/set/${key}`, {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${KV_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(typeof data === 'string' ? data : JSON.stringify(data)),
+    });
+    return res.ok;
+  } catch (err) {
+    console.error('Failed to set to KV:', err);
+    return false;
+  }
+}
+
+async function commitToGithub(filePath: string, contentStr: string, commitMsg: string): Promise<boolean> {
+  if (!GITHUB_TOKEN) return false;
+  try {
+    const cleanRepo = GITHUB_REPO.replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '');
+    const getUrl = `https://api.github.com/repos/${cleanRepo}/contents/${filePath}?ref=${GITHUB_BRANCH}`;
+    const getRes = await fetch(getUrl, {
+      headers: {
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        'User-Agent': 'antigravity-portfolio',
+      },
+      cache: 'no-store',
+    });
+
+    let sha: string | undefined = undefined;
+    if (getRes.ok) {
+      const existing = await getRes.json();
+      sha = existing.sha;
+    }
+
+    const putUrl = `https://api.github.com/repos/${cleanRepo}/contents/${filePath}`;
+    const putRes = await fetch(putUrl, {
+      method: 'PUT',
+      headers: {
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+        Accept: 'application/vnd.github.v3+json',
+        'Content-Type': 'application/json',
+        'User-Agent': 'antigravity-portfolio',
+      },
+      body: JSON.stringify({
+        message: commitMsg,
+        content: Buffer.from(contentStr).toString('base64'),
+        sha,
+        branch: GITHUB_BRANCH,
+      }),
+    });
+
+    return putRes.ok;
+  } catch (err) {
+    console.error('Failed to commit to GitHub:', err);
+    return false;
+  }
+}
+
 async function persistDataUriIfNeeded(val: string | undefined, prefix: string): Promise<string> {
   if (!val || !val.startsWith('data:image/')) return val || '';
-  const match = val.match(/^data:image\/([a-zA-Z0-9+.-]+);base64,(.+)$/);
-  if (!match) return val;
-  let ext = match[1].toLowerCase();
-  if (ext === 'jpeg') ext = 'jpg';
-  if (ext === 'svg+xml') ext = 'svg';
-  await fs.mkdir(UPLOADS_DIR, { recursive: true });
-  const filename = `${prefix}-${Date.now()}.${ext}`;
-  await fs.writeFile(path.join(UPLOADS_DIR, filename), Buffer.from(match[2], 'base64'));
-  return `/uploads/${filename}`;
+  try {
+    const match = val.match(/^data:image\/([a-zA-Z0-9+.-]+);base64,(.+)$/);
+    if (!match) return val;
+    let ext = match[1].toLowerCase();
+    if (ext === 'jpeg') ext = 'jpg';
+    if (ext === 'svg+xml') ext = 'svg';
+    await fs.mkdir(UPLOADS_DIR, { recursive: true });
+    const filename = `${prefix}-${Date.now()}.${ext}`;
+    await fs.writeFile(path.join(UPLOADS_DIR, filename), Buffer.from(match[2], 'base64'));
+    return `/uploads/${filename}`;
+  } catch {
+    // If running in a read-only serverless environment, keep base64 so image never breaks
+    return val;
+  }
 }
 
 export async function GET(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const type = searchParams.get('type') === 'photographer' ? 'photographer' : 'graphic';
+    const kvKey = `portfolio_db_${type}`;
+
+    // 1. Check KV / Upstash if configured
+    if (KV_URL && KV_TOKEN) {
+      const kvData = await getFromKv(kvKey);
+      if (kvData && kvData.designerProfile) {
+        return NextResponse.json(kvData);
+      }
+    }
+
+    // 2. Read local / bundled files
     const primaryPath = type === 'photographer' ? PHOTOGRAPHER_DB_PATH : DB_PATH;
     const fallbackPath = type === 'photographer' ? LEGACY_PHOTOGRAPHER_DB_PATH : LEGACY_DB_PATH;
 
@@ -47,6 +150,8 @@ export async function POST(request: Request) {
   try {
     const { searchParams } = new URL(request.url);
     const type = searchParams.get('type') === 'photographer' ? 'photographer' : 'graphic';
+    const kvKey = `portfolio_db_${type}`;
+    const gitFilePath = type === 'photographer' ? 'data/photographer_db.json' : 'data/db.json';
     const targetPath = type === 'photographer' ? PHOTOGRAPHER_DB_PATH : DB_PATH;
 
     const updatedData = await request.json();
@@ -58,7 +163,7 @@ export async function POST(request: Request) {
       );
     }
 
-    // Automatically convert any base64 images to real static files so JSON stays tiny & fast
+    // Safely attempt converting base64 images to static files if local disk is writable
     if (updatedData.designerProfile?.photoUrl?.startsWith('data:image/')) {
       updatedData.designerProfile.photoUrl = await persistDataUriIfNeeded(
         updatedData.designerProfile.photoUrl,
@@ -83,10 +188,49 @@ export async function POST(request: Request) {
       }
     }
 
-    await fs.mkdir(DATA_DIR, { recursive: true });
-    await fs.writeFile(targetPath, JSON.stringify(updatedData, null, 2), 'utf-8');
+    const jsonString = JSON.stringify(updatedData, null, 2);
+    let saved = false;
 
-    return NextResponse.json({ success: true, message: `Data (${type}) saved successfully` });
+    // A. If Vercel KV / Upstash Redis is connected
+    if (KV_URL && KV_TOKEN) {
+      const kvOk = await setToKv(kvKey, updatedData);
+      if (kvOk) saved = true;
+    }
+
+    // B. If GITHUB_TOKEN is configured in Vercel Environment Variables
+    if (GITHUB_TOKEN) {
+      const gitOk = await commitToGithub(
+        gitFilePath,
+        jsonString,
+        `Update ${type} portfolio via Web Admin CMS [skip ci]`
+      );
+      if (gitOk) saved = true;
+    }
+
+    // C. Always attempt local file save (for local laptop development)
+    try {
+      await fs.mkdir(DATA_DIR, { recursive: true });
+      await fs.writeFile(targetPath, jsonString, 'utf-8');
+      saved = true;
+    } catch (fsErr: any) {
+      // If disk is read-only on Vercel and no cloud storage configured yet
+      if (!saved && (fsErr?.code === 'EROFS' || fsErr?.code === 'EACCES')) {
+        return NextResponse.json(
+          {
+            error: 'READ_ONLY_ENVIRONMENT',
+            message:
+              'Hosting Vercel bersifat Read-Only. Tambahkan GITHUB_TOKEN atau sambungkan Vercel KV di Settings agar dapat menyimpan langsung dari web.',
+          },
+          { status: 503 }
+        );
+      }
+    }
+
+    if (saved) {
+      return NextResponse.json({ success: true, message: `Data (${type}) saved successfully` });
+    }
+
+    return NextResponse.json({ error: 'Gagal menyimpan data ke database.' }, { status: 500 });
   } catch (error) {
     console.error('Failed to write database:', error);
     return NextResponse.json({ error: 'Failed to update database' }, { status: 500 });

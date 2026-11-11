@@ -967,11 +967,10 @@ export default function AdminPage() {
       }
     } else {
       alert(
-        'Gagal menyimpan ke server: Hosting Vercel bersifat Read-Only (tidak bisa menulis file langsung di cloud).\n\n' +
-        '💡 CARA TERBAIK:\n' +
-        '1. Buka admin di laptop Anda: http://localhost:3000/admin\n' +
-        '2. Tambah / edit karya di sana lalu klik Simpan.\n' +
-        '3. Jalankan "git push" di terminal untuk sinkronisasi otomatis ke Vercel.'
+        'Gagal menyimpan ke server.\n\n' +
+        '💡 Untuk mengaktifkan tombol Simpan langsung di website live Vercel:\n' +
+        'Masukkan GITHUB_TOKEN di Vercel Dashboard -> Settings -> Environment Variables.\n\n' +
+        'Atau kelola sementara melalui laptop Anda di http://localhost:3000/admin lalu lakukan git push.'
       );
     }
   };
