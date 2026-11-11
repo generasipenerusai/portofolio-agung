@@ -167,9 +167,47 @@ export const PortfolioProvider: React.FC<{
     let isMounted = true;
     setIsLoading(true);
 
+    const storageKey = `portfolio_backup_${resolvedType}`;
+
+    // 1. Segera pulihkan dari localStorage saat halaman di-refresh agar karya baru tidak hilang
+    if (typeof window !== 'undefined') {
+      try {
+        const cached = localStorage.getItem(storageKey);
+        if (cached) {
+          const parsed = JSON.parse(cached);
+          if (parsed.designerProfile) setDesignerProfile(parsed.designerProfile);
+          if (Array.isArray(parsed.portfolioSections) && parsed.portfolioSections.length > 0) {
+            setPortfolioSections(parsed.portfolioSections);
+          }
+          if (Array.isArray(parsed.projectsData) && parsed.projectsData.length > 0) {
+            setProjectsData(parsed.projectsData);
+          }
+          if (Array.isArray(parsed.applicationsList) && parsed.applicationsList.length > 0) {
+            setApplicationsList(parsed.applicationsList);
+          }
+          if (Array.isArray(parsed.servicesData) && parsed.servicesData.length > 0) {
+            setServicesData(parsed.servicesData);
+          }
+          if (Array.isArray(parsed.awardsData) && parsed.awardsData.length > 0) {
+            setAwardsData(parsed.awardsData);
+          }
+          if (Array.isArray(parsed.clientRoster) && parsed.clientRoster.length > 0) {
+            setClientRoster(parsed.clientRoster);
+          }
+          if (Array.isArray(parsed.testimonials) && parsed.testimonials.length > 0) {
+            setTestimonials(parsed.testimonials);
+          }
+        }
+      } catch {
+        // Abaikan jika cache kosong / gagal dibaca
+      }
+    }
+
     const fetchData = async () => {
       try {
-        const res = await fetch(`/api/portfolio?type=${resolvedType}`);
+        const res = await fetch(`/api/portfolio?type=${resolvedType}&_t=${Date.now()}`, {
+          cache: 'no-store',
+        });
         if (res.ok) {
           const data = await res.json();
           if (!isMounted) return;
@@ -190,6 +228,15 @@ export const PortfolioProvider: React.FC<{
           if (data.testimonials) setTestimonials(data.testimonials);
           if (data.tactileSpecs) setTactileSpecs(data.tactileSpecs);
           if (data.inquiries) setInquiries(data.inquiries);
+
+          // Update backup cache dengan data server terbaru
+          if (typeof window !== 'undefined') {
+            try {
+              localStorage.setItem(storageKey, JSON.stringify(data));
+            } catch {
+              // Ignore localStorage quota
+            }
+          }
         }
       } catch (err) {
         console.warn(`Using seeded data as fallback for ${resolvedType}:`, err);

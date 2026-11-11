@@ -52,6 +52,27 @@ async function setToKv(key: string, data: any): Promise<boolean> {
   }
 }
 
+async function getFromGithub(filePath: string) {
+  if (!GITHUB_TOKEN) return null;
+  try {
+    const cleanRepo = GITHUB_REPO.replace(/^https?:\/\/github\.com\//, '').replace(/\.git$/, '');
+    const url = `https://raw.githubusercontent.com/${cleanRepo}/${GITHUB_BRANCH}/${filePath}?t=${Date.now()}`;
+    const res = await fetch(url, {
+      headers: {
+        Authorization: `Bearer ${GITHUB_TOKEN}`,
+      },
+      cache: 'no-store',
+    });
+    if (res.ok) {
+      const text = await res.text();
+      return JSON.parse(text);
+    }
+  } catch (err) {
+    console.warn('Failed to fetch latest data from GitHub:', err);
+  }
+  return null;
+}
+
 async function commitToGithub(filePath: string, contentStr: string, commitMsg: string): Promise<boolean> {
   if (!GITHUB_TOKEN) return false;
   try {
@@ -160,7 +181,16 @@ export async function GET(request: Request) {
       }
     }
 
-    // 2. Read local / bundled files
+    // 2. Check GitHub live commit if GITHUB_TOKEN is configured (fetches latest saved data in real-time)
+    const gitFilePath = type === 'photographer' ? 'data/photographer_db.json' : 'data/db.json';
+    if (GITHUB_TOKEN) {
+      const ghData = await getFromGithub(gitFilePath);
+      if (ghData && ghData.designerProfile) {
+        return NextResponse.json(ghData);
+      }
+    }
+
+    // 3. Fallback to bundled local files (for local laptop development)
     const primaryPath = type === 'photographer' ? PHOTOGRAPHER_DB_PATH : DB_PATH;
     const fallbackPath = type === 'photographer' ? LEGACY_PHOTOGRAPHER_DB_PATH : LEGACY_DB_PATH;
 
