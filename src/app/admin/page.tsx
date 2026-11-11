@@ -358,6 +358,13 @@ export default function AdminPage() {
   // Tool Modal State
   const [isToolModalOpen, setIsToolModalOpen] = useState(false);
   const [editingToolId, setEditingToolId] = useState<string | null>(null);
+  const [isQuickAddToolOpen, setIsQuickAddToolOpen] = useState(false);
+  const [quickToolForm, setQuickToolForm] = useState({
+    name: '',
+    shortCode: '',
+    iconUrl: '',
+    purpose: '',
+  });
   const [toolForm, setToolForm] = useState<Partial<ApplicationTool>>({
     name: '',
     shortCode: 'Nw',
@@ -1250,6 +1257,164 @@ export default function AdminPage() {
         }
       }
     }
+  };
+
+  // Quick-Add Tool directly from Project Modal (Tab 3)
+  const POPULAR_SOFTWARE_PRESETS = [
+    {
+      name: 'Adobe Illustrator',
+      code: 'Ai',
+      icon: '/icons/software/illustrator.svg',
+      defaultPurpose: 'Desain identitas visual dan aset grafis vektor',
+    },
+    {
+      name: 'Adobe Photoshop',
+      code: 'Ps',
+      icon: '/icons/software/photoshop.svg',
+      defaultPurpose: 'Penyusunan mockup fotorealistik beresolusi tinggi',
+    },
+    {
+      name: 'Figma',
+      code: 'Fg',
+      icon: '/icons/software/figma.svg',
+      defaultPurpose: 'Wireframe, user interface, & prototipe digital interaktif',
+    },
+    {
+      name: 'DaVinci Resolve Studio',
+      code: 'Dv',
+      icon: '/icons/software/davinci-resolve.svg',
+      defaultPurpose: 'Color grading, editing video sinematik, & master audio',
+    },
+    {
+      name: 'Cinema 4D & Octane',
+      code: 'C4',
+      icon: '/icons/software/cinema4d.svg',
+      defaultPurpose: 'Modeling produk 3D & render packaging fotorealistik',
+    },
+    {
+      name: 'Blender',
+      code: 'Bl',
+      icon: '/icons/software/blender.svg',
+      defaultPurpose: 'Modeling objek 3D, animasi ruang, & simulasi material',
+    },
+    {
+      name: 'Adobe Premiere Pro',
+      code: 'Pr',
+      icon: '/icons/software/premiere.svg',
+      defaultPurpose: 'Penyuntingan video ritmis & visual storytelling',
+    },
+    {
+      name: 'Adobe After Effects',
+      code: 'Ae',
+      icon: '/icons/software/aftereffects.svg',
+      defaultPurpose: 'Animasi motion graphic, logo bumper, & efek visual',
+    },
+    {
+      name: 'Adobe InDesign',
+      code: 'Id',
+      icon: '/icons/software/indesign.svg',
+      defaultPurpose: 'Tata letak editorial majalah, booklet, & berkas siap cetak',
+    },
+    {
+      name: 'Adobe Lightroom',
+      code: 'Lr',
+      icon: '/icons/software/lightroom.svg',
+      defaultPurpose: 'Color grading kurasi foto RAW beresolusi tinggi',
+    },
+    {
+      name: 'Glyphs 3',
+      code: 'Gl',
+      icon: '/icons/software/glyphs.svg',
+      defaultPurpose: 'Gambar kurva bezier font tipografi kustom & kerning',
+    },
+    {
+      name: 'CapCut',
+      code: 'Ct',
+      icon: '/icons/software/capcut.svg',
+      defaultPurpose: 'Editing video cepat vertikal & konten media sosial',
+    },
+  ];
+
+  const handleQuickAddAndCheckTool = async () => {
+    if (!quickToolForm.name.trim()) {
+      alert('Nama software wajib diisi.');
+      return;
+    }
+
+    const trimmedName = quickToolForm.name.trim();
+    const shortCode =
+      quickToolForm.shortCode.trim() ||
+      trimmedName.slice(0, 2).toUpperCase() ||
+      'SW';
+    const purpose =
+      quickToolForm.purpose.trim() || 'Pembuatan aset & pengerjaan proyek';
+
+    // Cek jika software sudah ada di applicationsList
+    const existing = applicationsList.find(
+      (a) => a.name.toLowerCase() === trimmedName.toLowerCase()
+    );
+
+    if (existing) {
+      const updatedToolsUsed = [
+        ...(projectForm.toolsUsed || []).filter(
+          (t) => t.name.toLowerCase() !== existing.name.toLowerCase()
+        ),
+        {
+          name: existing.name,
+          code: existing.shortCode,
+          purpose: purpose || existing.keyUseCases?.[0] || 'Pembuatan aset proyek',
+          colorBg: existing.color?.bg || 'bg-neutral-800',
+          colorText: existing.color?.text || 'text-white',
+        },
+      ];
+      setProjectForm((prev) => ({ ...prev, toolsUsed: updatedToolsUsed }));
+      setIsQuickAddToolOpen(false);
+      setQuickToolForm({ name: '', shortCode: '', iconUrl: '', purpose: '' });
+      soundFx.playPop();
+      showToast(`Software "${existing.name}" sudah ada dan langsung diceklis!`);
+      return;
+    }
+
+    const newApp: ApplicationTool = {
+      id: `tool-${Date.now()}`,
+      name: trimmedName,
+      shortCode,
+      iconUrl: quickToolForm.iconUrl.trim() || undefined,
+      category: 'Vektor & Brand',
+      experienceLevel: 'Primary Daily Driver',
+      yearsUsed: '3+ Tahun',
+      description: `Perangkat lunak untuk ${purpose.toLowerCase()}`,
+      color: {
+        bg: 'bg-neutral-800',
+        text: 'text-white',
+        border: 'border-neutral-700',
+        badge: 'bg-lime-400 text-black',
+      },
+      keyUseCases: [purpose],
+    };
+
+    // 1. Tambah ke Software Sehari-hari (applicationsList)
+    await addApplication(newApp);
+
+    // 2. Otomatis ceklis di form karya yang sedang diisi
+    const updatedToolsUsed = [
+      ...(projectForm.toolsUsed || []).filter(
+        (t) => t.name.toLowerCase() !== newApp.name.toLowerCase()
+      ),
+      {
+        name: newApp.name,
+        code: newApp.shortCode,
+        purpose,
+        colorBg: newApp.color.bg,
+        colorText: newApp.color.text,
+      },
+    ];
+    setProjectForm((prev) => ({ ...prev, toolsUsed: updatedToolsUsed }));
+
+    setQuickToolForm({ name: '', shortCode: '', iconUrl: '', purpose: '' });
+    setIsQuickAddToolOpen(false);
+    soundFx.playPop();
+    showToast(`Software "${newApp.name}" berhasil ditambahkan ke Software Sehari-hari & diceklis!`);
   };
 
   // ==============================================================
@@ -4494,10 +4659,122 @@ export default function AdminPage() {
               {/* TAB C: SOFTWARE YANG DIGUNAKAN */}
               {modalFormTab === 'tools' && (
                 <div className="space-y-4">
-                  <div className="text-xs font-mono text-neutral-400">
-                    Pilih aplikasi yang Anda gunakan untuk proyek ini dan jelaskan fungsinya:
+                  <div className="flex flex-wrap items-center justify-between gap-2 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800">
+                    <div className="text-xs font-mono text-neutral-300">
+                      Pilih software yang digunakan untuk karya ini. Software baru otomatis tersimpan ke <span className="text-lime-400 font-bold">Software Sehari-hari</span>:
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => setIsQuickAddToolOpen(!isQuickAddToolOpen)}
+                      className="px-3 py-1.5 rounded-lg bg-lime-400/10 border border-lime-400/30 text-lime-400 hover:bg-lime-400/20 text-xs font-mono font-bold flex items-center gap-1.5 transition-colors"
+                    >
+                      <Plus className="w-3.5 h-3.5" />
+                      <span>{isQuickAddToolOpen ? 'Tutup Form Tambah' : '+ Tambah Software Baru'}</span>
+                    </button>
                   </div>
 
+                  {/* Panel Cepat Tambah Software Langsung dari Tab Ini */}
+                  {isQuickAddToolOpen && (
+                    <div className="p-4 rounded-xl bg-neutral-900 border border-lime-400/30 space-y-3.5 shadow-xl animate-in fade-in duration-200">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-mono font-bold text-lime-400 flex items-center gap-1.5">
+                          <Wrench className="w-3.5 h-3.5" />
+                          <span>Tambah Software ke Daftar Sehari-hari & Langsung Ceklis:</span>
+                        </span>
+                        <span className="text-[10px] font-mono text-neutral-500">
+                          Tersimpan permanen ke Software Sehari-hari
+                        </span>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div className="sm:col-span-2 space-y-1">
+                          <label className="text-[11px] font-mono text-neutral-400">Nama Software *</label>
+                          <input
+                            type="text"
+                            placeholder="e.g. Blender, Cinema 4D, Canva..."
+                            value={quickToolForm.name}
+                            onChange={(e) => {
+                              const val = e.target.value;
+                              setQuickToolForm((prev) => ({
+                                ...prev,
+                                name: val,
+                                shortCode: prev.shortCode || (val.slice(0, 2).toUpperCase() || 'SW'),
+                              }));
+                            }}
+                            className="w-full px-3 py-1.5 rounded bg-neutral-950 border border-neutral-800 text-xs text-white focus:border-lime-400 outline-none font-mono"
+                          />
+                        </div>
+
+                        <div className="space-y-1">
+                          <label className="text-[11px] font-mono text-neutral-400">Kode Ikon</label>
+                          <input
+                            type="text"
+                            placeholder="e.g. Bl"
+                            value={quickToolForm.shortCode}
+                            onChange={(e) => setQuickToolForm({ ...quickToolForm, shortCode: e.target.value })}
+                            className="w-full px-3 py-1.5 rounded bg-neutral-950 border border-neutral-800 text-xs text-lime-400 font-bold font-mono text-center outline-none"
+                          />
+                        </div>
+                      </div>
+
+                      <div className="space-y-1">
+                        <label className="text-[11px] font-mono text-neutral-400">
+                          Peran / Fungsi Spesifik di Proyek Ini (Opsional)
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="e.g. Modeling kemasan 3D & render visual fotorealistik"
+                          value={quickToolForm.purpose}
+                          onChange={(e) => setQuickToolForm({ ...quickToolForm, purpose: e.target.value })}
+                          className="w-full px-3 py-1.5 rounded bg-neutral-950 border border-neutral-800 text-xs text-neutral-300 font-mono outline-none"
+                        />
+                      </div>
+
+                      {/* Preset Cepat Logo Populer */}
+                      <div className="pt-2 border-t border-neutral-800/80">
+                        <div className="text-[10px] font-mono text-neutral-400 mb-1.5">Preset Cepat Logo Populer:</div>
+                        <div className="flex flex-wrap gap-1.5">
+                          {POPULAR_SOFTWARE_PRESETS.map((preset) => (
+                            <button
+                              key={preset.name}
+                              type="button"
+                              onClick={() => {
+                                setQuickToolForm({
+                                  name: preset.name,
+                                  shortCode: preset.code,
+                                  iconUrl: preset.icon,
+                                  purpose: preset.defaultPurpose,
+                                });
+                              }}
+                              className="px-2 py-0.5 rounded bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-[10px] font-mono text-neutral-300 hover:text-lime-400 transition-colors"
+                            >
+                              {preset.name}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="flex items-center justify-end gap-2 pt-2 border-t border-neutral-800">
+                        <button
+                          type="button"
+                          onClick={() => setIsQuickAddToolOpen(false)}
+                          className="px-3 py-1 text-xs font-mono text-neutral-400 hover:text-white"
+                        >
+                          Batal
+                        </button>
+                        <button
+                          type="button"
+                          onClick={handleQuickAddAndCheckTool}
+                          className="px-4 py-1.5 rounded bg-lime-400 text-black text-xs font-mono font-bold hover:bg-lime-300 transition-colors flex items-center gap-1.5 shadow-sm"
+                        >
+                          <Plus className="w-3.5 h-3.5" />
+                          <span>Tambahkan ke Sehari-hari & Ceklis</span>
+                        </button>
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Grid Checkbox Software */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {applicationsList.map((app) => {
                       const isUsed = projectForm.toolsUsed?.some((t) => t.name === app.name);
@@ -4508,24 +4785,24 @@ export default function AdminPage() {
                         <div
                           key={app.id}
                           className={`p-3 rounded-xl border transition-all ${
-                            isUsed ? 'bg-neutral-900 border-lime-400/50' : 'bg-neutral-950 border-neutral-800'
+                            isUsed ? 'bg-neutral-900 border-lime-400/50 shadow-sm' : 'bg-neutral-950 border-neutral-800'
                           }`}
                         >
                           <div className="flex items-center justify-between mb-2">
-                            <label className="flex items-center gap-2 cursor-pointer">
+                            <label className="flex items-center gap-2.5 cursor-pointer flex-1 min-w-0">
                               <input
                                 type="checkbox"
                                 checked={isUsed}
                                 onChange={(e) => {
                                   if (e.target.checked) {
                                     const updated = [
-                                      ...(projectForm.toolsUsed || []),
+                                      ...(projectForm.toolsUsed || []).filter((t) => t.name !== app.name),
                                       {
                                         name: app.name,
                                         code: app.shortCode,
-                                        purpose: app.keyUseCases[0] || 'Pembuatan aset proyek',
-                                        colorBg: app.color.bg,
-                                        colorText: app.color.text,
+                                        purpose: app.keyUseCases?.[0] || 'Pembuatan aset proyek',
+                                        colorBg: app.color?.bg || 'bg-neutral-800',
+                                        colorText: app.color?.text || 'text-white',
                                       },
                                     ];
                                     setProjectForm({ ...projectForm, toolsUsed: updated });
@@ -4534,11 +4811,31 @@ export default function AdminPage() {
                                     setProjectForm({ ...projectForm, toolsUsed: updated });
                                   }
                                 }}
-                                className="accent-lime-400 w-4 h-4 rounded"
+                                className="accent-lime-400 w-4 h-4 rounded shrink-0"
                               />
-                              <span className="font-bold text-xs text-white">{app.name}</span>
+
+                              {/* Official Icon or Shortcode Monogram */}
+                              <div className="w-6 h-6 rounded bg-neutral-950 border border-neutral-800 flex items-center justify-center p-0.5 shrink-0 overflow-hidden">
+                                {app.iconUrl ? (
+                                  <img
+                                    src={app.iconUrl}
+                                    alt={app.name}
+                                    className="w-full h-full object-contain"
+                                    onError={(e) => {
+                                      (e.currentTarget as HTMLElement).style.display = 'none';
+                                    }}
+                                  />
+                                ) : (
+                                  <span className="text-[10px] font-mono font-bold text-lime-400">
+                                    {app.shortCode}
+                                  </span>
+                                )}
+                              </div>
+
+                              <span className="font-bold text-xs text-white truncate">{app.name}</span>
                             </label>
-                            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-800 text-lime-400">
+
+                            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-800 text-neutral-400 shrink-0">
                               {app.shortCode}
                             </span>
                           </div>
@@ -4554,7 +4851,7 @@ export default function AdminPage() {
                                 );
                                 setProjectForm({ ...projectForm, toolsUsed: updated });
                               }}
-                              className="w-full px-2.5 py-1 text-xs rounded bg-neutral-950 border border-neutral-800 text-neutral-300"
+                              className="w-full px-2.5 py-1 text-xs rounded bg-neutral-950 border border-neutral-800 text-neutral-300 font-mono focus:border-lime-400 outline-none"
                             />
                           )}
                         </div>

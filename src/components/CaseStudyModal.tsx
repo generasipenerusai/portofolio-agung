@@ -80,7 +80,7 @@ function parseVideoEmbed(rawUrl?: string): {
 }
 
 export const CaseStudyModal: React.FC<ModalProps> = ({ project, onClose }) => {
-  const { portfolioSections } = usePortfolio();
+  const { portfolioSections, applicationsList } = usePortfolio();
   const [copiedHex, setCopiedHex] = useState<string | null>(null);
 
   useEffect(() => {
@@ -490,21 +490,41 @@ export const CaseStudyModal: React.FC<ModalProps> = ({ project, onClose }) => {
                     Software yang Digunakan
                   </span>
                   <div className="flex flex-wrap gap-2">
-                    {project.toolsUsed.map((tool, idx) => (
-                      <div
-                        key={idx}
-                        className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 text-xs"
-                      >
-                        <span
-                          className={`w-5 h-5 rounded flex items-center justify-center font-bold text-[10px] ${tool.colorBg} ${tool.colorText}`}
+                    {project.toolsUsed.map((tool, idx) => {
+                      const matchedApp = applicationsList?.find(
+                        (a) => a.name.toLowerCase() === tool.name.toLowerCase()
+                      );
+                      const iconUrl = matchedApp?.iconUrl;
+
+                      return (
+                        <div
+                          key={idx}
+                          className="inline-flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-white dark:bg-neutral-950 border border-neutral-200 dark:border-neutral-800 text-xs shadow-xs"
                         >
-                          {tool.code}
-                        </span>
-                        <span className="font-medium text-neutral-800 dark:text-neutral-200">
-                          {tool.name}
-                        </span>
-                      </div>
-                    ))}
+                          {iconUrl ? (
+                            <div className="w-5 h-5 rounded p-0.5 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 flex items-center justify-center shrink-0">
+                              <img
+                                src={iconUrl}
+                                alt={tool.name}
+                                className="w-full h-full object-contain"
+                                onError={(e) => {
+                                  (e.currentTarget as HTMLElement).style.display = 'none';
+                                }}
+                              />
+                            </div>
+                          ) : (
+                            <span
+                              className={`w-5 h-5 rounded flex items-center justify-center font-bold text-[10px] ${tool.colorBg} ${tool.colorText}`}
+                            >
+                              {tool.code}
+                            </span>
+                          )}
+                          <span className="font-medium text-neutral-800 dark:text-neutral-200">
+                            {tool.name}
+                          </span>
+                        </div>
+                      );
+                    })}
                   </div>
                 </div>
               )}
