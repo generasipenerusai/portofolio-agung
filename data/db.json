@@ -1480,6 +1480,24 @@
         "Fungsi kapabilitas 2"
       ],
       "iconUrl": "/icons/software/capcut.svg"
+    },
+    {
+      "id": "tool-1794400212050",
+      "name": "HTML",
+      "shortCode": "HTML",
+      "category": "Vektor & Brand",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "3+ Tahun",
+      "description": "Perangkat lunak untuk pembuatan aset & pengerjaan proyek",
+      "color": {
+        "bg": "bg-neutral-800",
+        "text": "text-white",
+        "border": "border-neutral-700",
+        "badge": "bg-lime-400 text-black"
+      },
+      "keyUseCases": [
+        "Pembuatan aset & pengerjaan proyek"
+      ]
     }
   ],
   "servicesData": [
