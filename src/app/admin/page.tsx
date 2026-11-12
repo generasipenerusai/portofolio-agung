@@ -1418,6 +1418,24 @@ export default function AdminPage() {
       icon: '/icons/software/capcut.svg',
       defaultPurpose: 'Editing video cepat vertikal & konten media sosial',
     },
+    {
+      name: 'HTML5',
+      code: 'HTML',
+      icon: '/icons/software/html.svg',
+      defaultPurpose: 'Struktur semantik & markup antarmuka web modern',
+    },
+    {
+      name: 'CSS3',
+      code: 'CSS',
+      icon: '/icons/software/css.svg',
+      defaultPurpose: 'Styling layout responsif, animasi, & desain web',
+    },
+    {
+      name: 'JavaScript',
+      code: 'JS',
+      icon: '/icons/software/javascript.svg',
+      defaultPurpose: 'Logika interaktivitas dinamis & integrasi aplikasi web',
+    },
   ];
 
   const handleQuickAddAndCheckTool = async () => {
