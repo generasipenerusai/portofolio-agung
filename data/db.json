@@ -105,19 +105,19 @@
   },
   "portfolioSections": [
     {
+      "id": "main",
+      "eyebrow": "Portofolio Utama",
+      "title": "Design Graphic",
+      "subtitle": "Klik pada karya untuk melihat detail kontribusi, proses pengerjaan, dan hasil akhir.",
+      "layout": "grid-2"
+    },
+    {
       "id": "sec-1793524758056",
       "eyebrow": "UI/UX & Product Design",
       "title": "UI/UX Designer",
       "subtitle": "Perancangan antarmuka aplikasi, website, dan sistem desain berbasis riset pengguna (Design Thinking).",
       "layout": "grid-2",
       "showDesignThinking": true
-    },
-    {
-      "id": "main",
-      "eyebrow": "Portofolio Utama",
-      "title": "Design Graphic",
-      "subtitle": "Klik pada karya untuk melihat detail kontribusi, proses pengerjaan, dan hasil akhir.",
-      "layout": "grid-2"
     },
     {
       "id": "sec-1793451369822",
@@ -130,7 +130,7 @@
   "projectsData": [
     {
       "id": "project-1794424042020",
-      "sectionId": "main",
+      "sectionId": "sec-1793524758056",
       "title": "aaa",
       "subtitle": "",
       "client": "aaa",
