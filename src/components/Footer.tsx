@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowUp, Lock } from 'lucide-react';
+import { ArrowUp } from 'lucide-react';
 import { usePortfolio } from '../context/PortfolioContext';
 
 export const Footer: React.FC = () => {
@@ -12,7 +12,6 @@ export const Footer: React.FC = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const adminHref = portfolioType === 'photographer' ? '/photographer/admin' : '/admin';
   const otherPortfolioHref = portfolioType === 'photographer' ? '/' : '/photographer';
   const otherPortfolioLabel =
     portfolioType === 'photographer' ? '🎨 Portofolio Desain Grafis & UI/UX' : '📷 Portofolio Fotografi & Videografi';
@@ -29,25 +28,13 @@ export const Footer: React.FC = () => {
 
         <div className="flex flex-wrap items-center justify-center gap-4">
           {!designerProfile?.hidePortfolioSwitcher && (
-            <>
-              <Link
-                href={otherPortfolioHref}
-                className="inline-flex items-center gap-1 text-neutral-500 hover:text-neutral-900 dark:hover:text-lime-400 font-mono transition-colors"
-              >
-                <span>{otherPortfolioLabel}</span>
-              </Link>
-              <span className="text-neutral-400 dark:text-neutral-700 hidden sm:inline">·</span>
-            </>
+            <Link
+              href={otherPortfolioHref}
+              className="inline-flex items-center gap-1 text-neutral-500 hover:text-neutral-900 dark:hover:text-lime-400 font-mono transition-colors"
+            >
+              <span>{otherPortfolioLabel}</span>
+            </Link>
           )}
-
-          <Link
-            href={adminHref}
-            title="Panel Kelola Portofolio"
-            className="inline-flex items-center gap-1 text-neutral-400 hover:text-neutral-700 dark:hover:text-neutral-200 transition-colors font-mono"
-          >
-            <Lock className="w-3 h-3" />
-            <span>Admin</span>
-          </Link>
 
           <button
             onClick={scrollToTop}

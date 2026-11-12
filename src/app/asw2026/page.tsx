@@ -1114,7 +1114,7 @@ export default function AdminPage() {
         'Gagal menyimpan ke server.\n\n' +
         '💡 Untuk mengaktifkan tombol Simpan langsung di website live Vercel:\n' +
         'Masukkan GITHUB_TOKEN di Vercel Dashboard -> Settings -> Environment Variables.\n\n' +
-        'Atau kelola sementara melalui laptop Anda di http://localhost:3000/admin lalu lakukan git push.'
+        'Atau kelola sementara melalui laptop Anda di http://localhost:3000/asw2026 lalu lakukan git push.'
       );
     }
   };
@@ -2075,7 +2075,7 @@ export default function AdminPage() {
           {/* Quick Dual-Portfolio Switcher in Admin Header */}
           <div className="hidden lg:flex items-center p-1 rounded-lg bg-neutral-900 border border-neutral-800 text-[11px] font-mono">
             <Link
-              href="/admin"
+              href="/asw2026"
               className={`px-2.5 py-1 rounded transition-colors ${
                 portfolioType === 'graphic'
                   ? 'bg-lime-400 text-black font-bold shadow-xs'
@@ -2086,7 +2086,7 @@ export default function AdminPage() {
               🎨 Desain Grafis
             </Link>
             <Link
-              href="/photographer/admin"
+              href="/photographer/asw2026"
               className={`px-2.5 py-1 rounded transition-colors ${
                 portfolioType === 'photographer'
                   ? 'bg-lime-400 text-black font-bold shadow-xs'
@@ -4067,7 +4067,7 @@ export default function AdminPage() {
                     <span>Catatan Keamanan:</span>
                   </div>
                   <p className="text-xs text-neutral-300 leading-relaxed">
-                    Kredensial ini akan langsung aktif. Setiap kali Anda membuka halaman <code>/admin</code> dari peramban baru atau setelah mengklik <strong>Keluar</strong>, Anda akan diminta memasukkan username dan password ini.
+                    Kredensial ini akan langsung aktif. Setiap kali Anda membuka halaman <code>/asw2026</code> dari peramban baru atau setelah mengklik <strong>Keluar</strong>, Anda akan diminta memasukkan username dan password ini.
                   </p>
                 </div>
 

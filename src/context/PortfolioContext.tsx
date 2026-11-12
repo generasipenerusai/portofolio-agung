@@ -137,7 +137,7 @@ export const PortfolioProvider: React.FC<{
     explicitType || (pathname && pathname.startsWith('/photographer') ? 'photographer' : 'graphic');
 
   const switchPortfolioUrl = resolvedType === 'photographer' ? '/' : '/photographer';
-  const adminSwitchUrl = resolvedType === 'photographer' ? '/admin' : '/photographer/admin';
+  const adminSwitchUrl = resolvedType === 'photographer' ? '/asw2026' : '/photographer/asw2026';
 
   const initialData = getInitialData(resolvedType);
 
