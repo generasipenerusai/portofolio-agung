@@ -15,6 +15,7 @@ import {
   Wrench,
   Download,
   Upload,
+  FileText,
   RotateCcw,
   Sparkles,
   Layers,
@@ -549,6 +550,57 @@ export default function AdminPage() {
       reader.readAsDataURL(compressedFile);
     } catch {
       alert('Gagal memproses berkas gambar.');
+    }
+  };
+
+  // Upload Handler for CV / Portfolio PDF Document
+  const [isUploadingPdf, setIsUploadingPdf] = useState(false);
+
+  const handlePdfUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    if (file.type !== 'application/pdf' && !file.name.toLowerCase().endsWith('.pdf')) {
+      alert('Harap pilih berkas dokumen berformat PDF.');
+      return;
+    }
+
+    setIsUploadingPdf(true);
+    showToast('Mengunggah berkas CV (PDF)...');
+
+    try {
+      const formData = new FormData();
+      formData.append('file', file);
+      const res = await fetch('/api/upload', { method: 'POST', body: formData });
+      if (res.ok) {
+        const data = await res.json();
+        if (data.urls?.[0]) {
+          setProfileForm((prev) => ({ ...prev, portfolioPdfUrl: data.urls[0] }));
+          soundFx.playPop();
+          showToast('Berkas CV (PDF) berhasil diunggah!');
+          setIsUploadingPdf(false);
+          return;
+        }
+      }
+    } catch (err) {
+      console.error('PDF upload failed:', err);
+    }
+
+    // Fallback Data URI jika offline / direct
+    try {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        if (typeof reader.result === 'string') {
+          setProfileForm((prev) => ({ ...prev, portfolioPdfUrl: reader.result as string }));
+          soundFx.playPop();
+          showToast('Berkas CV (PDF) berhasil dipasang!');
+        }
+        setIsUploadingPdf(false);
+      };
+      reader.readAsDataURL(file);
+    } catch {
+      alert('Gagal mengunggah berkas CV. Silakan coba lagi atau gunakan tautan Google Drive.');
+      setIsUploadingPdf(false);
     }
   };
 
@@ -2860,15 +2912,56 @@ export default function AdminPage() {
                     />
                   </div>
 
-                  <div className="space-y-1 sm:col-span-2">
-                    <label className="text-xs font-mono text-neutral-400">Tautan Portofolio / CV PDF (Download Link)</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. /cv-portfolio.pdf atau link Google Drive / Dropbox"
-                      value={profileForm.portfolioPdfUrl}
-                      onChange={(e) => setProfileForm({ ...profileForm, portfolioPdfUrl: e.target.value })}
-                      className="w-full px-3.5 py-2.5 rounded-lg bg-neutral-950 border border-neutral-800 text-sm text-white focus:border-lime-400 outline-none"
-                    />
+                  <div className="space-y-2 sm:col-span-2 p-3.5 bg-neutral-950 rounded-xl border border-neutral-800">
+                    <div className="flex items-center justify-between">
+                      <label className="text-xs font-mono text-neutral-300 font-bold flex items-center gap-1.5">
+                        <FileText className="w-3.5 h-3.5 text-lime-400" />
+                        <span>Dokumen Portofolio / CV (Format PDF)</span>
+                      </label>
+                      {profileForm.portfolioPdfUrl &&
+                        profileForm.portfolioPdfUrl !== '#kontak' &&
+                        profileForm.portfolioPdfUrl.trim() !== '' && (
+                          <a
+                            href={profileForm.portfolioPdfUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-[11px] font-mono text-lime-400 hover:underline flex items-center gap-1 font-semibold"
+                          >
+                            <span>Lihat / Tes Buka Dokumen</span>
+                            <ExternalLink className="w-2.5 h-2.5" />
+                          </a>
+                        )}
+                    </div>
+
+                    <div className="flex flex-col sm:flex-row gap-2">
+                      <div className="flex-1">
+                        <input
+                          type="text"
+                          placeholder="Tempel link Google Drive / Dropbox, atau unggah file PDF langsung 👉"
+                          value={profileForm.portfolioPdfUrl}
+                          onChange={(e) => setProfileForm({ ...profileForm, portfolioPdfUrl: e.target.value })}
+                          className="w-full px-3.5 py-2.5 rounded-lg bg-neutral-900 border border-neutral-700/80 text-sm text-white focus:border-lime-400 outline-none"
+                        />
+                      </div>
+                      <label
+                        className={`px-4 py-2.5 rounded-lg border border-neutral-700 bg-neutral-800 hover:bg-neutral-700 text-xs font-mono font-bold text-white flex items-center justify-center gap-2 cursor-pointer transition-colors shrink-0 shadow-sm ${
+                          isUploadingPdf ? 'opacity-60 cursor-wait' : ''
+                        }`}
+                      >
+                        <Upload className="w-3.5 h-3.5 text-lime-400" />
+                        <span>{isUploadingPdf ? 'Mengunggah...' : 'Unggah File PDF'}</span>
+                        <input
+                          type="file"
+                          accept="application/pdf,.pdf"
+                          className="hidden"
+                          disabled={isUploadingPdf}
+                          onChange={handlePdfUpload}
+                        />
+                      </label>
+                    </div>
+                    <p className="text-[11px] text-neutral-400 leading-relaxed">
+                      💡 Anda bisa <strong>mengunggah file PDF langsung dari laptop/HP</strong>, atau menempelkan tautan dokumen dari <strong>Google Drive / Dropbox</strong> (pastikan izin aksesnya diatur ke <em>"Siapa saja yang memiliki link"</em>).
+                    </p>
                   </div>
                 </div>
               </div>
