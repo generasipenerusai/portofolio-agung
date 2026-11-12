@@ -12,9 +12,7 @@
       "UI/UX Designer",
       "Web Designer",
       "Motion Graphics",
-      "Photo & Video Editor",
-      "Cinematography & Color Grading",
-      "Custom Typography"
+      "Photo & Video Editor."
     ],
     "aliasTitle": "Desainer Grafis & Visual Artist",
     "photoUrl": "/images/agung-sabdo.png",
@@ -52,9 +50,9 @@
         "sublabel": "Desainer & Kreatif Independen"
       },
       {
-        "number": "100%",
-        "label": "Kualitas Produksi",
-        "sublabel": "Pengawasan ketat pre-press & mastering"
+        "number": "10+",
+        "label": "Sofware",
+        "sublabel": "UI/UX, Desain Visual , Motion, Photography & Videography"
       }
     ],
     "socials": [
@@ -105,13 +103,6 @@
   },
   "portfolioSections": [
     {
-      "id": "main",
-      "eyebrow": "Portofolio Utama",
-      "title": "Design Graphic",
-      "subtitle": "Klik pada karya untuk melihat detail kontribusi, proses pengerjaan, dan hasil akhir.",
-      "layout": "grid-2"
-    },
-    {
       "id": "sec-1793524758056",
       "eyebrow": "UI/UX & Product Design",
       "title": "UI/UX Designer",
@@ -120,14 +111,440 @@
       "showDesignThinking": true
     },
     {
-      "id": "sec-1793451369822",
+      "id": "main",
+      "eyebrow": "Portofolio Utama",
+      "title": "Design Graphic",
+      "subtitle": "Klik pada karya untuk melihat detail kontribusi, proses pengerjaan, dan hasil akhir.",
+      "layout": "grid-2"
+    },
+    {
+      "id": "sec-1794464924835",
       "eyebrow": "Keahlian Tambahan",
-      "title": "Animation & Motion Graphics",
-      "subtitle": "",
-      "layout": "gallery-3"
+      "title": "AI - Fullstack Web Developer",
+      "subtitle": "Membuat aplikasi full dikerjakan dengan menggunakan Artificial Intelligence",
+      "layout": "grid-2",
+      "showDesignThinking": false
     }
   ],
   "projectsData": [
+    {
+      "id": "project-1794465900658",
+      "sectionId": "sec-1794464924835",
+      "title": "Digital Scoring Pencak Silat Standard IPSI",
+      "subtitle": "Transformasi Digital Sistem Penilaian Pertandingan Pencak Silat untuk Meningkatkan Akurasi, Transparansi, dan Efisiensi Proses Scoring.",
+      "client": "Persinas ASAD",
+      "year": "2026",
+      "category": "Web Application Development & UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "UI/UX Design",
+        "Design Thinking",
+        "Figma"
+      ],
+      "featured": true,
+      "customMockupUrl": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794466716632-0-WhatsApp-Image-2026-11-12-at-13-15-50.jpg",
+      "projectUrl": "",
+      "projectUrlLabel": "Buka Prototype Figma",
+      "videoEmbedUrl": "",
+      "photoGallery": [
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794466723720-0-WhatsApp-Image-2026-11-12-at-13-15-44.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794466728089-0-IMG_8716.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794466731684-0-IMG_7611.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794466735272-0-LTS03219.jpg",
+          "caption": ""
+        }
+      ],
+      "aspectRatio": "standard",
+      "mockupType": "monograph-book",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Digital Scoring Pencak Silat Standard IPSI merupakan sistem penilaian pertandingan berbasis digital yang dirancang untuk mendukung proses scoring dalam kompetisi pencak silat. Platform ini dikembangkan untuk membantu proses pencatatan nilai, pemantauan pertandingan, serta pengelolaan hasil penilaian secara lebih terstruktur, cepat, dan transparan.\n\nDengan pendekatan UI/UX dan pengembangan aplikasi berbasis web, sistem ini mengintegrasikan kebutuhan pertandingan ke dalam antarmuka digital yang informatif dan mudah digunakan. Perancangan difokuskan pada kemudahan akses bagi petugas pertandingan, kejelasan informasi skor, serta penyajian data pertandingan secara real-time sesuai kemampuan implementasi sistem.\n\nProyek ini menjadi bagian dari upaya digitalisasi sistem pertandingan pencak silat untuk mendukung penyelenggaraan kompetisi yang lebih modern, efektif, dan profesional.",
+      "designBrief": "Proses penilaian pertandingan pencak silat membutuhkan ketelitian, kecepatan, dan konsistensi dalam pencatatan skor. Pengelolaan nilai secara manual berpotensi menimbulkan keterlambatan informasi, kesalahan pencatatan, serta kesulitan dalam memantau hasil pertandingan.\n\nTantangan utama dalam proyek ini adalah merancang sistem scoring digital yang mampu menyajikan informasi pertandingan secara jelas, meminimalkan kompleksitas operasional, dan mendukung kebutuhan petugas pertandingan dengan alur kerja yang efisien.\n\nSistem juga perlu memiliki struktur informasi yang mudah dipahami agar pengguna dapat mengakses data pertandingan dan hasil penilaian tanpa mengalami kesulitan.",
+      "conceptPhilosophy": "Mengembangkan konsep digital scoring berbasis web dengan antarmuka yang modern, informatif, dan berorientasi pada kebutuhan pertandingan.\n\nPendekatan desain mengutamakan visual hierarchy untuk menonjolkan informasi penting seperti identitas pesilat, kategori pertandingan, waktu pertandingan, dan informasi skor.\n\nTata letak dirancang dengan struktur yang terorganisasi, penggunaan warna yang memiliki kontras baik, serta komponen antarmuka yang konsisten. Pendekatan ini bertujuan menciptakan pengalaman penggunaan yang intuitif, meningkatkan keterbacaan informasi, dan mendukung kelancaran proses penilaian pertandingan.",
+      "myRole": {
+        "title": "Full Stack Developer AI",
+        "contributionType": "100% Kontribusi",
+        "responsibilities": [
+          "Riset pengguna, perumusan masalah & User Persona (Empathize & Define)",
+          "Penyusunan Information Architecture, User Flow & Wireframe (Ideate)",
+          "Perancangan UI Design System, Interactive Prototype & Usability Testing (Prototype & Test)"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Wireframing, UI Design System & Interactive Prototyping",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "HTML",
+          "code": "HTML",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/html.svg"
+        },
+        {
+          "name": "Javascript",
+          "code": "JS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/javascript.svg"
+        },
+        {
+          "name": "CSS",
+          "code": "CSS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/css.svg"
+        },
+        {
+          "name": "Google Gemini",
+          "code": "G",
+          "purpose": "Peniaian poin secara digital",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Menggali kebutuhan, perilaku, dan kendala utama (pain points) pengguna terhadap produk atau alur layanan.",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Menyintesis temuan riset menjadi User Persona, User Journey Map, dan Problem Statement yang fokus.",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Menyusun Information Architecture, alur navigasi (User Flow), dan sketsa tata letak Low-Fidelity Wireframe.",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Membangun komponen Design System, antarmuka High-Fidelity, serta prototipe interaktif yang siap diuji.",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Menguji skenario penggunaan bersama pengguna untuk memvalidasi kemudahan alur dan menyempurnakan detail UX.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "User Persona & User Flow",
+        "UI Design System",
+        "Interactive Figma Prototype"
+      ],
+      "colorPalette": [],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1794456873285",
+      "sectionId": "sec-1793524758056",
+      "title": "RAJA GADAI – Pawnshop Management System & Web Application Design",
+      "subtitle": "Perancangan Sistem Digital Pengelolaan Gadai untuk Meningkatkan Efisiensi Operasional, Kemudahan Transaksi, dan Pengelolaan Data Nasabah.",
+      "client": "PT. Derap Kreasi Persada",
+      "year": "2026",
+      "category": "UI/UX & Web Design",
+      "mediaType": "graphic",
+      "tags": [
+        "UI/UX Design",
+        "Design Thinking",
+        "Figma"
+      ],
+      "featured": false,
+      "customMockupUrl": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794458114260-0-Raja-Gadai-UI_UX-Showcase.jpg",
+      "projectUrl": "",
+      "projectUrlLabel": "Buka Prototype Figma",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "monograph-book",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Perancangan UI/UX dan Web Design berfokus pada kemudahan penggunaan, efisiensi alur kerja, serta penyajian informasi yang terstruktur melalui dashboard interaktif. Dengan menggabungkan identitas visual warna ungu dan hijau, sistem menghadirkan tampilan modern, profesional, dan konsisten untuk mendukung aktivitas operasional perusahaan, projek ini ditujukan agar ketika nasabah datang ingin menggadaikan barang yang dimiliki bisa mengisi data digital secara mandiri sehingga alur kerja lebih efisien.",
+      "designBrief": "Pengguna membutuhkan antarmuka yang sederhana dan mudah dipahami agar setiap proses operasional dapat dilakukan secara efisien tanpa harus melalui tahapan yang rumit, web ini app ini akan di gunakan dalam perangkat tablet.",
+      "conceptPhilosophy": "Dashboard untuk menampilkan informasi dan aktivitas transaksi.\nModul Gadai untuk mengelola pengajuan gadai baru.\nModul Tebus Gadai untuk pengelolaan transaksi penebusan.\nModul Perpanjangan Gadai untuk proses perpanjangan masa gadai.\nModul Nasabah untuk pengelolaan informasi pelanggan.\nModul Pengaturan untuk mendukung pengelolaan sistem.\nDialog interaktif untuk proses persetujuan dan penolakan pengajuan.",
+      "myRole": {
+        "title": "UI/UX & Web Designer",
+        "contributionType": "Design & Frontend ",
+        "responsibilities": [
+          "Penyusunan Information Architecture, User Flow & Wireframe (Ideate)",
+          "Perancangan UI Design System, Interactive Prototype & Usability Testing (Prototype & Test)",
+          "Membuat Web design dengan HTML, CSS, JS"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Wireframing, UI Design System & Interactive Prototyping",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "Adobe Photoshop",
+          "code": "Ps",
+          "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
+          "colorBg": "bg-[#31A8FF]/10",
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
+        },
+        {
+          "name": "Adobe Illustrator",
+          "code": "Ai",
+          "purpose": "Konstruksi Geometri Vektor & Monogram",
+          "colorBg": "bg-[#FF9A00]/10",
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
+        },
+        {
+          "name": "HTML",
+          "code": "HTML",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/html.svg"
+        },
+        {
+          "name": "CSS",
+          "code": "CSS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/css.svg"
+        },
+        {
+          "name": "Javascript",
+          "code": "JS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/javascript.svg"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Menggali kebutuhan, perilaku, dan kendala utama (pain points) pengguna terhadap produk atau alur layanan.",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Menyintesis temuan riset menjadi User Persona, User Journey Map, dan Problem Statement yang fokus.",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Menyusun Information Architecture, alur navigasi (User Flow), dan sketsa tata letak Low-Fidelity Wireframe.",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Membangun komponen Design System, antarmuka High-Fidelity, serta prototipe interaktif yang siap diuji.",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Menguji skenario penggunaan bersama pengguna untuk memvalidasi kemudahan alur dan menyempurnakan detail UX.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "User Persona & User Flow",
+        "UI Design System",
+        "Interactive Figma Prototype"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#5A0EA3",
+          "name": "Royal Purple"
+        },
+        {
+          "hex": "#A4D428",
+          "name": "Lime Green"
+        },
+        {
+          "hex": "#E9D8FF",
+          "name": "Light Lavender"
+        },
+        {
+          "hex": "#FFFF",
+          "name": "Off White"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1794456053669",
+      "sectionId": "sec-1793524758056",
+      "title": "OGIYA – Corporate Website & Responsive Web Design",
+      "subtitle": "Perancangan Website Korporat untuk Memperkuat Identitas Perusahaan dan Mempermudah Akses Informasi Produk.",
+      "client": "PT. 107",
+      "year": "2019",
+      "category": "UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "UI/UX Design",
+        "Design Thinking",
+        "Figma"
+      ],
+      "featured": false,
+      "customMockupUrl": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/1794456189454-0--------------------.jpg",
+      "projectUrl": "",
+      "projectUrlLabel": "Buka Prototype Figma",
+      "videoEmbedUrl": "",
+      "photoGallery": [],
+      "aspectRatio": "standard",
+      "mockupType": "monograph-book",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "OGIYA merupakan website korporat yang dirancang untuk memperkenalkan profil perusahaan serta menyediakan informasi produk dan layanan di bidang perlengkapan dapur, kebutuhan restoran, kemasan makanan, dan produk kebersihan. Website ini dikembangkan dengan pendekatan UI/UX yang mengutamakan kemudahan navigasi, penyajian informasi produk yang terstruktur, serta tampilan visual profesional. Desain menggabungkan identitas perusahaan dengan fotografi produk berkualitas, sehingga memberikan pengalaman digital yang informatif, menarik, dan responsif di berbagai perangkat.",
+      "designBrief": "Pengguna membutuhkan akses informasi yang cepat dan jelas mengenai produk serta layanan yang disediakan perusahaan. Website korporat perlu mampu menyampaikan identitas bisnis, kategori produk, informasi perusahaan, dan panduan penggunaan layanan secara terstruktur. Tantangan utama dalam perancangan ini adalah menyajikan berbagai kategori produk dalam satu platform tanpa membuat navigasi menjadi rumit, dan penyesuaian bahasa dari jepang ke indonesia agar saya dapat memahami dan tidak salah menempatkan konten diluar semestinya",
+      "conceptPhilosophy": "Merancang website dengan struktur navigasi sederhana yang mencakup halaman beranda, informasi produk, panduan penggunaan, profil perusahaan, dan kontak. Menggunakan pendekatan visual hierarchy untuk menonjolkan informasi utama, hero section dengan fotografi produk, serta tata letak katalog yang memudahkan pengguna mengenali kategori produk. Sistem visual menggunakan warna biru sebagai identitas utama dengan kombinasi putih dan aksen merah. Desain juga mempertimbangkan responsive layout agar pengalaman pengguna tetap optimal pada desktop, tablet, dan smartphone.",
+      "myRole": {
+        "title": "UI/UX Designer & Web Designer",
+        "contributionType": "UI Designer dan Web Designer",
+        "responsibilities": [
+          "Menentukan visual hierarchy dan user flow.",
+          "Membuat desain antarmuka (UI).",
+          "Menentukan warna, tipografi, dan elemen visual.",
+          "Menyusun tampilan katalog dan informasi produk.",
+          "Mengadaptasi desain untuk tampilan desktop dan mobile."
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "Figma",
+          "code": "Fg",
+          "purpose": "Wireframing, UI Design System & Interactive Prototyping",
+          "colorBg": "bg-[#0ACF83]/10",
+          "colorText": "text-[#0ACF83]"
+        },
+        {
+          "name": "CSS",
+          "code": "CSS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/css.svg"
+        },
+        {
+          "name": "HTML",
+          "code": "HTML",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/html.svg"
+        },
+        {
+          "name": "Javascript",
+          "code": "JS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/javascript.svg"
+        }
+      ],
+      "creationProcess": [],
+      "deliverables": [
+        "User Persona & User Flow",
+        "UI Design System",
+        "Interactive Figma Prototype"
+      ],
+      "colorPalette": [
+        {
+          "hex": "#024790",
+          "name": "Biru Navy"
+        },
+        {
+          "hex": "#FEFEFE",
+          "name": "Putih Bersih"
+        },
+        {
+          "hex": "#010101",
+          "name": "Hitam Pekat"
+        },
+        {
+          "hex": "#D7D5DA",
+          "name": "Abu Netral"
+        }
+      ],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
     {
       "id": "project-1794424042020",
       "sectionId": "sec-1793524758056",
@@ -1306,144 +1723,6 @@
       ],
       "typographyStack": [],
       "impactMetrics": []
-    },
-    {
-      "id": "project-1793270490568",
-      "sectionId": "sec-1793451369822",
-      "title": "3D promotional animation Champion PERSINAS ASAD",
-      "subtitle": "Animation Promotion Champion ",
-      "client": "PERSINAS ASAD SOUTH TANGERANG",
-      "year": "2026",
-      "category": "Animation",
-      "mediaType": "motion",
-      "tags": [
-        "Branding"
-      ],
-      "featured": false,
-      "customMockupUrl": "/uploads/cover-project-1793270490568.jpg",
-      "videoEmbedUrl": "https://www.instagram.com/reel/DeVp-aDR4ba/?utm_source=ig_web_copy_link&obrf=MzRlODBiNWFlZA==&srtk=MzRlODBiNWFlZA==",
-      "photoGallery": [],
-      "aspectRatio": "standard",
-      "mockupType": "motion-reel",
-      "heroTheme": {
-        "bg": "from-neutral-900 to-black",
-        "text": "text-white",
-        "accent": "text-lime-400",
-        "border": "border-lime-400/30",
-        "tagBg": "bg-lime-400/10 text-lime-400"
-      },
-      "summary": "3D promotional animation using Google AI Flow",
-      "designBrief": "Membuat animasi sebagai promosi kejuaraan.\nAgar orang melihat dapat tertarik dan juga segera mendaftarkan diri sebelum pendaftaran ditutup.\n\n",
-      "conceptPhilosophy": "Konsep 3D Animasi, dengan cerita pesan baik kepada para atlit yang hendak akan bertanding, bahwa untuk menjadi juara membutuhkan usaha dan juga doa.",
-      "myRole": {
-        "title": "Lead Produksi",
-        "contributionType": "Sole Lead & Art Director (100%)",
-        "responsibilities": [
-          "Konseptualisasi ide dan sketsa arah visual",
-          "Memproduksi Animasi"
-        ]
-      },
-      "toolsUsed": [
-        {
-          "name": "Adobe Premiere Pro",
-          "code": "Pr",
-          "purpose": "Timeline Editing Video Iklan Komersial & Reels",
-          "colorBg": "bg-[#9999FF]/10",
-          "colorText": "text-[#9999FF]",
-          "iconUrl": "/icons/software/premiere.svg"
-        }
-      ],
-      "creationProcess": [
-        {
-          "stepNumber": "01",
-          "title": "Pra-produksi",
-          "duration": "Minggu 1",
-          "toolUsed": "Google Flow AI",
-          "description": "Menganalisis referensi, menentukan konsep, gaya visual, durasi, rasio video, dan membagi cerita menjadi beberapa adegan.",
-          "keyMilestone": "Riset dan mencari referensi"
-        },
-        {
-          "stepNumber": "02",
-          "title": "Membuat aset visual",
-          "duration": "Minggu 2 - 3",
-          "toolUsed": "Google Flow AI",
-          "description": "Membuat gambar referensi karakter, objek utama, latar, pencahayaan, serta komposisi untuk setiap adegan.",
-          "keyMilestone": "Storyboard "
-        },
-        {
-          "stepNumber": "03",
-          "title": "Animasi",
-          "duration": "Minggu 1",
-          "toolUsed": "Google Flow AI",
-          "description": "Menghasilkan klip per adegan, mengatur gerakan kamera, aksi objek, transisi, dan kesinambungan visual menggunakan referensi gambar yang sesuai.",
-          "keyMilestone": "Mengubah gambar dan teks menjadi Animasi"
-        },
-        {
-          "stepNumber": "04",
-          "title": "Pascaproduksi",
-          "duration": "Minggu 1",
-          "toolUsed": "Capcut",
-          "description": "Menyusun klip, mengatur tempo, musik, efek suara, color grading, teks, dan ekspor video untuk Instagram Reels.",
-          "keyMilestone": "Output"
-        }
-      ],
-      "deliverables": [
-        "Identitas Visual Lengkap",
-        "Brand Guidelines Book"
-      ],
-      "colorPalette": [
-        {
-          "hex": "#0C0C0E",
-          "name": "Obsidian Black",
-          "cmyk": "75 / 65 / 65 / 90"
-        },
-        {
-          "hex": "#CCFF00",
-          "name": "Radioactive Lime",
-          "pantone": "Pantone 802 C"
-        }
-      ],
-      "typographyStack": [
-        {
-          "role": "Headline",
-          "fontName": "Clash Display Bold",
-          "category": "Display",
-          "sampleText": "SAMPLE TEXT"
-        }
-      ],
-      "impactMetrics": [
-        {
-          "label": "Kepuasan Klien",
-          "value": "100%"
-        }
-      ],
-      "printSpecs": {
-        "paperStock": "Fedrigoni Materica 360gsm",
-        "finishing": [
-          "Kurz Gold Foil Hot Stamping"
-        ],
-        "pantone": [
-          "Pantone 802 C"
-        ],
-        "dimensions": "A4 Format",
-        "technique": "Offset Lithography"
-      },
-      "photoSpecs": {
-        "camera": "Hasselblad H6D-100c",
-        "lens": "80mm f/2.8",
-        "settings": "f/8.0 · 1/250s · ISO 64",
-        "location": "Studio / Location",
-        "filmSimulation": "Kodak Portra 160",
-        "lighting": "Natural Diffused Light"
-      },
-      "videoSpecs": {
-        "resolution": "4K DCI (4096 x 2160)",
-        "aspectRatio": "2.39:1 Anamorphic",
-        "frameRate": "24.00 FPS",
-        "colorGrade": "Arri LogC3 to Kodak 2383 Film Print LUT",
-        "runtime": "01:30 Menit",
-        "audioSpec": "24-bit 48kHz LPCM Stereo"
-      }
     }
   ],
   "applicationsList": [
@@ -1492,28 +1771,6 @@
       "iconUrl": "/icons/software/photoshop.svg"
     },
     {
-      "id": "davinci-resolve",
-      "name": "DaVinci Resolve Studio",
-      "shortCode": "Dv",
-      "category": "Videografi & Color",
-      "experienceLevel": "Advanced Specialist",
-      "yearsUsed": "5+ Tahun",
-      "color": {
-        "bg": "bg-[#E63946]/10",
-        "text": "text-[#E63946]",
-        "border": "border-[#E63946]/30",
-        "badge": "bg-[#E63946] text-white"
-      },
-      "description": "Standar industri Hollywood untuk koreksi warna sinematik, manajemen ruang warna ACES, emulsi cetak film 35mm, dan mastering HDR video komersial.",
-      "keyUseCases": [
-        "Color Grading Film Sinematik & Emulsi Kodak 2383",
-        "Manajemen Warna ACES & Arri LogC3 Pipeline",
-        "Koreksi Warna Kulit (Skin Tone Separation)",
-        "Mastering Video Komersial Resolusi 4K DCI"
-      ],
-      "iconUrl": "/icons/software/davinci-resolve.svg"
-    },
-    {
       "id": "cinema4d",
       "name": "Cinema 4D & Octane",
       "shortCode": "C4",
@@ -1556,28 +1813,6 @@
         "Ekspor Master ProRes 422 HQ & H.265/AV1"
       ],
       "iconUrl": "/icons/software/premiere.svg"
-    },
-    {
-      "id": "indesign",
-      "name": "Adobe InDesign",
-      "shortCode": "Id",
-      "category": "Editorial & Layout",
-      "experienceLevel": "Production Master",
-      "yearsUsed": "7+ Tahun",
-      "color": {
-        "bg": "bg-[#FF3366]/10",
-        "text": "text-[#FF3366]",
-        "border": "border-[#FF3366]/30",
-        "badge": "bg-[#FF3366] text-white"
-      },
-      "description": "Pilar utama untuk arsitektur publikasi buku seni, monografi sampul keras, pedoman manual jenama (brand guidelines), dan majalah dengan kedisiplinan modular grid Swiss.",
-      "keyUseCases": [
-        "Tata Letak Buku Monografi & Publikasi Multi-Halaman",
-        "Penyusunan Brand Architecture & Guidelines Book",
-        "Manajemen Master Pages, Baseline Grid & Style Sheets",
-        "Kompilasi File Pre-Press PDF/X-1a dengan Bleed & Slugs"
-      ],
-      "iconUrl": "/icons/software/indesign.svg"
     },
     {
       "id": "aftereffects",
@@ -1721,6 +1956,24 @@
         "Pembuatan aset & pengerjaan proyek"
       ],
       "iconUrl": "/icons/software/javascript.svg"
+    },
+    {
+      "id": "tool-1794465789211",
+      "name": "Google Gemini",
+      "shortCode": "G",
+      "category": "Vektor & Brand",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "3+ Tahun",
+      "description": "Perangkat lunak untuk peniaian poin secara digital",
+      "color": {
+        "bg": "bg-neutral-800",
+        "text": "text-white",
+        "border": "border-neutral-700",
+        "badge": "bg-lime-400 text-black"
+      },
+      "keyUseCases": [
+        "Peniaian poin secara digital"
+      ]
     }
   ],
   "servicesData": [
