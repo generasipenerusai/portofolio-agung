@@ -1650,28 +1650,6 @@
       "iconUrl": "/icons/software/premiere.svg"
     },
     {
-      "id": "indesign",
-      "name": "Adobe InDesign",
-      "shortCode": "Id",
-      "category": "Editorial & Layout",
-      "experienceLevel": "Production Master",
-      "yearsUsed": "7+ Tahun",
-      "color": {
-        "bg": "bg-[#FF3366]/10",
-        "text": "text-[#FF3366]",
-        "border": "border-[#FF3366]/30",
-        "badge": "bg-[#FF3366] text-white"
-      },
-      "description": "Pilar utama untuk arsitektur publikasi buku seni, monografi sampul keras, pedoman manual jenama (brand guidelines), dan majalah dengan kedisiplinan modular grid Swiss.",
-      "keyUseCases": [
-        "Tata Letak Buku Monografi & Publikasi Multi-Halaman",
-        "Penyusunan Brand Architecture & Guidelines Book",
-        "Manajemen Master Pages, Baseline Grid & Style Sheets",
-        "Kompilasi File Pre-Press PDF/X-1a dengan Bleed & Slugs"
-      ],
-      "iconUrl": "/icons/software/indesign.svg"
-    },
-    {
       "id": "aftereffects",
       "name": "Adobe After Effects",
       "shortCode": "Ae",
