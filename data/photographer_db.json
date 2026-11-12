@@ -162,7 +162,8 @@
           "code": "Lr",
           "purpose": "Color grading dan retouching foto",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/lightroom.svg"
         }
       ],
       "creationProcess": [],

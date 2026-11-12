@@ -181,7 +181,8 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         }
       ],
       "creationProcess": [
@@ -295,14 +296,16 @@
           "code": "Fg",
           "purpose": "Presentasi Papan Konsep & Moodboard Interaktif",
           "colorBg": "bg-[#0ACF83]/10",
-          "colorText": "text-[#0ACF83]"
+          "colorText": "text-[#0ACF83]",
+          "iconUrl": "/icons/software/figma.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [
@@ -373,21 +376,24 @@
           "code": "Fg",
           "purpose": "Wireframing, UI Design System & Interactive Prototyping",
           "colorBg": "bg-[#0ACF83]/10",
-          "colorText": "text-[#0ACF83]"
+          "colorText": "text-[#0ACF83]",
+          "iconUrl": "/icons/software/figma.svg"
         },
         {
           "name": "Adobe Illustrator",
           "code": "Ai",
           "purpose": "Konstruksi Geometri Vektor & Monogram",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [
@@ -510,21 +516,24 @@
           "code": "Fg",
           "purpose": "Wireframing, UI Design System & Interactive Prototyping",
           "colorBg": "bg-[#0ACF83]/10",
-          "colorText": "text-[#0ACF83]"
+          "colorText": "text-[#0ACF83]",
+          "iconUrl": "/icons/software/figma.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         },
         {
           "name": "Adobe Illustrator",
           "code": "Ai",
           "purpose": "Konstruksi Geometri Vektor & Monogram",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         }
       ],
       "creationProcess": [
@@ -645,7 +654,8 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         }
       ],
       "creationProcess": [],
@@ -715,14 +725,16 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [],
@@ -792,14 +804,16 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [
@@ -918,14 +932,16 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [],
@@ -995,14 +1011,16 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [
@@ -1089,14 +1107,16 @@
           "code": "Ai",
           "purpose": "Desain identitas visual dan aset grafis",
           "colorBg": "bg-[#FF9A00]/10",
-          "colorText": "text-[#FF9A00]"
+          "colorText": "text-[#FF9A00]",
+          "iconUrl": "/icons/software/illustrator.svg"
         },
         {
           "name": "Adobe Photoshop",
           "code": "Ps",
           "purpose": "Penyusunan Mockup Fotorealistik Beresolusi Tinggi",
           "colorBg": "bg-[#31A8FF]/10",
-          "colorText": "text-[#31A8FF]"
+          "colorText": "text-[#31A8FF]",
+          "iconUrl": "/icons/software/photoshop.svg"
         }
       ],
       "creationProcess": [],
@@ -1166,7 +1186,8 @@
           "code": "Pr",
           "purpose": "Timeline Editing Video Iklan Komersial & Reels",
           "colorBg": "bg-[#9999FF]/10",
-          "colorText": "text-[#9999FF]"
+          "colorText": "text-[#9999FF]",
+          "iconUrl": "/icons/software/premiere.svg"
         }
       ],
       "creationProcess": [

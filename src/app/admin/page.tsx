@@ -1450,6 +1450,7 @@ export default function AdminPage() {
           purpose: purpose || existing.keyUseCases?.[0] || 'Pembuatan aset proyek',
           colorBg: existing.color?.bg || 'bg-neutral-800',
           colorText: existing.color?.text || 'text-white',
+          iconUrl: existing.iconUrl,
         },
       ];
       setProjectForm((prev) => ({ ...prev, toolsUsed: updatedToolsUsed }));
@@ -1492,6 +1493,7 @@ export default function AdminPage() {
         purpose,
         colorBg: newApp.color.bg,
         colorText: newApp.color.text,
+        iconUrl: newApp.iconUrl,
       },
     ];
     setProjectForm((prev) => ({ ...prev, toolsUsed: updatedToolsUsed }));
@@ -4764,19 +4766,52 @@ export default function AdminPage() {
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-mono font-bold text-lime-400 flex items-center gap-1.5">
                           <Wrench className="w-3.5 h-3.5" />
-                          <span>Tambah Software ke Daftar Sehari-hari & Langsung Ceklis:</span>
+                          <span>Tambah Software Baru (Logo Resmi & Ceklis):</span>
                         </span>
                         <span className="text-[10px] font-mono text-neutral-500">
-                          Tersimpan permanen ke Software Sehari-hari
+                          Tersimpan otomatis ke Software Sehari-hari
                         </span>
                       </div>
 
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                      {/* Pilihan Preset Logo Cepat dengan Icon Asli */}
+                      <div className="space-y-1.5">
+                        <label className="text-[11px] font-mono text-neutral-300 font-bold block">
+                          Pilih Cepat Logo Software Populer:
+                        </label>
+                        <div className="flex flex-wrap gap-2">
+                          {POPULAR_SOFTWARE_PRESETS.map((preset) => (
+                            <button
+                              key={preset.name}
+                              type="button"
+                              onClick={() => {
+                                setQuickToolForm({
+                                  name: preset.name,
+                                  shortCode: preset.code,
+                                  iconUrl: preset.icon,
+                                  purpose: preset.defaultPurpose,
+                                });
+                              }}
+                              className={`px-2.5 py-1.5 rounded-lg border text-xs font-mono flex items-center gap-2 transition-all ${
+                                quickToolForm.name === preset.name
+                                  ? 'bg-lime-400/20 border-lime-400 text-lime-400 font-bold shadow-xs'
+                                  : 'bg-neutral-950 border-neutral-800 text-neutral-300 hover:border-neutral-700'
+                              }`}
+                            >
+                              <div className="w-4 h-4 flex items-center justify-center shrink-0">
+                                <img src={preset.icon} alt={preset.name} className="w-full h-full object-contain" />
+                              </div>
+                              <span>{preset.name}</span>
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2 border-t border-neutral-800">
                         <div className="sm:col-span-2 space-y-1">
                           <label className="text-[11px] font-mono text-neutral-400">Nama Software *</label>
                           <input
                             type="text"
-                            placeholder="e.g. Blender, Cinema 4D, Canva..."
+                            placeholder="e.g. Blender, Cinema 4D, Canva, Corel..."
                             value={quickToolForm.name}
                             onChange={(e) => {
                               const val = e.target.value;
@@ -4790,15 +4825,31 @@ export default function AdminPage() {
                           />
                         </div>
 
+                        {/* Pratinjau Icon Software */}
                         <div className="space-y-1">
-                          <label className="text-[11px] font-mono text-neutral-400">Kode Ikon</label>
-                          <input
-                            type="text"
-                            placeholder="e.g. Bl"
-                            value={quickToolForm.shortCode}
-                            onChange={(e) => setQuickToolForm({ ...quickToolForm, shortCode: e.target.value })}
-                            className="w-full px-3 py-1.5 rounded bg-neutral-950 border border-neutral-800 text-xs text-lime-400 font-bold font-mono text-center outline-none"
-                          />
+                          <label className="text-[11px] font-mono text-neutral-400">Logo Icon Terpilih</label>
+                          <div className="flex items-center gap-2">
+                            <div className="w-8 h-8 rounded-lg bg-neutral-950 border border-neutral-800 flex items-center justify-center p-1 shrink-0 overflow-hidden">
+                              {quickToolForm.iconUrl ? (
+                                <img src={quickToolForm.iconUrl} alt="Logo" className="w-full h-full object-contain" />
+                              ) : (
+                                <span className="text-xs font-bold text-neutral-500">?</span>
+                              )}
+                            </div>
+                            <label className="cursor-pointer text-[11px] font-mono text-lime-400 hover:text-lime-300 bg-neutral-950 border border-neutral-800 px-2.5 py-1.5 rounded">
+                              Unggah Icon
+                              <input
+                                type="file"
+                                accept="image/png,image/svg+xml,image/jpeg,image/webp"
+                                className="hidden"
+                                onChange={(e) =>
+                                  handleLocalImageUpload(e, (url) =>
+                                    setQuickToolForm((prev) => ({ ...prev, iconUrl: url }))
+                                  )
+                                }
+                              />
+                            </label>
+                          </div>
                         </div>
                       </div>
 
@@ -4813,30 +4864,6 @@ export default function AdminPage() {
                           onChange={(e) => setQuickToolForm({ ...quickToolForm, purpose: e.target.value })}
                           className="w-full px-3 py-1.5 rounded bg-neutral-950 border border-neutral-800 text-xs text-neutral-300 font-mono outline-none"
                         />
-                      </div>
-
-                      {/* Preset Cepat Logo Populer */}
-                      <div className="pt-2 border-t border-neutral-800/80">
-                        <div className="text-[10px] font-mono text-neutral-400 mb-1.5">Preset Cepat Logo Populer:</div>
-                        <div className="flex flex-wrap gap-1.5">
-                          {POPULAR_SOFTWARE_PRESETS.map((preset) => (
-                            <button
-                              key={preset.name}
-                              type="button"
-                              onClick={() => {
-                                setQuickToolForm({
-                                  name: preset.name,
-                                  shortCode: preset.code,
-                                  iconUrl: preset.icon,
-                                  purpose: preset.defaultPurpose,
-                                });
-                              }}
-                              className="px-2 py-0.5 rounded bg-neutral-950 hover:bg-neutral-800 border border-neutral-800 text-[10px] font-mono text-neutral-300 hover:text-lime-400 transition-colors"
-                            >
-                              {preset.name}
-                            </button>
-                          ))}
-                        </div>
                       </div>
 
                       <div className="flex items-center justify-end gap-2 pt-2 border-t border-neutral-800">
@@ -4859,7 +4886,7 @@ export default function AdminPage() {
                     </div>
                   )}
 
-                  {/* Grid Checkbox Software */}
+                  {/* Grid Checkbox Software dengan Logo Resmi */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {applicationsList.map((app) => {
                       const isUsed = projectForm.toolsUsed?.some((t) => t.name === app.name);
@@ -4874,7 +4901,7 @@ export default function AdminPage() {
                           }`}
                         >
                           <div className="flex items-center justify-between mb-2">
-                            <label className="flex items-center gap-2.5 cursor-pointer flex-1 min-w-0">
+                            <label className="flex items-center gap-3 cursor-pointer flex-1 min-w-0">
                               <input
                                 type="checkbox"
                                 checked={isUsed}
@@ -4888,6 +4915,7 @@ export default function AdminPage() {
                                         purpose: app.keyUseCases?.[0] || 'Pembuatan aset proyek',
                                         colorBg: app.color?.bg || 'bg-neutral-800',
                                         colorText: app.color?.text || 'text-white',
+                                        iconUrl: app.iconUrl,
                                       },
                                     ];
                                     setProjectForm({ ...projectForm, toolsUsed: updated });
@@ -4899,8 +4927,8 @@ export default function AdminPage() {
                                 className="accent-lime-400 w-4 h-4 rounded shrink-0"
                               />
 
-                              {/* Official Icon or Shortcode Monogram */}
-                              <div className="w-6 h-6 rounded bg-neutral-950 border border-neutral-800 flex items-center justify-center p-0.5 shrink-0 overflow-hidden">
+                              {/* Logo Resmi Software */}
+                              <div className="w-9 h-9 rounded-lg bg-neutral-950 border border-neutral-800 flex items-center justify-center p-1.5 shrink-0 overflow-hidden shadow-inner">
                                 {app.iconUrl ? (
                                   <img
                                     src={app.iconUrl}
@@ -4911,18 +4939,17 @@ export default function AdminPage() {
                                     }}
                                   />
                                 ) : (
-                                  <span className="text-[10px] font-mono font-bold text-lime-400">
+                                  <span className="text-xs font-mono font-bold text-lime-400">
                                     {app.shortCode}
                                   </span>
                                 )}
                               </div>
 
-                              <span className="font-bold text-xs text-white truncate">{app.name}</span>
+                              <div className="flex-1 min-w-0">
+                                <span className="font-bold text-xs text-white block truncate">{app.name}</span>
+                                <span className="text-[10px] font-mono text-neutral-400 block truncate">{app.category}</span>
+                              </div>
                             </label>
-
-                            <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-neutral-800 text-neutral-400 shrink-0">
-                              {app.shortCode}
-                            </span>
                           </div>
 
                           {isUsed && (

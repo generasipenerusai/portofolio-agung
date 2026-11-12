@@ -7,6 +7,7 @@ import { CustomGraphicMockup } from './CustomGraphicMockups';
 import { SpotlightTiltCard, ScrollReveal } from './InteractivePrimitives';
 import { soundFx } from '../utils/soundEffects';
 import { analyzeProjectLink } from '../utils/linkHelpers';
+import { usePortfolio } from '../context/PortfolioContext';
 
 interface ProjectCardProps {
   project: Project;
@@ -21,6 +22,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   onSelect,
   variant = 'default',
 }) => {
+  const { applicationsList } = usePortfolio();
   const galleryCount = project.photoGallery?.length || 0;
   const quickTags =
     project.deliverables && project.deliverables.length > 0
@@ -302,15 +304,39 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 
               {project.toolsUsed && project.toolsUsed.length > 0 && (
                 <div className="flex items-center gap-1.5 shrink-0">
-                  {project.toolsUsed.slice(0, 4).map((tool, idx) => (
-                    <span
-                      key={idx}
-                      title={`${tool.name}${tool.purpose ? ` — ${tool.purpose}` : ''}`}
-                      className={`w-6 h-6 rounded-md flex items-center justify-center font-bold text-[10px] ${tool.colorBg} ${tool.colorText} border border-current/15`}
-                    >
-                      {tool.code}
-                    </span>
-                  ))}
+                  {project.toolsUsed.slice(0, 4).map((tool, idx) => {
+                    const matchedApp = applicationsList?.find(
+                      (a) =>
+                        a.name.toLowerCase() === tool.name.toLowerCase() ||
+                        a.shortCode.toLowerCase() === tool.code?.toLowerCase()
+                    );
+                    const iconUrl = tool.iconUrl || matchedApp?.iconUrl;
+
+                    return iconUrl ? (
+                      <div
+                        key={idx}
+                        title={`${tool.name}${tool.purpose ? ` — ${tool.purpose}` : ''}`}
+                        className="w-6 h-6 rounded-md p-1 bg-neutral-900 border border-neutral-700/60 dark:border-neutral-800 flex items-center justify-center shrink-0 overflow-hidden shadow-xs hover:border-lime-400/80 transition-colors"
+                      >
+                        <img
+                          src={iconUrl}
+                          alt={tool.name}
+                          className="w-full h-full object-contain"
+                          onError={(e) => {
+                            (e.currentTarget as HTMLElement).style.display = 'none';
+                          }}
+                        />
+                      </div>
+                    ) : (
+                      <span
+                        key={idx}
+                        title={`${tool.name}${tool.purpose ? ` — ${tool.purpose}` : ''}`}
+                        className={`w-6 h-6 rounded-md flex items-center justify-center font-bold text-[10px] ${tool.colorBg} ${tool.colorText} border border-current/15`}
+                      >
+                        {tool.code}
+                      </span>
+                    );
+                  })}
                 </div>
               )}
             </div>

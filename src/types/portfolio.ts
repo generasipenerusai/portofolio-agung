@@ -68,6 +68,7 @@ export interface ProjectToolUsage {
   purpose: string;
   colorBg: string;
   colorText: string;
+  iconUrl?: string;
 }
 
 export interface ProjectGalleryImage {
