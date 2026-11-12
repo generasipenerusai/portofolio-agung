@@ -128,6 +128,280 @@
   ],
   "projectsData": [
     {
+      "id": "project-1794465027692",
+      "sectionId": "sec-1794464924835",
+      "title": "Digital Scoring Pencak Silat Standard IPSI",
+      "subtitle": "Transformasi Digital Sistem Penilaian Pertandingan Pencak Silat untuk Meningkatkan Akurasi, Transparansi, dan Efisiensi Proses Scoring.",
+      "client": "Persinas ASAD",
+      "year": "2026",
+      "category": "Web Application Development & UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": true,
+      "customMockupUrl": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-cover-0-1794465826962.jpg",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "photoGallery": [
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-0-0-1794465828003.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-0-1-1794465828857.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-0-2-1794465829670.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-0-3-1794465830764.jpg",
+          "caption": ""
+        }
+      ],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Digital Scoring Pencak Silat Standard IPSI merupakan sistem penilaian pertandingan berbasis digital yang dirancang untuk mendukung proses scoring dalam kompetisi pencak silat. Platform ini dikembangkan untuk membantu proses pencatatan nilai, pemantauan pertandingan, serta pengelolaan hasil penilaian secara lebih terstruktur, cepat, dan transparan.\n\nDengan pendekatan UI/UX dan pengembangan aplikasi berbasis web, sistem ini mengintegrasikan kebutuhan pertandingan ke dalam antarmuka digital yang informatif dan mudah digunakan. Perancangan difokuskan pada kemudahan akses bagi petugas pertandingan, kejelasan informasi skor, serta penyajian data pertandingan secara real-time sesuai kemampuan implementasi sistem.\n\nProyek ini menjadi bagian dari upaya digitalisasi sistem pertandingan pencak silat untuk mendukung penyelenggaraan kompetisi yang lebih modern, efektif, dan profesional.",
+      "designBrief": "Proses penilaian pertandingan pencak silat membutuhkan ketelitian, kecepatan, dan konsistensi dalam pencatatan skor. Pengelolaan nilai secara manual berpotensi menimbulkan keterlambatan informasi, kesalahan pencatatan, serta kesulitan dalam memantau hasil pertandingan.\n\nTantangan utama dalam proyek ini adalah merancang sistem scoring digital yang mampu menyajikan informasi pertandingan secara jelas, meminimalkan kompleksitas operasional, dan mendukung kebutuhan petugas pertandingan dengan alur kerja yang efisien.\n\nSistem juga perlu memiliki struktur informasi yang mudah dipahami agar pengguna dapat mengakses data pertandingan dan hasil penilaian tanpa mengalami kesulitan.",
+      "conceptPhilosophy": "Mengembangkan konsep digital scoring berbasis web dengan antarmuka yang modern, informatif, dan berorientasi pada kebutuhan pertandingan.\n\nPendekatan desain mengutamakan visual hierarchy untuk menonjolkan informasi penting seperti identitas pesilat, kategori pertandingan, waktu pertandingan, dan informasi skor.\n\nTata letak dirancang dengan struktur yang terorganisasi, penggunaan warna yang memiliki kontras baik, serta komponen antarmuka yang konsisten. Pendekatan ini bertujuan menciptakan pengalaman penggunaan yang intuitif, meningkatkan keterbacaan informasi, dan mendukung kelancaran proses penilaian pertandingan.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "HTML",
+          "code": "HTML",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/html.svg"
+        },
+        {
+          "name": "CSS",
+          "code": "CSS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/css.svg"
+        },
+        {
+          "name": "Javascript",
+          "code": "JS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/javascript.svg"
+        },
+        {
+          "name": "Google Gemini",
+          "code": "G",
+          "purpose": "Peniaian poin secara digital",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Menggali kebutuhan, perilaku, dan kendala utama (pain points) pengguna terhadap produk atau alur layanan.",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Menyintesis temuan riset menjadi User Persona, User Journey Map, dan Problem Statement yang fokus.",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Menyusun Information Architecture, alur navigasi (User Flow), dan sketsa tata letak Low-Fidelity Wireframe.",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Membangun komponen Design System, antarmuka High-Fidelity, serta prototipe interaktif yang siap diuji.",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Menguji skenario penggunaan bersama pengguna untuk memvalidasi kemudahan alur dan menyempurnakan detail UX.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
+      "id": "project-1794465027692",
+      "sectionId": "sec-1794464924835",
+      "title": "Digital Scoring Pencak Silat Standard IPSI",
+      "subtitle": "Transformasi Digital Sistem Penilaian Pertandingan Pencak Silat untuk Meningkatkan Akurasi, Transparansi, dan Efisiensi Proses Scoring.",
+      "client": "Persinas ASAD",
+      "year": "2026",
+      "category": "Web Application Development & UI/UX Design",
+      "mediaType": "graphic",
+      "tags": [
+        "Branding"
+      ],
+      "featured": true,
+      "customMockupUrl": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-cover-1-1794465831615.jpg",
+      "projectUrl": "",
+      "projectUrlLabel": "",
+      "videoEmbedUrl": "",
+      "photoGallery": [
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-1-0-1794465832562.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-1-1-1794465833521.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-1-2-1794465834505.jpg",
+          "caption": ""
+        },
+        {
+          "url": "https://raw.githubusercontent.com/generasipenerusai/portofolio-agung/main/public/uploads/graphic-gallery-1-3-1794465835381.jpg",
+          "caption": ""
+        }
+      ],
+      "aspectRatio": "standard",
+      "mockupType": "bottle-packaging",
+      "heroTheme": {
+        "bg": "from-neutral-900 to-black",
+        "text": "text-white",
+        "accent": "text-lime-400",
+        "border": "border-lime-400/30",
+        "tagBg": "bg-lime-400/10 text-lime-400"
+      },
+      "summary": "Digital Scoring Pencak Silat Standard IPSI merupakan sistem penilaian pertandingan berbasis digital yang dirancang untuk mendukung proses scoring dalam kompetisi pencak silat. Platform ini dikembangkan untuk membantu proses pencatatan nilai, pemantauan pertandingan, serta pengelolaan hasil penilaian secara lebih terstruktur, cepat, dan transparan.\n\nDengan pendekatan UI/UX dan pengembangan aplikasi berbasis web, sistem ini mengintegrasikan kebutuhan pertandingan ke dalam antarmuka digital yang informatif dan mudah digunakan. Perancangan difokuskan pada kemudahan akses bagi petugas pertandingan, kejelasan informasi skor, serta penyajian data pertandingan secara real-time sesuai kemampuan implementasi sistem.\n\nProyek ini menjadi bagian dari upaya digitalisasi sistem pertandingan pencak silat untuk mendukung penyelenggaraan kompetisi yang lebih modern, efektif, dan profesional.",
+      "designBrief": "Proses penilaian pertandingan pencak silat membutuhkan ketelitian, kecepatan, dan konsistensi dalam pencatatan skor. Pengelolaan nilai secara manual berpotensi menimbulkan keterlambatan informasi, kesalahan pencatatan, serta kesulitan dalam memantau hasil pertandingan.\n\nTantangan utama dalam proyek ini adalah merancang sistem scoring digital yang mampu menyajikan informasi pertandingan secara jelas, meminimalkan kompleksitas operasional, dan mendukung kebutuhan petugas pertandingan dengan alur kerja yang efisien.\n\nSistem juga perlu memiliki struktur informasi yang mudah dipahami agar pengguna dapat mengakses data pertandingan dan hasil penilaian tanpa mengalami kesulitan.",
+      "conceptPhilosophy": "Mengembangkan konsep digital scoring berbasis web dengan antarmuka yang modern, informatif, dan berorientasi pada kebutuhan pertandingan.\n\nPendekatan desain mengutamakan visual hierarchy untuk menonjolkan informasi penting seperti identitas pesilat, kategori pertandingan, waktu pertandingan, dan informasi skor.\n\nTata letak dirancang dengan struktur yang terorganisasi, penggunaan warna yang memiliki kontras baik, serta komponen antarmuka yang konsisten. Pendekatan ini bertujuan menciptakan pengalaman penggunaan yang intuitif, meningkatkan keterbacaan informasi, dan mendukung kelancaran proses penilaian pertandingan.",
+      "myRole": {
+        "title": "Lead Designer",
+        "contributionType": "100% Eksekusi Mandiri",
+        "responsibilities": [
+          "Konseptualisasi ide dan arah visual",
+          "Eksekusi produksi dan penyuntingan akhir"
+        ]
+      },
+      "toolsUsed": [
+        {
+          "name": "HTML",
+          "code": "HTML",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/html.svg"
+        },
+        {
+          "name": "CSS",
+          "code": "CSS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/css.svg"
+        },
+        {
+          "name": "Javascript",
+          "code": "JS",
+          "purpose": "Pembuatan aset & pengerjaan proyek",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white",
+          "iconUrl": "/icons/software/javascript.svg"
+        },
+        {
+          "name": "Google Gemini",
+          "code": "G",
+          "purpose": "Peniaian poin secara digital",
+          "colorBg": "bg-neutral-800",
+          "colorText": "text-white"
+        }
+      ],
+      "creationProcess": [
+        {
+          "stepNumber": "01",
+          "title": "Empathize — Riset Pengguna & Konteks",
+          "duration": "Tahap 1",
+          "toolUsed": "FigJam / User Interview",
+          "description": "Menggali kebutuhan, perilaku, dan kendala utama (pain points) pengguna terhadap produk atau alur layanan.",
+          "keyMilestone": "User Insight & Pain Points"
+        },
+        {
+          "stepNumber": "02",
+          "title": "Define — Perumusan Masalah & Persona",
+          "duration": "Tahap 2",
+          "toolUsed": "FigJam / Notion",
+          "description": "Menyintesis temuan riset menjadi User Persona, User Journey Map, dan Problem Statement yang fokus.",
+          "keyMilestone": "User Persona & Problem Statement"
+        },
+        {
+          "stepNumber": "03",
+          "title": "Ideate — User Flow & Wireframing",
+          "duration": "Tahap 3",
+          "toolUsed": "Figma / Whimsical",
+          "description": "Menyusun Information Architecture, alur navigasi (User Flow), dan sketsa tata letak Low-Fidelity Wireframe.",
+          "keyMilestone": "User Flow & Wireframe"
+        },
+        {
+          "stepNumber": "04",
+          "title": "Prototype — UI Design System & Interaksi",
+          "duration": "Tahap 4",
+          "toolUsed": "Figma",
+          "description": "Membangun komponen Design System, antarmuka High-Fidelity, serta prototipe interaktif yang siap diuji.",
+          "keyMilestone": "UI System & Interactive Prototype"
+        },
+        {
+          "stepNumber": "05",
+          "title": "Test — Usability Testing & Iterasi",
+          "duration": "Tahap 5",
+          "toolUsed": "Figma Prototype / Maze",
+          "description": "Menguji skenario penggunaan bersama pengguna untuk memvalidasi kemudahan alur dan menyempurnakan detail UX.",
+          "keyMilestone": "Validated Final UI/UX"
+        }
+      ],
+      "deliverables": [
+        "Aset Visual Resolusi Tinggi"
+      ],
+      "colorPalette": [],
+      "typographyStack": [],
+      "impactMetrics": []
+    },
+    {
       "id": "project-1794456873285",
       "sectionId": "sec-1793524758056",
       "title": "RAJA GADAI – Pawnshop Management System & Web Application Design",
@@ -1799,6 +2073,24 @@
         "Pembuatan aset & pengerjaan proyek"
       ],
       "iconUrl": "/icons/software/javascript.svg"
+    },
+    {
+      "id": "tool-1794465789211",
+      "name": "Google Gemini",
+      "shortCode": "G",
+      "category": "Vektor & Brand",
+      "experienceLevel": "Primary Daily Driver",
+      "yearsUsed": "3+ Tahun",
+      "description": "Perangkat lunak untuk peniaian poin secara digital",
+      "color": {
+        "bg": "bg-neutral-800",
+        "text": "text-white",
+        "border": "border-neutral-700",
+        "badge": "bg-lime-400 text-black"
+      },
+      "keyUseCases": [
+        "Peniaian poin secara digital"
+      ]
     }
   ],
   "servicesData": [
