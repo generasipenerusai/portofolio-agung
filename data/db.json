@@ -1606,28 +1606,6 @@
       "iconUrl": "/icons/software/photoshop.svg"
     },
     {
-      "id": "davinci-resolve",
-      "name": "DaVinci Resolve Studio",
-      "shortCode": "Dv",
-      "category": "Videografi & Color",
-      "experienceLevel": "Advanced Specialist",
-      "yearsUsed": "5+ Tahun",
-      "color": {
-        "bg": "bg-[#E63946]/10",
-        "text": "text-[#E63946]",
-        "border": "border-[#E63946]/30",
-        "badge": "bg-[#E63946] text-white"
-      },
-      "description": "Standar industri Hollywood untuk koreksi warna sinematik, manajemen ruang warna ACES, emulsi cetak film 35mm, dan mastering HDR video komersial.",
-      "keyUseCases": [
-        "Color Grading Film Sinematik & Emulsi Kodak 2383",
-        "Manajemen Warna ACES & Arri LogC3 Pipeline",
-        "Koreksi Warna Kulit (Skin Tone Separation)",
-        "Mastering Video Komersial Resolusi 4K DCI"
-      ],
-      "iconUrl": "/icons/software/davinci-resolve.svg"
-    },
-    {
       "id": "cinema4d",
       "name": "Cinema 4D & Octane",
       "shortCode": "C4",
