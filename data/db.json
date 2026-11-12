@@ -116,6 +116,14 @@
       "title": "Design Graphic",
       "subtitle": "Klik pada karya untuk melihat detail kontribusi, proses pengerjaan, dan hasil akhir.",
       "layout": "grid-2"
+    },
+    {
+      "id": "sec-1794464924835",
+      "eyebrow": "Keahlian Tambahan",
+      "title": "AI - Fullstack Web Developer",
+      "subtitle": "Membuat aplikasi full dikerjakan dengan menggunakan Artificial Intelligence",
+      "layout": "grid-2",
+      "showDesignThinking": false
     }
   ],
   "projectsData": [
